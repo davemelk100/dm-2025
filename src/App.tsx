@@ -68,7 +68,7 @@ function App() {
       description: "Redesign of a Wordpress site linking to an eBay store",
       technologies: ["Wordpress", "React", "Figma", "Tailwind"],
       demo: "https://graceful-crostata-2d37d7.netlify.app/",
-      image: "/img/vintage-wp.png",
+      image: "https://i.ebayimg.com/images/g/3hMAAOSwehhkKIjR/s-l1600.jpg",
     },
     {
       title: "Portfolio",
@@ -359,7 +359,7 @@ function App() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg bg-gray-800/20 p-6 transition-all duration-300 hover:bg-gray-800/30"
+                className="group relative overflow-hidden rounded-lg bg-gray-50/90 p-6 transition-all duration-300 hover:bg-gray-100/90"
               >
                 <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <img
@@ -397,7 +397,7 @@ function App() {
       </section>
 
       {/* Work Section */}
-      <section id="work" className="py-12 sm:py-20">
+      <section id="work" className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16">
             {content.work.title}

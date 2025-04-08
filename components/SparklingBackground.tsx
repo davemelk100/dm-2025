@@ -17,24 +17,29 @@ const SparklingBackground: React.FC = () => {
     { background: "#6da9fd", border: "#a8c9ff" },
     { background: "#C03221", border: "#e05a4a" },
     { background: "#F9C22E", border: "#ffd86b" },
+    { background: "#4CAF50", border: "#81c784" },
+    { background: "#828E82", border: "#9BA69B" },
   ];
 
   useEffect(() => {
     // Create initial sparkles
-    const initialSparkles: Sparkle[] = Array.from({ length: 300 }, (_, i) => {
+    const initialSparkles: Sparkle[] = Array.from({ length: 500 }, (_, i) => {
       const strandIndex = Math.floor(i / 100);
       const baseAngle = (i % 100) * Math.PI * 2;
       // Create a staggered twisting pattern
-      const phaseOffset = strandIndex * (Math.PI / 2); // Different phase for each strand
+      const phaseOffset = strandIndex * (Math.PI / 3); // Different phase for each strand
+      const twistMultiplier = strandIndex === 4 ? 2 : 1; // More twist for purple strand
       const twistAngle =
-        strandIndex * (Math.PI / 3) +
-        Math.sin(baseAngle / 4 + phaseOffset) *
+        strandIndex * (Math.PI / 2.5) +
+        Math.sin(baseAngle / 3 + phaseOffset) *
           Math.PI *
-          (strandIndex === 2 ? -1 : 1);
+          (strandIndex % 2 === 0 ? 1 : -1) *
+          twistMultiplier;
       // Vary the radius to create a spiral effect
       const radius =
-        3 +
-        Math.sin(baseAngle / 8 + strandIndex * (Math.PI / 3) + phaseOffset) * 2;
+        4 +
+        Math.sin(baseAngle / 6 + strandIndex * (Math.PI / 2.5) + phaseOffset) *
+          (strandIndex === 4 ? 4 : 3); // Larger radius variation for purple strand
       return {
         id: i,
         x: 95 + Math.cos(baseAngle + twistAngle) * radius,
@@ -55,19 +60,21 @@ const SparklingBackground: React.FC = () => {
           const baseAngle =
             ((i % 100) / 100) * Math.PI * 2 + Date.now() / 240000;
           // Create a staggered twisting pattern
-          const phaseOffset = strandIndex * (Math.PI / 2); // Different phase for each strand
+          const phaseOffset = strandIndex * (Math.PI / 3); // Different phase for each strand
+          const twistMultiplier = strandIndex === 4 ? 2 : 1; // More twist for purple strand
           const twistAngle =
-            strandIndex * (Math.PI / 3) +
-            Math.sin(baseAngle / 4 + phaseOffset) *
+            strandIndex * (Math.PI / 2.5) +
+            Math.sin(baseAngle / 3 + phaseOffset) *
               Math.PI *
-              (strandIndex === 2 ? -1 : 1);
+              (strandIndex % 2 === 0 ? 1 : -1) *
+              twistMultiplier;
           // Vary the radius to create a spiral effect
           const radius =
-            3 +
+            4 +
             Math.sin(
-              baseAngle / 8 + strandIndex * (Math.PI / 3) + phaseOffset
+              baseAngle / 6 + strandIndex * (Math.PI / 2.5) + phaseOffset
             ) *
-              2;
+              (strandIndex === 4 ? 4 : 3); // Larger radius variation for purple strand
           return {
             ...sparkle,
             x: 95 + Math.cos(baseAngle + twistAngle) * radius,
