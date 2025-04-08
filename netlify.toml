@@ -2,11 +2,6 @@
   command = "npm run build" # Command to build your Vite project
   publish = "dist"         # Folder containing the build output
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  force = true
-
 [[headers]]
   for = "/*"
   [headers.values]
