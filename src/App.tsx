@@ -68,7 +68,7 @@ function App() {
       description: "Redesign of a Wordpress site linking to an eBay store",
       technologies: ["Wordpress", "React", "Figma", "Tailwind"],
       demo: "https://graceful-crostata-2d37d7.netlify.app/",
-      image: "https://i.ebayimg.com/images/g/3hMAAOSwehhkKIjR/s-l1600.jpg",
+      image: "/img/vintage-wp.png",
     },
     {
       title: "Portfolio",
