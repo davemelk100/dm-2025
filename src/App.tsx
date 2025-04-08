@@ -7,6 +7,7 @@ import {
   X,
   Dribbble,
   ArrowUp,
+  Github,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
@@ -59,6 +60,36 @@ function App() {
       setShowScrollTop(true);
     }
   };
+
+  const projects = [
+    {
+      title: "Project One",
+      description:
+        "A brief description of the first project and its key features.",
+      technologies: ["React", "TypeScript", "Tailwind"],
+      github: "https://github.com/yourusername/project1",
+      demo: "https://project1-demo.com",
+      image: "/project1.jpg",
+    },
+    {
+      title: "Project Two",
+      description:
+        "A brief description of the second project and its key features.",
+      technologies: ["Next.js", "Node.js", "MongoDB"],
+      github: "https://github.com/yourusername/project2",
+      demo: "https://project2-demo.com",
+      image: "/project2.jpg",
+    },
+    {
+      title: "Project Three",
+      description:
+        "A brief description of the third project and its key features.",
+      technologies: ["Vue", "Firebase", "GraphQL"],
+      github: "https://github.com/yourusername/project3",
+      demo: "https://project3-demo.com",
+      image: "/project3.jpg",
+    },
+  ];
 
   return (
     <div className="relative min-h-screen bg-white text-black">
@@ -313,6 +344,78 @@ function App() {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* Latest Projects Section - Commented out for now
+      <motion.section 
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={staggerChildren}
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+      >
+        <div className="max-w-7xl mx-auto">
+          <motion.h2 
+            variants={fadeInUp}
+            className="text-4xl font-bold text-center mb-12"
+          >
+            Latest Projects
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="aspect-w-16 aspect-h-9 bg-gray-100">
+                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                    <span className="text-gray-400">Project Image</span>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <div className="flex gap-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+                    >
+                      <Github className="w-5 h-5" />
+                      <span>GitHub</span>
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+      */}
 
       {/* Work Section */}
       <section id="work" className="py-12 sm:py-20">
