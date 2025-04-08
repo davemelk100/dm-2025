@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
 import ImageModal from "../components/ImageModal";
+import designTokens from "../public/designTokens.json";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -541,6 +542,106 @@ function App() {
                         {position.description}
                       </p>
                     )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Design System Section */}
+      <section id="design-system" className="py-12 sm:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Design System</h2>
+          <p className="text-lg text-muted-foreground mb-12">
+            Seamlessly integrated with Figma Design Tokens, automatically
+            syncing colors, typography, and spacing across design and code.
+          </p>
+
+          {/* Color Palette */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6">Color Palette</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {designTokens.colors.map((color) => (
+                <motion.div
+                  key={color.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg p-4 shadow-sm"
+                >
+                  <div
+                    className="w-full h-20 rounded-md mb-3"
+                    style={{ backgroundColor: color.value }}
+                  />
+                  <div>
+                    <p className="font-medium text-sm mb-1">{color.name}</p>
+                    <p className="text-sm text-gray-500">{color.value}</p>
+                    <p className="text-xs text-gray-400 mt-1">
+                      {color.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Typography */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6">Typography</h3>
+            <div className="space-y-6">
+              {designTokens.typography.map((type) => (
+                <motion.div
+                  key={type.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg p-6 shadow-sm"
+                >
+                  <p
+                    style={{
+                      fontFamily: type.fontFamily,
+                      fontSize: type.fontSize,
+                      lineHeight: type.lineHeight,
+                      fontWeight: type.fontWeight,
+                    }}
+                  >
+                    The quick brown fox jumps over the lazy dog
+                  </p>
+                  <div className="mt-3 pt-3 border-t">
+                    <p className="text-sm font-medium">{type.name}</p>
+                    <p className="text-xs text-gray-500">
+                      {type.fontSize} / {type.lineHeight} / {type.fontWeight}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Spacing */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-6">Spacing Scale</h3>
+            <div className="space-y-4">
+              {designTokens.spacing.map((space) => (
+                <motion.div
+                  key={space.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className="flex items-center bg-white rounded-lg p-4 shadow-sm"
+                >
+                  <div
+                    className="bg-primary/20 mr-4"
+                    style={{
+                      width: space.value,
+                      height: space.value,
+                    }}
+                  />
+                  <div>
+                    <p className="font-medium text-sm">{space.name}</p>
+                    <p className="text-sm text-gray-500">{space.value}</p>
                   </div>
                 </motion.div>
               ))}

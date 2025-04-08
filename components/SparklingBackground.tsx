@@ -92,7 +92,7 @@ const SparklingBackground: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-transparent">
+    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
       <style>
         {`
           @keyframes sparkle {
