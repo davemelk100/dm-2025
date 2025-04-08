@@ -65,11 +65,12 @@ function App() {
 
   const projects = [
     {
-      title: "e-commerce site revamp",
-      description: "Redesign of a Wordpress site linking to an eBay store",
-      technologies: ["Wordpress", "React", "Figma", "Tailwind"],
-      demo: "https://graceful-crostata-2d37d7.netlify.app/",
-      image: "https://i.ebayimg.com/images/g/3hMAAOSwehhkKIjR/s-l1600.jpg",
+      title: "Illustrator Profile and CMS",
+      description:
+        "World class illustrator profile and CMS built as promotional tool/.",
+      technologies: ["React", "Vite", "AI", "Tailwind", "Figma"],
+      demo: "https://effervescent-duckanoo-3cafae.netlify.app/",
+      image: "/img/holloway.png",
     },
     {
       title: "Portfolio",
@@ -360,7 +361,7 @@ function App() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg bg-gray-50/90 p-6 transition-all duration-300 hover:bg-gray-100/90"
+                className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80"
               >
                 <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <img
