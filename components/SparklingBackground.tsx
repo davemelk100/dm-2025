@@ -53,7 +53,7 @@ const SparklingBackground: React.FC = () => {
         prevSparkles.map((sparkle, i) => {
           const strandIndex = Math.floor(i / 100);
           const baseAngle =
-            ((i % 100) / 100) * Math.PI * 2 + Date.now() / 480000;
+            ((i % 100) / 100) * Math.PI * 2 + Date.now() / 240000;
           // Create a staggered twisting pattern
           const phaseOffset = strandIndex * (Math.PI / 2); // Different phase for each strand
           const twistAngle =
@@ -72,14 +72,14 @@ const SparklingBackground: React.FC = () => {
             ...sparkle,
             x: 95 + Math.cos(baseAngle + twistAngle) * radius,
             y: ((i % 100) / 100) * 100,
-            delay: Math.random() * 30 + 15,
-            duration: Math.random() * 12 + 8,
+            delay: Math.random() * 15 + 7,
+            duration: Math.random() * 6 + 4,
             color: colors[strandIndex],
             size: Math.random() * 12 + 10,
           };
         })
       );
-    }, 300);
+    }, 150);
 
     return () => clearInterval(interval);
   }, []);
@@ -114,7 +114,7 @@ const SparklingBackground: React.FC = () => {
             pointerEvents: "none",
             backgroundColor: sparkle.color.background,
             border: `2px solid ${sparkle.color.border}`,
-            boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
+            boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
             transform: "translateZ(0)",
           }}
         />
