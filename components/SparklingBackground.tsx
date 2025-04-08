@@ -7,45 +7,42 @@ interface Sparkle {
   size: number;
   delay: number;
   duration: number;
-  color: string;
+  color: { background: string; border: string };
 }
 
 const SparklingBackground: React.FC = () => {
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
 
   const colors = [
-    "bg-red-700",
-    "bg-blue-700",
-    "bg-green-700",
-    "bg-yellow-600",
-    "bg-purple-700",
-    "bg-pink-700",
-    "bg-indigo-700",
-    "bg-teal-700",
-    "bg-orange-600",
-    "bg-cyan-700",
-    "bg-rose-700",
-    "bg-violet-700",
-    "bg-emerald-700",
-    "bg-amber-600",
-    "bg-fuchsia-700",
+    { background: "#6da9fd", border: "#a8c9ff" },
+    { background: "#C03221", border: "#e05a4a" },
+    { background: "#F9C22E", border: "#ffd86b" },
   ];
 
   useEffect(() => {
     // Create initial sparkles
-    const initialSparkles: Sparkle[] = Array.from({ length: 100 }, (_, i) => {
-      const isSecondString = i >= 50;
-      const baseAngle = (i % 50) * Math.PI * 2; // Full rotation
-      const twistAngle = isSecondString ? Math.PI : 0; // Offset second string by 180 degrees
-      const radius = 2; // Distance from center
+    const initialSparkles: Sparkle[] = Array.from({ length: 300 }, (_, i) => {
+      const strandIndex = Math.floor(i / 100);
+      const baseAngle = (i % 100) * Math.PI * 2;
+      // Create a staggered twisting pattern
+      const phaseOffset = strandIndex * (Math.PI / 2); // Different phase for each strand
+      const twistAngle =
+        strandIndex * (Math.PI / 3) +
+        Math.sin(baseAngle / 4 + phaseOffset) *
+          Math.PI *
+          (strandIndex === 2 ? -1 : 1);
+      // Vary the radius to create a spiral effect
+      const radius =
+        3 +
+        Math.sin(baseAngle / 8 + strandIndex * (Math.PI / 3) + phaseOffset) * 2;
       return {
         id: i,
-        x: 95 + Math.cos(baseAngle + twistAngle) * radius, // Moved to far right
-        y: ((i % 50) / 50) * 100, // Evenly spaced vertically
-        size: Math.random() * 8 + 6,
+        x: 95 + Math.cos(baseAngle + twistAngle) * radius,
+        y: ((i % 100) / 100) * 100,
+        size: Math.random() * 12 + 10,
         delay: 0,
         duration: 0,
-        color: colors[Math.floor(Math.random() * colors.length)],
+        color: colors[strandIndex],
       };
     });
     setSparkles(initialSparkles);
@@ -54,21 +51,35 @@ const SparklingBackground: React.FC = () => {
     const interval = setInterval(() => {
       setSparkles((prevSparkles) =>
         prevSparkles.map((sparkle, i) => {
-          const isSecondString = i >= 50;
-          const baseAngle = ((i % 50) / 50) * Math.PI * 2 + Date.now() / 30000;
-          const twistAngle = isSecondString ? Math.PI : 0;
-          const radius = 2;
+          const strandIndex = Math.floor(i / 100);
+          const baseAngle =
+            ((i % 100) / 100) * Math.PI * 2 + Date.now() / 480000;
+          // Create a staggered twisting pattern
+          const phaseOffset = strandIndex * (Math.PI / 2); // Different phase for each strand
+          const twistAngle =
+            strandIndex * (Math.PI / 3) +
+            Math.sin(baseAngle / 4 + phaseOffset) *
+              Math.PI *
+              (strandIndex === 2 ? -1 : 1);
+          // Vary the radius to create a spiral effect
+          const radius =
+            3 +
+            Math.sin(
+              baseAngle / 8 + strandIndex * (Math.PI / 3) + phaseOffset
+            ) *
+              2;
           return {
             ...sparkle,
-            x: 95 + Math.cos(baseAngle + twistAngle) * radius, // Moved to far right
-            y: ((i % 50) / 50) * 100,
-            delay: Math.random() * 15 + 5,
-            color: colors[Math.floor(Math.random() * colors.length)],
-            size: Math.random() * 8 + 6,
+            x: 95 + Math.cos(baseAngle + twistAngle) * radius,
+            y: ((i % 100) / 100) * 100,
+            delay: Math.random() * 30 + 15,
+            duration: Math.random() * 12 + 8,
+            color: colors[strandIndex],
+            size: Math.random() * 12 + 10,
           };
         })
       );
-    }, 200); // Much slower update interval
+    }, 300);
 
     return () => clearInterval(interval);
   }, []);
@@ -79,10 +90,13 @@ const SparklingBackground: React.FC = () => {
         {`
           @keyframes sparkle {
             0% {
-              opacity: 1;
+              transform: scale(0.98);
+            }
+            50% {
+              transform: scale(1.02);
             }
             100% {
-              opacity: 1;
+              transform: scale(0.98);
             }
           }
         `}
@@ -90,20 +104,17 @@ const SparklingBackground: React.FC = () => {
       {sparkles.map((sparkle) => (
         <div
           key={sparkle.id}
-          className={`absolute rounded-full ${sparkle.color}`}
+          className="absolute rounded-full"
           style={{
             left: `${sparkle.x}%`,
             top: `${sparkle.y}%`,
             width: `${sparkle.size}px`,
             height: `${sparkle.size}px`,
-            opacity: 1,
+            animation: `sparkle ${sparkle.duration}s ease-in-out ${sparkle.delay}s infinite`,
             pointerEvents: "none",
-            boxShadow: `
-              2px 2px 4px rgba(0, 0, 0, 0.2),
-              -2px -2px 4px rgba(255, 255, 255, 0.8),
-              inset 1px 1px 2px rgba(255, 255, 255, 0.3),
-              inset -1px -1px 2px rgba(0, 0, 0, 0.1)
-            `,
+            backgroundColor: sparkle.color.background,
+            border: `2px solid ${sparkle.color.border}`,
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
             transform: "translateZ(0)",
           }}
         />

@@ -225,9 +225,9 @@ function App() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="absolute top-8 right-8 z-10 hidden md:block"
+          className="absolute top-8 right-4 sm:right-8 z-10 hidden md:block"
         >
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-4 sm:gap-6 md:gap-8">
             {content.navigation.links.map((item) => (
               <motion.li
                 key={item.id}
@@ -236,22 +236,27 @@ function App() {
               >
                 <button
                   onClick={() => handleNavClick(item.id)}
-                  className="hover:opacity-70 transition-opacity"
+                  className="text-sm sm:text-base hover:opacity-70 transition-opacity"
                 >
                   {item.text}
                 </button>
               </motion.li>
             ))}
-            <li className="h-4 w-px bg-border mx-2" aria-hidden="true" />
+            <li
+              className="h-4 w-px bg-border mx-1 sm:mx-2"
+              aria-hidden="true"
+            />
             <motion.li whileHover={{ scale: 1.05 }}>
               <a
                 href={content.navigation.social.linkedin.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-70 transition-opacity flex items-center gap-2"
+                className="hover:opacity-70 transition-opacity flex items-center gap-1 sm:gap-2"
               >
-                <LinkedInLogoIcon className="h-5 w-5" />
-                <span>{content.navigation.social.linkedin.text}</span>
+                <LinkedInLogoIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="text-sm sm:text-base">
+                  {content.navigation.social.linkedin.text}
+                </span>
               </a>
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }}>
@@ -259,10 +264,12 @@ function App() {
                 href={content.navigation.social.dribbble.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-70 transition-opacity flex items-center gap-2"
+                className="hover:opacity-70 transition-opacity flex items-center gap-1 sm:gap-2"
               >
-                <Dribbble className="h-5 w-5" />
-                <span>{content.navigation.social.dribbble.text}</span>
+                <Dribbble className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="text-sm sm:text-base">
+                  {content.navigation.social.dribbble.text}
+                </span>
               </a>
             </motion.li>
           </ul>
@@ -346,9 +353,9 @@ function App() {
         whileInView="animate"
         viewport={{ once: true }}
         variants={staggerChildren}
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-white w-full"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto w-full">
           <motion.h2
             variants={fadeInUp}
             className="text-4xl font-bold text-center mb-12"
@@ -356,12 +363,12 @@ function App() {
             Latest Projects
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full"
               >
                 <div className="w-full h-48 overflow-hidden">
                   <img
