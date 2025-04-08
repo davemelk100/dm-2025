@@ -7,7 +7,6 @@ import {
   X,
   Dribbble,
   ArrowUp,
-  Github,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
@@ -66,7 +65,6 @@ function App() {
       title: "e-commerce site revamp",
       description: "Redesign of a Wordpress site linking to an eBay store",
       technologies: ["Wordpress", "React", "Figma", "Tailwind"],
-      github: "https://github.com/yourusername/project1",
       demo: "https://graceful-crostata-2d37d7.netlify.app/",
       image: "https://i.ebayimg.com/images/g/3hMAAOSwehhkKIjR/s-l1600.jpg",
     },
@@ -75,7 +73,6 @@ function App() {
       description:
         "Previous portfolio with OpenAI and Figma Design Token integrations.",
       technologies: ["Figma", "OpenAI", "React", "Tailwind"],
-      github: "https://github.com/yourusername/project2",
       demo: "https://rococo-paprenjak-da1be1.netlify.app/",
       image: "/img/old-portfolio.png",
     },
@@ -84,7 +81,6 @@ function App() {
       description:
         "An AI-driven learning management system for user experience knowledge.",
       technologies: ["React", "Vite", "AI", "Tailwind", "OpenAI"],
-      github: "https://github.com/yourusername/project3",
       demo: "https://silly-genie-67c18c.netlify.app/",
       image: "/img/ux-lms.png",
     },
