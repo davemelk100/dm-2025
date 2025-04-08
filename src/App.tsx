@@ -12,6 +12,7 @@ import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
+import ImageModal from "../components/ImageModal";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -33,6 +34,7 @@ const staggerChildren = {
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -347,71 +349,52 @@ function App() {
         </motion.div>
       </section>
 
-      {/* Latest Projects Section */}
-      <motion.section
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        variants={staggerChildren}
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-white w-full"
-      >
-        <div className="max-w-7xl mx-auto w-full">
-          <motion.h2
-            variants={fadeInUp}
-            className="text-4xl font-bold text-center mb-12"
-          >
-            Latest Projects
-          </motion.h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      {/* Projects Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 sm:px-8">
+          <h2 className="mb-12 text-center text-4xl font-bold">
+            Current Projects
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <motion.div
+              <div
                 key={index}
-                variants={fadeInUp}
-                className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full"
+                className="group relative overflow-hidden rounded-lg bg-gray-800/20 p-6 transition-all duration-300 hover:bg-gray-800/30"
               >
-                <div className="w-full h-48 overflow-hidden">
+                <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="h-full w-full cursor-pointer object-cover transition-transform duration-300 group-hover:scale-105"
+                    onClick={() => setSelectedImage(project.image)}
                   />
                 </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex gap-4">
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
+                <p className="mb-4 text-black">{project.description}</p>
+                <div className="mb-4 flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="rounded-full bg-white px-3 py-1 text-sm"
                     >
-                      <ArrowUpRight className="w-5 h-5" />
-                      <span>Live Demo</span>
-                    </a>
-                  </div>
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-              </motion.div>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-black hover:text-gray-600"
+                >
+                  View Demo
+                  <ArrowUpRight className="ml-1 h-4 w-4" />
+                </a>
+              </div>
             ))}
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Work Section */}
       <section id="work" className="py-12 sm:py-20">
@@ -429,7 +412,10 @@ function App() {
                 transition={{ duration: 0.6, delay: (index % 2) * 0.2 }}
                 className="group relative"
               >
-                <div className="overflow-hidden">
+                <div
+                  className="overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage(project.image)}
+                >
                   <img
                     src={project.image}
                     alt={project.alt}
@@ -562,6 +548,14 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <ImageModal
+          imageUrl={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }
