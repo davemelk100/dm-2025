@@ -11,6 +11,7 @@ import {
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { content } from "./content";
+import SparklingBackground from "../components/SparklingBackground";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -60,7 +61,8 @@ function App() {
   };
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen bg-white text-black">
+      <SparklingBackground />
       {/* Scroll to Top Button */}
       <AnimatePresence>
         {showScrollTop && (
@@ -461,7 +463,7 @@ function App() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
