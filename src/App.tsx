@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
 import ImageModal from "../components/ImageModal";
-import designTokens from "../public/designTokens.json";
+import designTokens from "./designTokens.json";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
