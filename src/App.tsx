@@ -116,7 +116,7 @@ function App() {
           className="absolute inset-0 bg-gradient-to-b from-transparent to-background/5"
         />
 
-        <div className="absolute top-8 left-4 sm:left-8 z-10">
+        <div className="absolute top-8 left-16 sm:left-20 z-10">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -148,7 +148,7 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="absolute top-8 right-4 z-50 block md:hidden"
+          className="absolute top-8 left-4 z-50 block lg:hidden"
           aria-label={
             mobileMenuOpen
               ? content.navigation.menuAriaLabels.close
@@ -170,7 +170,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ type: "spring", stiffness: 100, damping: 20 }}
-              className="fixed inset-0 z-40 bg-background md:hidden"
+              className="fixed top-24 inset-x-0 bottom-0 z-40 bg-background lg:hidden"
             >
               <motion.ul
                 variants={staggerChildren}
@@ -227,7 +227,7 @@ function App() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="absolute top-8 right-4 sm:right-8 z-10 hidden md:block"
+          className="absolute top-8 right-4 sm:right-8 z-10 hidden lg:block"
         >
           <ul className="flex items-center gap-4 sm:gap-6 md:gap-8">
             {content.navigation.links.map((item) => (
