@@ -8,33 +8,44 @@ interface Sparkle {
   delay: number;
   duration: number;
   color: string;
-  shadowColor: string;
 }
-
-const colors = [
-  { bg: "bg-yellow-600", shadow: "rgba(161, 98, 7, 0.95)" },
-  { bg: "bg-orange-500", shadow: "rgba(249, 115, 22, 0.95)" },
-  { bg: "bg-amber-500", shadow: "rgba(245, 158, 11, 0.95)" },
-  { bg: "bg-red-500", shadow: "rgba(239, 68, 68, 0.95)" },
-  { bg: "bg-pink-500", shadow: "rgba(236, 72, 153, 0.95)" },
-];
 
 const SparklingBackground: React.FC = () => {
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
 
+  const colors = [
+    "bg-red-700",
+    "bg-blue-700",
+    "bg-green-700",
+    "bg-yellow-600",
+    "bg-purple-700",
+    "bg-pink-700",
+    "bg-indigo-700",
+    "bg-teal-700",
+    "bg-orange-600",
+    "bg-cyan-700",
+    "bg-rose-700",
+    "bg-violet-700",
+    "bg-emerald-700",
+    "bg-amber-600",
+    "bg-fuchsia-700",
+  ];
+
   useEffect(() => {
     // Create initial sparkles
-    const initialSparkles: Sparkle[] = Array.from({ length: 50 }, (_, i) => {
-      const colorIndex = Math.floor(Math.random() * colors.length);
+    const initialSparkles: Sparkle[] = Array.from({ length: 100 }, (_, i) => {
+      const isSecondString = i >= 50;
+      const baseAngle = (i % 50) * Math.PI * 2; // Full rotation
+      const twistAngle = isSecondString ? Math.PI : 0; // Offset second string by 180 degrees
+      const radius = 2; // Distance from center
       return {
         id: i,
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 8 + 4,
-        delay: Math.random() * 5,
-        duration: Math.random() * 3 + 2,
-        color: colors[colorIndex].bg,
-        shadowColor: colors[colorIndex].shadow,
+        x: 95 + Math.cos(baseAngle + twistAngle) * radius, // Moved to far right
+        y: ((i % 50) / 50) * 100, // Evenly spaced vertically
+        size: Math.random() * 8 + 6,
+        delay: 0,
+        duration: 0,
+        color: colors[Math.floor(Math.random() * colors.length)],
       };
     });
     setSparkles(initialSparkles);
@@ -42,19 +53,22 @@ const SparklingBackground: React.FC = () => {
     // Update sparkles periodically
     const interval = setInterval(() => {
       setSparkles((prevSparkles) =>
-        prevSparkles.map((sparkle) => {
-          const colorIndex = Math.floor(Math.random() * colors.length);
+        prevSparkles.map((sparkle, i) => {
+          const isSecondString = i >= 50;
+          const baseAngle = ((i % 50) / 50) * Math.PI * 2 + Date.now() / 30000;
+          const twistAngle = isSecondString ? Math.PI : 0;
+          const radius = 2;
           return {
             ...sparkle,
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            delay: Math.random() * 5,
-            color: colors[colorIndex].bg,
-            shadowColor: colors[colorIndex].shadow,
+            x: 95 + Math.cos(baseAngle + twistAngle) * radius, // Moved to far right
+            y: ((i % 50) / 50) * 100,
+            delay: Math.random() * 15 + 5,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            size: Math.random() * 8 + 6,
           };
         })
       );
-    }, 5000);
+    }, 200); // Much slower update interval
 
     return () => clearInterval(interval);
   }, []);
@@ -65,16 +79,10 @@ const SparklingBackground: React.FC = () => {
         {`
           @keyframes sparkle {
             0% {
-              opacity: 0.5;
-              transform: scale(0.5);
-            }
-            50% {
               opacity: 1;
-              transform: scale(1.3);
             }
             100% {
-              opacity: 0.5;
-              transform: scale(0.5);
+              opacity: 1;
             }
           }
         `}
@@ -88,10 +96,15 @@ const SparklingBackground: React.FC = () => {
             top: `${sparkle.y}%`,
             width: `${sparkle.size}px`,
             height: `${sparkle.size}px`,
-            animation: `sparkle ${sparkle.duration}s ease-in-out ${sparkle.delay}s infinite`,
-            opacity: 0.5,
-            boxShadow: `0 0 20px ${sparkle.shadowColor}`,
+            opacity: 1,
             pointerEvents: "none",
+            boxShadow: `
+              2px 2px 4px rgba(0, 0, 0, 0.2),
+              -2px -2px 4px rgba(255, 255, 255, 0.8),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+              inset -1px -1px 2px rgba(0, 0, 0, 0.1)
+            `,
+            transform: "translateZ(0)",
           }}
         />
       ))}

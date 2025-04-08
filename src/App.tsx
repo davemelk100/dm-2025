@@ -63,31 +63,30 @@ function App() {
 
   const projects = [
     {
-      title: "Project One",
-      description:
-        "A brief description of the first project and its key features.",
-      technologies: ["React", "TypeScript", "Tailwind"],
+      title: "e-commerce site revamp",
+      description: "Redesign of a Wordpress site linking to an eBay store",
+      technologies: ["Wordpress", "React", "Figma", "Tailwind"],
       github: "https://github.com/yourusername/project1",
-      demo: "https://project1-demo.com",
-      image: "/project1.jpg",
+      demo: "https://graceful-crostata-2d37d7.netlify.app/",
+      image: "https://i.ebayimg.com/images/g/3hMAAOSwehhkKIjR/s-l1600.jpg",
     },
     {
-      title: "Project Two",
+      title: "Portfolio",
       description:
-        "A brief description of the second project and its key features.",
-      technologies: ["Next.js", "Node.js", "MongoDB"],
+        "Previous portfolio with OpenAI and Figma Design Token integrations.",
+      technologies: ["Figma", "OpenAI", "React", "Tailwind"],
       github: "https://github.com/yourusername/project2",
-      demo: "https://project2-demo.com",
-      image: "/project2.jpg",
+      demo: "https://rococo-paprenjak-da1be1.netlify.app/",
+      image: "/img/old-portfolio.png",
     },
     {
-      title: "Project Three",
+      title: "OpenAI UX LMS",
       description:
-        "A brief description of the third project and its key features.",
-      technologies: ["Vue", "Firebase", "GraphQL"],
+        "An AI-driven learning management system for user experience knowledge.",
+      technologies: ["React", "Vite", "AI", "Tailwind", "OpenAI"],
       github: "https://github.com/yourusername/project3",
-      demo: "https://project3-demo.com",
-      image: "/project3.jpg",
+      demo: "https://silly-genie-67c18c.netlify.app/",
+      image: "/img/ux-lms.png",
     },
   ];
 
@@ -345,8 +344,8 @@ function App() {
         </motion.div>
       </section>
 
-      {/* Latest Projects Section - Commented out for now
-      <motion.section 
+      {/* Latest Projects Section */}
+      <motion.section
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
@@ -354,13 +353,13 @@ function App() {
         className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
       >
         <div className="max-w-7xl mx-auto">
-          <motion.h2 
+          <motion.h2
             variants={fadeInUp}
             className="text-4xl font-bold text-center mb-12"
           >
             Latest Projects
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
@@ -368,16 +367,20 @@ function App() {
                 variants={fadeInUp}
                 className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="aspect-w-16 aspect-h-9 bg-gray-100">
-                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                    <span className="text-gray-400">Project Image</span>
-                  </div>
+                <div className="w-full h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                
+
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <span
@@ -388,17 +391,8 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex gap-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                      <span>GitHub</span>
-                    </a>
                     <a
                       href={project.demo}
                       target="_blank"
@@ -415,7 +409,6 @@ function App() {
           </div>
         </div>
       </motion.section>
-      */}
 
       {/* Work Section */}
       <section id="work" className="py-12 sm:py-20">
