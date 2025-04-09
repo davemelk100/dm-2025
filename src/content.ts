@@ -41,12 +41,11 @@ export const content = {
         categories: "Mobile App, UI/UX Design, Photography",
       },
       {
-        title: "OpenAI UX LMS",
-        description:
-          "An AI-driven learning management system for user experience knowledge.",
-        image: "/img/ux-lms.png",
-        alt: "OpenAI UX LMS",
-        categories: "Web Design, AI Integration",
+        title: "Hex Code Pop Art",
+        categories: "Graphic Design, CSS",
+        image:
+          "https://cdn.dribbble.com/userupload/42714493/file/original-c195fc10c35f0cdfae246c54e244e472.png?resize=1024x494&vertical=center",
+        alt: "Hex Code Pop Art",
       },
       {
         title: "Podcast Logo",
@@ -61,13 +60,6 @@ export const content = {
         image:
           "https://cdn.dribbble.com/userupload/31524484/file/original-d64db8a660e52bc317659dd5968e4a43.jpg?resize=1905x901&vertical=center",
         alt: "Vintage Contact Form",
-      },
-      {
-        title: "Hex Code Pop Art",
-        categories: "Graphic Design, CSS",
-        image:
-          "https://cdn.dribbble.com/userupload/42714493/file/original-c195fc10c35f0cdfae246c54e244e472.png?resize=1024x494&vertical=center",
-        alt: "Hex Code Pop Art",
       },
       {
         title: "Custom Iconography",
