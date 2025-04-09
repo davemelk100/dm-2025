@@ -34,14 +34,6 @@ const staggerChildren = {
   },
 };
 
-interface Project {
-  title: string;
-  description?: string;
-  image: string;
-  alt: string;
-  categories: string;
-}
-
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
