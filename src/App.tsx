@@ -351,8 +351,8 @@ function App() {
         </motion.div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-20">
+      {/* Current Projects Section */}
+      <section id="current-projects" className="py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="mb-12 text-center text-4xl font-bold">
             Current Projects
