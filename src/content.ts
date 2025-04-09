@@ -2,7 +2,8 @@ export const content = {
   siteInfo: {
     title: "Dave Melkonian",
     subtitle: "Digital Experience Designer",
-    description: "Dave Melkonian  |  Digital Professional  |  Using AI for UX/UI/A11Y",
+    description:
+      "Dave Melkonian  |  Digital Professional  |  Using AI for UX/UI/A11Y",
     scrollText: "Scroll to explore",
   },
 
@@ -144,7 +145,7 @@ export const content = {
         company: "Optum / United Healthcare Group (UHG)",
         period: "October 2011 – June 2015",
         description:
-          "Led Federal Exchange (HealthCare.gov) UI/UX assessment and accessibility initiatives. Managed global team of 30 across multiple locations including Manila, New Delhi, and Hyderabad. Created responsive design framework using HTML/CSS/AngularJS and implemented Adobe Experience Manager CMS solutions.",
+          "Facilitated Federal Exchange (HealthCare.gov) UI/UX assessment and accessibility initiatives. Managed global team of 30 across multiple locations including Manila, New Delhi, and Hyderabad. Created responsive design framework using HTML/CSS/AngularJS and implemented Adobe Experience Manager CMS solutions.",
       },
     ],
   },
