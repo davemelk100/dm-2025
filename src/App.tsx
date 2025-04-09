@@ -454,8 +454,8 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: (index % 2) * 0.2 }}
-                className="bg-background p-6 sm:p-8 rounded-lg shadow-lg relative"
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="bg-gray-100/80 p-6 sm:p-8 rounded-lg shadow-lg relative"
               >
                 <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 absolute -top-3 -left-3 sm:-top-4 sm:-left-4" />
                 <p className="text-base sm:text-lg mb-6">{testimonial.quote}</p>
