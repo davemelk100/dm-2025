@@ -1,213 +1,71 @@
 {
   "colors": [
     {
-      "name": "primary",
-      "value": "#2177ae",
-      "description": "Primary brand color - A professional blue",
-      "category": "brand"
+      "name": "Primary",
+      "value": "#6da9fd",
+      "description": "Main brand color"
     },
     {
-      "name": "primary-light",
-      "value": "#4a8fbe",
-      "description": "Lightened primary color for hover states",
-      "category": "brand"
+      "name": "Secondary",
+      "value": "#C03221",
+      "description": "Secondary brand color"
     },
     {
-      "name": "primary-dark",
-      "value": "#1a5f8a",
-      "description": "Darkened primary color for active states",
-      "category": "brand"
+      "name": "Accent",
+      "value": "#F9C22E",
+      "description": "Accent color"
     },
     {
-      "name": "accent",
-      "value": "#e16b6a",
-      "description": "Accent color - A warm coral red",
-      "category": "brand"
+      "name": "Success",
+      "value": "#4CAF50",
+      "description": "Success state color"
     },
     {
-      "name": "accent-light",
-      "value": "#e88a89",
-      "description": "Lightened accent color for hover states",
-      "category": "brand"
-    },
-    {
-      "name": "accent-dark",
-      "value": "#b35554",
-      "description": "Darkened accent color for active states",
-      "category": "brand"
-    },
-    {
-      "name": "background",
-      "value": "#ffffff",
-      "description": "Main background color",
-      "category": "background"
-    },
-    {
-      "name": "surface",
-      "value": "#f8f8f8",
-      "description": "Surface color for cards and panels",
-      "category": "background"
-    },
-    {
-      "name": "surface-hover",
-      "value": "#f0f0f0",
-      "description": "Surface color for hover states",
-      "category": "background"
-    },
-    {
-      "name": "text-primary",
-      "value": "#575757",
-      "description": "Primary text color",
-      "category": "text"
-    },
-    {
-      "name": "text-secondary",
-      "value": "#3c3c3c",
-      "description": "Secondary text color",
-      "category": "text"
-    },
-    {
-      "name": "text-tertiary",
-      "value": "#9e9e9e",
-      "description": "Tertiary text color for subtle information",
-      "category": "text"
-    },
-    {
-      "name": "border",
-      "value": "#e0e0e0",
-      "description": "Border color for dividers and outlines",
-      "category": "border"
-    },
-    {
-      "name": "border-hover",
-      "value": "#bdbdbd",
-      "description": "Border color for hover states",
-      "category": "border"
-    },
-    {
-      "name": "success",
-      "value": "#4caf50",
-      "description": "Success state color",
-      "category": "status"
-    },
-    {
-      "name": "warning",
-      "value": "#ff9800",
-      "description": "Warning state color",
-      "category": "status"
-    },
-    {
-      "name": "error",
-      "value": "#f44336",
-      "description": "Error state color",
-      "category": "status"
+      "name": "Neutral",
+      "value": "#828E82",
+      "description": "Neutral color"
     }
   ],
+
   "typography": [
     {
-      "name": "heading-1",
-      "fontFamily": "Poppins, sans-serif",
+      "name": "Heading 1",
+      "fontFamily": "Inter",
       "fontSize": "2.5rem",
-      "lineHeight": 1.2,
-      "fontWeight": 700,
-      "category": "heading"
+      "lineHeight": "1.2",
+      "fontWeight": "700"
     },
     {
-      "name": "heading-2",
-      "fontFamily": "Poppins, sans-serif",
+      "name": "Heading 2",
+      "fontFamily": "Inter",
       "fontSize": "2rem",
-      "lineHeight": 1.3,
-      "fontWeight": 600,
-      "category": "heading"
+      "lineHeight": "1.3",
+      "fontWeight": "600"
     },
     {
-      "name": "heading-3",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "1.75rem",
-      "lineHeight": 1.4,
-      "fontWeight": 600,
-      "category": "heading"
-    },
-    {
-      "name": "body-large",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "1.125rem",
-      "lineHeight": 1.6,
-      "fontWeight": 400,
-      "category": "body"
-    },
-    {
-      "name": "body",
-      "fontFamily": "Poppins, sans-serif",
+      "name": "Body",
+      "fontFamily": "Inter",
       "fontSize": "1rem",
-      "lineHeight": 1.5,
-      "fontWeight": 400,
-      "category": "body"
-    },
-    {
-      "name": "body-small",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "0.875rem",
-      "lineHeight": 1.5,
-      "fontWeight": 400,
-      "category": "body"
-    },
-    {
-      "name": "caption",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "0.75rem",
-      "lineHeight": 1.5,
-      "fontWeight": 400,
-      "category": "body"
+      "lineHeight": "1.5",
+      "fontWeight": "400"
     }
   ],
+
   "spacing": [
     {
-      "name": "spacing-xxs",
-      "value": "0.25rem",
-      "description": "Extra extra small spacing"
+      "name": "Small",
+      "value": "0.5rem"
     },
     {
-      "name": "spacing-xs",
-      "value": "0.5rem",
-      "description": "Extra small spacing"
+      "name": "Medium",
+      "value": "1rem"
     },
     {
-      "name": "spacing-sm",
-      "value": "0.75rem",
-      "description": "Small spacing"
-    },
-    {
-      "name": "spacing-md",
-      "value": "1rem",
-      "description": "Medium spacing"
-    },
-    {
-      "name": "spacing-lg",
-      "value": "1.5rem",
-      "description": "Large spacing"
-    },
-    {
-      "name": "spacing-xl",
-      "value": "2rem",
-      "description": "Extra large spacing"
-    },
-    {
-      "name": "spacing-xxl",
-      "value": "3rem",
-      "description": "Extra extra large spacing"
-    },
-    {
-      "name": "container-padding",
-      "value": "1rem",
-      "description": "Container padding"
-    },
-    {
-      "name": "section-spacing",
-      "value": "4rem",
-      "description": "Section spacing"
+      "name": "Large",
+      "value": "2rem"
     }
   ],
+
   "shadows": [
     {
       "name": "shadow-sm",
@@ -230,6 +88,7 @@
       "description": "Extra large shadow for elevated surfaces"
     }
   ],
+
   "strings": [
     {
       "name": "app-name",
@@ -262,6 +121,7 @@
       "description": "Navigation contact label"
     }
   ],
+
   "numbers": [
     {
       "name": "border-radius-sm",
@@ -309,6 +169,7 @@
       "description": "Z-index for tooltips"
     }
   ],
+
   "version": "1.0.0",
-  "lastUpdated": "2024-03-21T12:00:00Z"
+  "lastUpdated": "2025-04-08T12:00:00Z"
 }

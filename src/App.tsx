@@ -556,7 +556,7 @@ function App() {
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Design System</h2>
           <p className="text-lg text-muted-foreground mb-12">
-            Seamlessly integrated with Figma Design Tokens, automatically
+            Integrated with Figma Design Tokens, automatically
             syncing colors, typography, and spacing across design and code.
           </p>
 
