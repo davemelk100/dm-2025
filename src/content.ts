@@ -15,7 +15,7 @@ export const content = {
     links: [
       { id: "work", text: "Work" },
       { id: "current-projects", text: "Lab" },
-      { id: "testimonials", text: "Testimonials" },
+      { id: "testimonials", text: "Kudos" },
       { id: "career", text: "Career" },
       { id: "design-system", text: "Design System" },
     ],
@@ -85,7 +85,7 @@ export const content = {
   },
 
   testimonials: {
-    title: "What People Say",
+    title: "Kudos",
     items: [
       {
         quote:

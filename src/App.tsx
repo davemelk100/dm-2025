@@ -328,11 +328,14 @@ function App() {
             </motion.div>
 
             {/* Color Palette */}
+            <p className="mt-16 text-xs text-gray-400 font-semibold uppercase">
+              Figma Design Token Integration
+            </p>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="mt-16 flex flex-wrap gap-3"
+              className="mt-4 flex flex-wrap gap-3"
             >
               {designTokens.colors.map((color) => {
                 // Function to determine if text should be light or dark based on background color
@@ -617,6 +620,58 @@ function App() {
               Integrated with Figma Design Tokens, automatically syncing colors,
               typography, and spacing across design and code.
             </p>
+
+            {/* Color Palette - Design System */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
+                Color Palette
+              </h3>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.2 }}
+                className="flex flex-wrap gap-3"
+              >
+                {designTokens.colors.map((color) => {
+                  const getTextColor = (hexColor: string) => {
+                    const r = parseInt(hexColor.slice(1, 3), 16);
+                    const g = parseInt(hexColor.slice(3, 5), 16);
+                    const b = parseInt(hexColor.slice(5, 7), 16);
+                    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+                    return brightness > 128 ? "text-black" : "text-white";
+                  };
+
+                  return (
+                    <div
+                      key={color.name}
+                      className="flex flex-col items-center gap-2"
+                    >
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="relative w-16 h-16 rounded-full shadow-sm"
+                        style={{ backgroundColor: color.value }}
+                      >
+                        <span
+                          className={`absolute inset-0 flex items-center justify-center text-[10px] font-medium ${getTextColor(
+                            color.value
+                          )}`}
+                        >
+                          {color.value}
+                        </span>
+                      </motion.div>
+                      <span className="text-xs text-muted-foreground">
+                        {color.name}
+                      </span>
+                    </div>
+                  );
+                })}
+              </motion.div>
+              <p className="mt-4 text-xs text-gray-400 font-semibold uppercase">
+                Figma Design Token Integration
+              </p>
+            </div>
 
             {/* Typography */}
             <div className="mb-12">
