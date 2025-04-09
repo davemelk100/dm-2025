@@ -3,7 +3,7 @@ export const content = {
     title: "Dave Melkonian",
     subtitle: "Digital Experience Designer",
     description:
-      "Dave Melkonian  |  Digital Professional  |  Using AI for UX/UI/A11Y",
+      "Dave Melkonian  |  Digital Professional  |  AI UX UI A11Y",
     scrollText: "Scroll to explore",
   },
 
