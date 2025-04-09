@@ -421,15 +421,11 @@ function App() {
                   rel="noopener noreferrer"
                   className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
                 >
-                  <div className="mb-4 aspect-video overflow-hidden rounded-lg">
+                  <div className="mb-4 aspect-video overflow-hidden rounded-lg cursor-pointer">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="h-full w-full cursor-pointer object-cover transition-transform duration-300 group-hover:scale-105"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setSelectedImage(project.image);
-                      }}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-semibold dark:text-black">
