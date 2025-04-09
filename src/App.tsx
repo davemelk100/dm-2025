@@ -280,12 +280,6 @@ function App() {
                   </span>
                 </a>
               </motion.li>
-              <motion.li
-                whileHover={{ scale: 1.05 }}
-                className="flex items-center"
-              >
-                <ThemeToggle />
-              </motion.li>
             </ul>
           </motion.nav>
 
