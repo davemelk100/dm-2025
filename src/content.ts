@@ -2,8 +2,7 @@ export const content = {
   siteInfo: {
     title: "Dave Melkonian",
     subtitle: "Digital Experience Designer",
-    description:
-      "Dave Melkonian  |  Digital Professional  |  AI UX UI A11Y",
+    description: "Dave Melkonian  |  Digital Professional  |  AI UX UI A11Y",
     scrollText: "Scroll to explore",
   },
 
@@ -13,11 +12,26 @@ export const content = {
       close: "Close menu",
     },
     links: [
-      { id: "work", text: "Work" },
-      { id: "current-projects", text: "Lab" },
-      { id: "testimonials", text: "Kudos" },
-      { id: "career", text: "Career" },
-      { id: "design-system", text: "Design System" },
+      {
+        id: "work",
+        text: "Samples",
+      },
+      {
+        id: "current-projects",
+        text: "Lab",
+      },
+      {
+        id: "testimonials",
+        text: "Testimonials",
+      },
+      {
+        id: "career",
+        text: "Career",
+      },
+      {
+        id: "design-system",
+        text: "Design System",
+      },
     ],
     social: {
       linkedin: {

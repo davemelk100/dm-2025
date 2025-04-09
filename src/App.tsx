@@ -127,24 +127,29 @@ function App() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex items-center gap-2"
+              className="flex flex-col gap-1"
             >
-              <motion.div
-                animate={{
-                  scale: [1, 1.1, 1],
-                  rotate: [0, 5, -5, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatDelay: 5,
-                }}
-              >
-                <CircleDot className="h-5 w-5 sm:h-6 sm:w-6" />
-              </motion.div>
-              <span className="text-base sm:text-lg font-medium">
-                {content.siteInfo.title}
-              </span>
+              <div className="flex items-center gap-2">
+                <motion.div
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 5, -5, 0],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatDelay: 5,
+                  }}
+                >
+                  <CircleDot className="h-5 w-5 sm:h-6 sm:w-6" />
+                </motion.div>
+                <span className="text-base sm:text-lg font-medium">
+                  {content.siteInfo.title}
+                </span>
+              </div>
+              <p className="text-xs text-gray-400 font-semibold uppercase">
+                Site inspiration: The New York City Subway System
+              </p>
             </motion.div>
           </div>
 
