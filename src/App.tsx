@@ -7,6 +7,7 @@ import {
   X,
   Dribbble,
   ArrowUp,
+  Train,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
@@ -147,9 +148,12 @@ function App() {
                   {content.siteInfo.title}
                 </span>
               </div>
-              <p className="text-xs text-gray-400 font-semibold uppercase">
-                Site inspiration: The New York City Subway System
-              </p>
+              <div className="flex items-center gap-2">
+                <Train className="h-4 w-4 text-gray-400" />
+                <p className="text-xs text-gray-400 font-semibold uppercase">
+                  Site inspired by The New York City Subway System
+                </p>
+              </div>
             </motion.div>
           </div>
 
