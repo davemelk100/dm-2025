@@ -62,13 +62,6 @@ export const content = {
         alt: "Vintage Contact Form",
       },
       {
-        title: "Custom Iconography",
-        categories: "UI Design, Iconography",
-        image:
-          "https://cdn.dribbble.com/userupload/4492872/file/original-4528bbe53b68a12baa096844b5e7615b.png?resize=1500x1200&vertical=center",
-        alt: "Custom Iconography",
-      },
-      {
         title: "Mobile App Design",
         categories: "UI/UX Design, Mobile",
         image:
