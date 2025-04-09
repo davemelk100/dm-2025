@@ -34,6 +34,21 @@ export const content = {
     title: "Selected Work",
     projects: [
       {
+        title: "Mushroom Tour Cards",
+        description: "Card design for a mushroom tour app.",
+        image: "/img/shroom-cards.png",
+        alt: "Card design for a mushroom tour app.",
+        categories: "Mobile App, UI/UX Design, Photography",
+      },
+      {
+        title: "OpenAI UX LMS",
+        description:
+          "An AI-driven learning management system for user experience knowledge.",
+        image: "/img/ux-lms.png",
+        alt: "OpenAI UX LMS",
+        categories: "Web Design, AI Integration",
+      },
+      {
         title: "Podcast Logo",
         categories: "Branding, Logo Design",
         image:

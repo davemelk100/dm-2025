@@ -399,7 +399,7 @@ function App() {
       </section>
 
       {/* Work Section */}
-      <section id="work" className="py-12 sm:py-20 bg-gray-50">
+      <section id="work" className="py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16">
             {content.work.title}
@@ -412,7 +412,7 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: (index % 2) * 0.2 }}
-                className="group relative"
+                className="group relative border border-gray-200/50 rounded-lg overflow-hidden p-4 bg-gray-100/80"
               >
                 <div
                   className="overflow-hidden cursor-pointer"
@@ -442,7 +442,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-12 sm:py-20 bg-muted">
+      <section id="testimonials" className="py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16 text-center">
             {content.testimonials.title}
@@ -552,7 +552,7 @@ function App() {
       </section>
 
       {/* Design System Section */}
-      <section id="design-system" className="py-12 sm:py-20 bg-gray-50">
+      <section id="design-system" className="py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Design System</h2>
           <p className="text-lg text-muted-foreground mb-12">
