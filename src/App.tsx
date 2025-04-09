@@ -69,7 +69,7 @@ function App() {
     {
       title: "Illustrator Profile and CMS",
       description:
-        "World class illustrator profile and CMS built as promotional tool/.",
+        "World class illustrator profile and CMS built as promotional tool.",
       technologies: ["React", "Vite", "AI", "Tailwind", "Figma"],
       demo: "https://effervescent-duckanoo-3cafae.netlify.app/",
       image: "/img/holloway.png",
