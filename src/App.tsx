@@ -345,22 +345,29 @@ function App() {
                 };
 
                 return (
-                  <motion.div
+                  <div
                     key={color.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="relative w-16 h-16 rounded-full shadow-sm"
-                    style={{ backgroundColor: color.value }}
+                    className="flex flex-col items-center gap-2"
                   >
-                    <span
-                      className={`absolute inset-0 flex items-center justify-center text-[10px] font-medium ${getTextColor(
-                        color.value
-                      )}`}
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      className="relative w-16 h-16 rounded-full shadow-sm"
+                      style={{ backgroundColor: color.value }}
                     >
-                      {color.value}
+                      <span
+                        className={`absolute inset-0 flex items-center justify-center text-[10px] font-medium ${getTextColor(
+                          color.value
+                        )}`}
+                      >
+                        {color.value}
+                      </span>
+                    </motion.div>
+                    <span className="text-xs text-muted-foreground">
+                      {color.name}
                     </span>
-                  </motion.div>
+                  </div>
                 );
               })}
             </motion.div>
