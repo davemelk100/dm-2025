@@ -405,16 +405,22 @@ function App() {
             <h2 className="mb-12 text-center text-4xl font-bold">Lab</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
-                <div
+                <a
                   key={index}
-                  className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80"
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
                 >
                   <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="h-full w-full cursor-pointer object-cover transition-transform duration-300 group-hover:scale-105"
-                      onClick={() => setSelectedImage(project.image)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setSelectedImage(project.image);
+                      }}
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-semibold dark:text-black">
@@ -433,16 +439,11 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700"
-                  >
+                  <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700">
                     View Demo
                     <ArrowUpRight className="ml-1 h-4 w-4" />
-                  </a>
-                </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
