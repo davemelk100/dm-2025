@@ -129,21 +129,21 @@ export const content = {
       {
         title: "Senior UX Designer",
         company: "Dewpoint",
-        period: "May 2016 – July 2023",
+        period: "May 2016 - July 2023",
         description:
           "Led UX strategy for 3D software, established accessibility standards, and built component libraries. Managed Agile teams and developed iterative design methodologies.",
       },
       {
         title: "Manager of Application Delivery",
         company: "Meridian Health Plan",
-        period: "June 2015 – May 2016",
+        period: "June 2015 - May 2016",
         description:
           "Managed a web team of 20 across numerous project tracks. Built a user experience discipline and implemented Agile Scrum framework. Created strategy for user experience and interface design while providing strategic direction for mobile and web development.",
       },
       {
         title: "Software Development Manager",
         company: "Optum / United Healthcare Group (UHG)",
-        period: "October 2011 – June 2015",
+        period: "October 2011 - June 2015",
         description:
           "Facilitated Federal Exchange (HealthCare.gov) UI/UX assessment and accessibility initiatives. Managed global team of 30 across multiple locations including Manila, New Delhi, and Hyderabad. Created responsive design framework using HTML/CSS/AngularJS and implemented Adobe Experience Manager CMS solutions.",
       },
