@@ -2,7 +2,7 @@ export const content = {
   siteInfo: {
     title: "Dave Melkonian",
     subtitle: "Digital Experience Designer",
-    description: "Dave Melkonian  |  Digital Professional",
+    description: "Dave Melkonian  |  Digital Professional  |  Using AI for UX/UI/A11Y",
     scrollText: "Scroll to explore",
   },
 
