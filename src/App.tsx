@@ -105,10 +105,10 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               onClick={scrollToTop}
-              className="fixed bottom-8 right-8 z-50 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:scale-110 transition-transform"
+              className="fixed bottom-8 right-[1.6rem] z-50 p-3 bg-primary text-primary-foreground rounded-full shadow-sm hover:scale-110 transition-transform"
               aria-label="Scroll to top"
             >
-              <ArrowUp className="h-6 w-6" />
+              <ArrowUp className="h-5 w-5" />
             </motion.button>
           )}
         </AnimatePresence>
@@ -233,7 +233,7 @@ function App() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-8 right-4 sm:right-8 z-10 hidden lg:block"
+            className="absolute top-8 right-32 z-10 hidden lg:block"
           >
             <ul className="flex items-center gap-4 sm:gap-6 md:gap-8">
               {content.navigation.links.map((item) => (
@@ -259,12 +259,10 @@ function App() {
                   href={content.navigation.social.linkedin.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-70 transition-opacity flex items-center gap-1 sm:gap-2"
+                  className="hover:opacity-70 transition-opacity"
+                  aria-label="LinkedIn"
                 >
-                  <LinkedInLogoIcon className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="text-sm sm:text-base">
-                    {content.navigation.social.linkedin.text}
-                  </span>
+                  <LinkedInLogoIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </a>
               </motion.li>
               <motion.li whileHover={{ scale: 1.05 }}>
@@ -272,12 +270,10 @@ function App() {
                   href={content.navigation.social.dribbble.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-70 transition-opacity flex items-center gap-1 sm:gap-2"
+                  className="hover:opacity-70 transition-opacity"
+                  aria-label="Dribbble"
                 >
-                  <Dribbble className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="text-sm sm:text-base">
-                    {content.navigation.social.dribbble.text}
-                  </span>
+                  <Dribbble className="h-5 w-5 sm:h-6 sm:w-6" />
                 </a>
               </motion.li>
             </ul>
@@ -330,6 +326,37 @@ function App() {
                 {content.siteInfo.description}
               </motion.p>
             </motion.div>
+
+            {/* Color Palette */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              className="mt-16 grid grid-cols-10 gap-2"
+            >
+              {designTokens.colors.map((color) => (
+                <motion.div
+                  key={color.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="bg-white/80 rounded-lg p-2 shadow-sm backdrop-blur-sm"
+                >
+                  <div
+                    className="w-full h-16 rounded-md mb-2"
+                    style={{ backgroundColor: color.value }}
+                  />
+                  <div>
+                    <p className="font-medium text-xs mb-0.5 dark:text-black">
+                      {color.name}
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-black">
+                      {color.value}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
 
           <motion.div
@@ -358,9 +385,7 @@ function App() {
         {/* Current Projects Section */}
         <section id="current-projects" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="mb-12 text-center text-4xl font-bold">
-              Current Projects
-            </h2>
+            <h2 className="mb-12 text-center text-4xl font-bold">Lab</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
                 <div
@@ -578,40 +603,6 @@ function App() {
               Integrated with Figma Design Tokens, automatically syncing colors,
               typography, and spacing across design and code.
             </p>
-
-            {/* Color Palette */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
-                Color Palette
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {designTokens.colors.map((color) => (
-                  <motion.div
-                    key={color.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="bg-white rounded-lg p-4 shadow-sm"
-                  >
-                    <div
-                      className="w-full h-20 rounded-md mb-3"
-                      style={{ backgroundColor: color.value }}
-                    />
-                    <div>
-                      <p className="font-medium text-sm mb-1 dark:text-black">
-                        {color.name}
-                      </p>
-                      <p className="text-sm text-gray-500 dark:text-black">
-                        {color.value}
-                      </p>
-                      <p className="text-xs text-gray-400 mt-1 dark:text-black">
-                        {color.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
 
             {/* Typography */}
             <div className="mb-12">

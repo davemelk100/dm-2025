@@ -2,67 +2,129 @@
   "colors": [
     {
       "name": "Primary",
-      "value": "#6da9fd",
+      "value": "#000000",
       "description": "Main brand color"
     },
     {
       "name": "Secondary",
-      "value": "#C03221",
+      "value": "#4B5563",
       "description": "Secondary brand color"
     },
     {
+      "name": "Tertiary",
+      "value": "#9CA3AF",
+      "description": "Tertiary brand color"
+    },
+    {
+      "name": "Background",
+      "value": "#FFFFFF",
+      "description": "Main background color"
+    },
+    {
+      "name": "Surface",
+      "value": "#F3F4F6",
+      "description": "Surface color for cards and components"
+    },
+    {
+      "name": "Muted",
+      "value": "#6B7280",
+      "description": "Muted text and icon color"
+    },
+    {
       "name": "Accent",
-      "value": "#F9C22E",
-      "description": "Accent color"
+      "value": "#3B82F6",
+      "description": "Accent color for interactive elements"
     },
     {
       "name": "Success",
-      "value": "#4CAF50",
+      "value": "#10B981",
       "description": "Success state color"
     },
     {
-      "name": "Neutral",
-      "value": "#828E82",
-      "description": "Neutral color"
+      "name": "Warning",
+      "value": "#F59E0B",
+      "description": "Warning state color"
+    },
+    {
+      "name": "Error",
+      "value": "#EF4444",
+      "description": "Error state color"
     }
   ],
 
   "typography": [
     {
       "name": "Heading 1",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "2.5rem",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "3rem",
       "lineHeight": "1.2",
       "fontWeight": "700"
     },
     {
       "name": "Heading 2",
-      "fontFamily": "Poppins, sans-serif",
-      "fontSize": "2rem",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "2.25rem",
       "lineHeight": "1.3",
       "fontWeight": "600"
     },
     {
+      "name": "Heading 3",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "1.875rem",
+      "lineHeight": "1.4",
+      "fontWeight": "600"
+    },
+    {
+      "name": "Body Large",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "1.125rem",
+      "lineHeight": "1.6",
+      "fontWeight": "400"
+    },
+    {
       "name": "Body",
-      "fontFamily": "Poppins, sans-serif",
+      "fontFamily": "Space Grotesk",
       "fontSize": "1rem",
-      "lineHeight": "1.5",
+      "lineHeight": "1.6",
+      "fontWeight": "400"
+    },
+    {
+      "name": "Body Small",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "0.875rem",
+      "lineHeight": "1.6",
       "fontWeight": "400"
     }
   ],
 
   "spacing": [
     {
-      "name": "Small",
+      "name": "XXS",
+      "value": "0.25rem"
+    },
+    {
+      "name": "XS",
       "value": "0.5rem"
     },
     {
-      "name": "Medium",
+      "name": "S",
+      "value": "0.75rem"
+    },
+    {
+      "name": "M",
       "value": "1rem"
     },
     {
-      "name": "Large",
+      "name": "L",
+      "value": "1.5rem"
+    },
+    {
+      "name": "XL",
       "value": "2rem"
+    },
+    {
+      "name": "XXL",
+      "value": "3rem"
     }
   ],
 
