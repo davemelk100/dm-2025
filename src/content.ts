@@ -43,6 +43,7 @@ export const content = {
       },
       {
         title: "Hex Code Pop Art",
+        description: "",
         categories: "Graphic Design, CSS",
         image:
           "https://cdn.dribbble.com/userupload/42714493/file/original-c195fc10c35f0cdfae246c54e244e472.png?resize=1024x494&vertical=center",
@@ -50,6 +51,7 @@ export const content = {
       },
       {
         title: "Podcast Logo",
+        description: "",
         categories: "Branding, Logo Design",
         image:
           "https://cdn.dribbble.com/userupload/17831184/file/original-58f76528d319cca00f6fd3d5579a02f8.png?resize=1600x1173&vertical=center",
@@ -57,6 +59,7 @@ export const content = {
       },
       {
         title: "Vintage Contact Form",
+        description: "",
         categories: "UI Design, Graphic Design",
         image:
           "https://cdn.dribbble.com/userupload/31524484/file/original-d64db8a660e52bc317659dd5968e4a43.jpg?resize=1905x901&vertical=center",
@@ -64,6 +67,7 @@ export const content = {
       },
       {
         title: "Mobile App Design",
+        description: "",
         categories: "UI/UX Design, Mobile",
         image:
           "https://cdn.dribbble.com/userupload/4492918/file/original-79c96b613cd96c876349064f868b72bc.png?resize=950x885&vertical=center",
@@ -71,6 +75,7 @@ export const content = {
       },
       {
         title: "Use Case",
+        description: "",
         categories: "UX Design, Documentation",
         image:
           "https://cdn.dribbble.com/userupload/4492832/file/original-792939a527da43ac1873b0d0e5efad6b.png?resize=1600x649&vertical=center",

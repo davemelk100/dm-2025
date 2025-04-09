@@ -34,6 +34,14 @@ const staggerChildren = {
   },
 };
 
+interface Project {
+  title: string;
+  description?: string;
+  image: string;
+  alt: string;
+  categories: string;
+}
+
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -196,7 +204,7 @@ function App() {
                   ))}
                   <motion.li
                     variants={fadeInUp}
-                    className="w-16 h-px bg-border my-4"
+                    className="w-16 h-px bg-gray-200 my-4"
                     aria-hidden="true"
                   />
                   <motion.li variants={fadeInUp}>
@@ -279,6 +287,12 @@ function App() {
                     {content.navigation.social.dribbble.text}
                   </span>
                 </a>
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center"
+              >
+                <ThemeToggle />
               </motion.li>
             </ul>
           </motion.nav>
@@ -375,15 +389,17 @@ function App() {
                       onClick={() => setSelectedImage(project.image)}
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-semibold">
+                  <h3 className="mb-2 text-xl font-semibold dark:text-black">
                     {project.title}
                   </h3>
-                  <p className="mb-4 text-black">{project.description}</p>
+                  <p className="mb-4 text-black dark:text-black">
+                    {project.description}
+                  </p>
                   <div className="mb-4 flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="rounded-full bg-white px-3 py-1 text-sm"
+                        className="rounded-full bg-white px-3 py-1 text-sm dark:text-black"
                       >
                         {tech}
                       </span>
@@ -393,7 +409,7 @@ function App() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-black hover:text-gray-600"
+                    className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700"
                   >
                     View Demo
                     <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -432,10 +448,15 @@ function App() {
                   </div>
                   <div className="mt-4 flex justify-between items-center">
                     <div>
-                      <h3 className="text-lg sm:text-xl font-medium">
+                      <h3 className="text-xl font-semibold mb-2 dark:text-black">
                         {project.title}
                       </h3>
-                      <p className="text-sm sm:text-base text-muted-foreground">
+                      {project.description && (
+                        <p className="text-black mb-4 dark:text-black">
+                          {project.description}
+                        </p>
+                      )}
+                      <p className="text-sm text-black dark:text-black">
                         {project.categories}
                       </p>
                     </div>
@@ -463,13 +484,15 @@ function App() {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   className="bg-gray-100/80 p-6 sm:p-8 rounded-lg shadow-lg relative"
                 >
-                  <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 absolute -top-3 -left-3 sm:-top-4 sm:-left-4" />
-                  <p className="text-base sm:text-lg mb-6">
+                  <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 dark:text-white/20 absolute -top-3 -left-3 sm:-top-4 sm:-left-4" />
+                  <p className="text-base sm:text-lg mb-6 dark:text-black">
                     {testimonial.quote}
                   </p>
                   <div>
-                    <p className="font-medium">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-medium dark:text-black">
+                      {testimonial.author}
+                    </p>
+                    <p className="text-sm text-muted-foreground dark:text-black">
                       {testimonial.role}
                     </p>
                   </div>
@@ -487,7 +510,7 @@ function App() {
             </h2>
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-0 md:left-1/2 h-full w-px bg-border" />
+              <div className="absolute left-0 md:left-1/2 h-full w-px bg-gray-200" />
 
               {/* Timeline Items */}
               <div className="space-y-12 sm:space-y-16">
@@ -562,17 +585,19 @@ function App() {
         {/* Design System Section */}
         <section id="design-system" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 dark:text-white">
               Design System
             </h2>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-12 dark:text-white">
               Integrated with Figma Design Tokens, automatically syncing colors,
               typography, and spacing across design and code.
             </p>
 
             {/* Color Palette */}
             <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-6">Color Palette</h3>
+              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
+                Color Palette
+              </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {designTokens.colors.map((color) => (
                   <motion.div
@@ -587,9 +612,13 @@ function App() {
                       style={{ backgroundColor: color.value }}
                     />
                     <div>
-                      <p className="font-medium text-sm mb-1">{color.name}</p>
-                      <p className="text-sm text-gray-500">{color.value}</p>
-                      <p className="text-xs text-gray-400 mt-1">
+                      <p className="font-medium text-sm mb-1 dark:text-black">
+                        {color.name}
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-black">
+                        {color.value}
+                      </p>
+                      <p className="text-xs text-gray-400 mt-1 dark:text-black">
                         {color.description}
                       </p>
                     </div>
@@ -600,7 +629,9 @@ function App() {
 
             {/* Typography */}
             <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-6">Typography</h3>
+              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
+                Typography
+              </h3>
               <div className="space-y-6">
                 {designTokens.typography.map((type) => (
                   <motion.div
@@ -617,12 +648,15 @@ function App() {
                         lineHeight: type.lineHeight,
                         fontWeight: type.fontWeight,
                       }}
+                      className="dark:text-black"
                     >
                       The quick brown fox jumps over the lazy dog
                     </p>
                     <div className="mt-3 pt-3 border-t">
-                      <p className="text-sm font-medium">{type.name}</p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-sm font-medium dark:text-black">
+                        {type.name}
+                      </p>
+                      <p className="text-xs text-gray-500 dark:text-black">
                         {type.fontSize} / {type.lineHeight} / {type.fontWeight}
                       </p>
                     </div>
@@ -633,7 +667,9 @@ function App() {
 
             {/* Spacing */}
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Spacing Scale</h3>
+              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
+                Spacing Scale
+              </h3>
               <div className="space-y-4">
                 {designTokens.spacing.map((space) => (
                   <motion.div
@@ -651,8 +687,12 @@ function App() {
                       }}
                     />
                     <div>
-                      <p className="font-medium text-sm">{space.name}</p>
-                      <p className="text-sm text-gray-500">{space.value}</p>
+                      <p className="font-medium text-sm dark:text-black">
+                        {space.name}
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-black">
+                        {space.value}
+                      </p>
                     </div>
                   </motion.div>
                 ))}
