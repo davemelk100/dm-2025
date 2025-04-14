@@ -7,7 +7,6 @@ import {
   X,
   Dribbble,
   ArrowUp,
-  Train,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
@@ -67,6 +66,14 @@ function App() {
   };
 
   const projects = [
+    {
+      title: "Design Principles",
+      description:
+        "Samples of various design principles with an OpenAI integration to learn about the principle.",
+      technologies: ["React", "Vite", "Tailwind"],
+      demo: "https://jazzy-platypus-e0858d.netlify.app/",
+      image: "/img/design-principles.png",
+    },
     {
       title: "Illustrator Profile and CMS",
       description:
@@ -148,12 +155,12 @@ function App() {
                   {content.siteInfo.title}
                 </span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Train className="h-4 w-4 text-gray-400" />
                 <p className="text-xs text-gray-400 font-semibold uppercase">
                   Site inspired by The New York City Subway System
                 </p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
@@ -748,6 +755,65 @@ function App() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-12">
+              <h3 className="text-2xl font-semibold mb-6 dark:text-white">
+                Buttons
+              </h3>
+              <div className="space-y-8">
+                {/* Variants */}
+                <div>
+                  <h4 className="text-lg font-medium mb-4 dark:text-white">
+                    Variants
+                  </h4>
+                  <div className="flex flex-wrap gap-4">
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 px-4 py-2">
+                      Default
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-destructive text-[#EF4444] hover:bg-destructive/90 h-10 px-4 py-2">
+                      Destructive
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-white text-gray-900 hover:bg-gray-100 h-10 px-4 py-2">
+                      Outline
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white hover:bg-secondary/80 h-10 px-4 py-2">
+                      Secondary
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#9CA3AF] text-white hover:bg-[#9CA3AF]/80 h-10 px-4 py-2">
+                      Tertiary
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 h-10 px-4 py-2">
+                      Ghost
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+                      Link
+                    </button>
+                  </div>
+                </div>
+
+                {/* Sizes */}
+                <div>
+                  <h4 className="text-lg font-medium mb-4 dark:text-white">
+                    Sizes
+                  </h4>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-9 rounded-md px-3">
+                      Small
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 px-4 py-2">
+                      Default
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-11 rounded-md px-8">
+                      Large
+                    </button>
+                    <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 w-10">
+                      Icon
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

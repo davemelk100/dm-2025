@@ -232,6 +232,57 @@
     }
   ],
 
+  "buttons": [
+    {
+      "name": "Primary",
+      "backgroundColor": "#3B82F6",
+      "textColor": "#FFFFFF",
+      "border": "none",
+      "padding": "0.75rem 1.5rem",
+      "borderRadius": 8,
+      "fontWeight": 600,
+      "hover": {
+        "backgroundColor": "#2563EB"
+      }
+    },
+    {
+      "name": "Secondary",
+      "backgroundColor": "#4B5563",
+      "textColor": "#FFFFFF",
+      "border": "none",
+      "padding": "0.75rem 1.5rem",
+      "borderRadius": 8,
+      "fontWeight": 600,
+      "hover": {
+        "backgroundColor": "#374151"
+      }
+    },
+    {
+      "name": "Outlined",
+      "backgroundColor": "transparent",
+      "textColor": "#3B82F6",
+      "border": "1px solid #3B82F6",
+      "padding": "0.75rem 1.5rem",
+      "borderRadius": 8,
+      "fontWeight": 600,
+      "hover": {
+        "backgroundColor": "#EFF6FF"
+      }
+    },
+    {
+      "name": "Ghost",
+      "backgroundColor": "transparent",
+      "textColor": "#3B82F6",
+      "border": "none",
+      "padding": "0.75rem 1.5rem",
+      "borderRadius": 8,
+      "fontWeight": 600,
+      "hover": {
+        "backgroundColor": "#F3F4F6"
+      }
+    }
+  ],
+
   "version": "1.0.0",
   "lastUpdated": "2025-04-08T12:00:00Z"
 }
