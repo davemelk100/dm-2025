@@ -13,12 +13,12 @@ export const content = {
     },
     links: [
       {
-        id: "work",
-        text: "Samples",
-      },
-      {
         id: "current-projects",
         text: "Lab",
+      },
+      {
+        id: "work",
+        text: "Design",
       },
       {
         id: "testimonials",
@@ -46,8 +46,43 @@ export const content = {
   },
 
   work: {
-    title: "Selected Work",
+    title: "Design Work",
     projects: [
+      {
+        title: "Delta Dental Member Portal",
+        description:
+          "Led user interface design implementation of a SaaS provider portal using HTML/CSS/Angular. Created accessible components following WCAG guidelines and implemented responsive design patterns for optimal user experience across all devices.",
+        categories: "UI/UX Design, Accessibility, Front End Development",
+        image: "/img/delta-portal-sq.png",
+        alt: "Delta Dental Member Portal",
+      },
+      {
+        title:
+          "Desktop view of the home page of a remote interpretation SaaS application",
+        description:
+          "Implemented a design in conjunction with marketing that overhauled the entire look and feel of the application. Mapped out and defined the user experience, and did front end development implementing the design.",
+        categories: "UI/UX Design, Design Systems, Front End Development",
+        image:
+          "https://upwork-usw2-prod-agora-file-storage.s3.us-west-2.amazonaws.com/profile/portfolio/thumbnail/fa2dc33bd3cd149bc6465355ff176544?response-content-disposition=inline;+filename=%22image_original%22;+filename*=utf-8%27%27image_original&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb//////////wEaCXVzLXdlc3QtMiJIMEYCIQDsFQ7K9ayYvgmuAbueM6Zkz8blbVK0tb0ZM/InXsIojQIhAOM7pUCdA9aPefChO%2BPhjpBS%2B9X6dnojwZzhY%2BqgodDUKpAFCB8QABoMNzM5OTM5MTczODE5Igw6DXMtplvuzX%2B4VTcq7QTVpj/JsH/GIp9Lxg8bA1OYvNvWZfKowi6tPooN%2BfKO6n6eun/QfaVtCdrPdA4lnjZu4t%2BroKEbB6%2BynQvxhCLsZPE5Ufn7s0bI8tQiN3dv5I8a5Lquob4t4UTfzgb4WNFR72Wd8CXzoPniVr5lh8KB7xxbQEZJ5Jz3FlL1FWxdYzo0WTP8hWIKFgfSP9n38h%2BvJDLqMkzimg%2BihLSSnBQEqHykyItLVh1EARu5so6oJN2T3YpPDTOqG03rRm6zuwQopj0gIinFWH38Ri1gxfwxmEqw7D/W6v6Et%2BimbMK%2BtkWpkkJY9G/rxhpX4OY0J1B1U%2BDqP/eJhq5NxyJX/uCDyD1C3c643WnAh7a7Ne9OdmkCEbgj9w3rMg42XgXQtPuj%2BfQ2iYujv4ojcxbv3Kq6VN878kyIBDb8R5QNZwBSRf3F1LnN5t56kOiZO%2BwRGcDSSCNo27dyfbNe1jyZtgiEVOSpPwHjlOQ57sxSjVips1lYWIbdvTNTz2%2BxeQ3GE763hqXaf8sfvQljmXnqv9pXO8xlSRMNh3J6MiAMMR6o3lkesBHfCZ3dZgzRDYlCfY0qCUNshH3vPrECtO/gE%2BUxpuMnPaJ6B4%2BslCTEdUFrZ7iG561h2ruN3eSoQAkSna2qqdMVmYnaSRn2JnDXqobAQThW56dA2NQIyptsaO884wdWHzjdPmiHmSTLm8Dz26HsVZ2hqKtjIQFWJof%2BBTYUFGhVAu0DdeFHDiWsn8MUUElwNJQYiRgbk638JL8Y8gGv3TMxhTJtHPArb3MXdDINjrR2D3uQPTMirMvkTFd8cagQmpAAsM/2o5fQyPMwqo32vwY6mgFkMvyssxk0dWImcf/J6VtL%2BpUdUv9fU/enbImb1TvdDLNW5pN5DtDv5baj3Iej3NT9bFyeukVp%2BthZy6SFdW3uQBgl5pGX%2BrqpQcH8znMnoEkEPgXEuwf%2BoIHPw/ATgCHt2dBuLkK2LIxGk7ZmAo%2BBLf6bgiBjrDSZE2xlc4HVpCvp7ZLe2X5NGgCFQUkZsC4TU047xLt4QKOU&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250414T224929Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=ASIA2YR6PYW5QHJFTOJC/20250414/us-west-2/s3/aws4_request&X-Amz-Signature=ea73f643969f149220418d537308e2d8d5115da7906234c4dd97b7070949afa5",
+        alt: "Modern UI Design System",
+      },
+      {
+        title: "Delta Dental Individual Insurance Registration",
+        description:
+          "Madlibs-style search for Saas individual insurance registration application.",
+        categories:
+          "UI/UX Design, Insurance, Accessibility, Front End Development",
+        image: "/img/delta-search.png",
+        alt: "Delta Dental Individual Insurance Registration",
+      },
+      {
+        title: "3D Conversion UX Plan",
+        description:
+          "Comprehensive UX strategy for 3D software conversion and modernization.",
+        categories: "UX Strategy, 3D Design, Documentation",
+        image: "/img/onuog.png",
+        alt: "3D Conversion UX Plan",
+      },
       {
         title: "Mushroom Tour Cards",
         description: "Card design for a mushroom tour app.",
@@ -57,23 +92,16 @@ export const content = {
       },
       {
         title: "Hex Code Pop Art",
-        description: "",
+        description:
+          "Digital art piece exploring color theory through hex codes.",
         categories: "Graphic Design, CSS",
         image:
           "https://cdn.dribbble.com/userupload/42714493/file/original-c195fc10c35f0cdfae246c54e244e472.png?resize=1024x494&vertical=center",
         alt: "Hex Code Pop Art",
       },
       {
-        title: "Podcast Logo",
-        description: "",
-        categories: "Branding, Logo Design",
-        image:
-          "https://cdn.dribbble.com/userupload/17831184/file/original-58f76528d319cca00f6fd3d5579a02f8.png?resize=1600x1173&vertical=center",
-        alt: "Podcast Logo",
-      },
-      {
         title: "Vintage Contact Form",
-        description: "",
+        description: "Retro-inspired contact form with modern functionality.",
         categories: "UI Design, Graphic Design",
         image:
           "https://cdn.dribbble.com/userupload/31524484/file/original-d64db8a660e52bc317659dd5968e4a43.jpg?resize=1905x901&vertical=center",
@@ -81,19 +109,12 @@ export const content = {
       },
       {
         title: "Mobile App Design",
-        description: "",
+        description:
+          "User interface design for a productivity mobile application.",
         categories: "UI/UX Design, Mobile",
         image:
           "https://cdn.dribbble.com/userupload/4492918/file/original-79c96b613cd96c876349064f868b72bc.png?resize=950x885&vertical=center",
         alt: "Mobile App Design",
-      },
-      {
-        title: "Use Case",
-        description: "",
-        categories: "UX Design, Documentation",
-        image:
-          "https://cdn.dribbble.com/userupload/4492832/file/original-792939a527da43ac1873b0d0e5efad6b.png?resize=1600x649&vertical=center",
-        alt: "Use Case",
       },
     ],
   },
@@ -132,6 +153,13 @@ export const content = {
     title: "Career Journey",
     positions: [
       {
+        title: "Senior Application Developer",
+        company: "Delta Dental of Michigan",
+        period: "June 2016 - October 2011",
+        description:
+          "Led development of Individual Shopping platform, implementing responsive design and accessibility standards. Managed cross-functional teams and delivered high-quality user experiences for dental insurance shopping.",
+      },
+      {
         title: "Senior Product Designer",
         company: "Powerley",
         period: "January 2025 - Present",
@@ -165,6 +193,28 @@ export const content = {
         period: "October 2011 - June 2015",
         description:
           "Facilitated Federal Exchange (HealthCare.gov) UI/UX assessment and accessibility initiatives. Managed global team of 30 across multiple locations including Manila, New Delhi, and Hyderabad. Created responsive design framework using HTML/CSS/AngularJS and implemented Adobe Experience Manager CMS solutions.",
+      },
+    ],
+  },
+
+  currentProjects: {
+    title: "Lab Experiments",
+    projects: [
+      {
+        title: "Design Principles",
+        description:
+          "Samples of various design principles with an OpenAI integration to learn about the principle.",
+        technologies: ["React", "Vite", "Tailwind"],
+        demo: "https://jazzy-platypus-e0858d.netlify.app/",
+        image: "/img/design-principle.png",
+      },
+      {
+        title: "Illustrator Profile and CMS",
+        description:
+          "World class illustrator profile and CMS built as promotional tool.",
+        technologies: ["React", "Vite", "AI", "Tailwind", "Figma"],
+        demo: "https://effervescent-duckanoo-3cafae.netlify.app/",
+        image: "/img/holloway.png",
       },
     ],
   },

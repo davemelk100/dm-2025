@@ -90,14 +90,6 @@ function App() {
       demo: "https://rococo-paprenjak-da1be1.netlify.app/",
       image: "/img/old-portfolio.png",
     },
-    {
-      title: "OpenAI UX LMS",
-      description:
-        "An AI-driven learning management system for user experience knowledge.",
-      technologies: ["React", "Vite", "AI", "Tailwind", "OpenAI"],
-      demo: "https://silly-genie-67c18c.netlify.app/",
-      image: "/img/ux-lms.png",
-    },
   ];
 
   return (
