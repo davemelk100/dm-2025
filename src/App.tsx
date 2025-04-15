@@ -34,6 +34,34 @@ const staggerChildren = {
   },
 };
 
+// Add SectionHeader component
+const SectionHeader = ({
+  title,
+  className = "",
+}: {
+  title: string;
+  className?: string;
+}) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <div className={`flex items-center justify-between ${className}`}>
+      <h2 className="text-3xl sm:text-4xl font-bold">{title}</h2>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={scrollToTop}
+        className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+        aria-label="Scroll to top"
+      >
+        <ArrowUp className="h-5 w-5" />
+      </motion.button>
+    </div>
+  );
+};
+
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,11 +95,11 @@ function App() {
 
   const projects = [
     {
-      title: "Design Principles",
+      title: "Design Panes",
       description:
-        "Samples of various design principles with an OpenAI integration to learn about the principle.",
+        "Various design ideas, principles, concepts, and philosophies with an OpenAI integration.",
       technologies: ["React", "Vite", "Tailwind"],
-      demo: "https://jazzy-platypus-e0858d.netlify.app/",
+      demo: "https://designpanes.com",
       image: "/img/design-principles.png",
     },
     {
@@ -410,7 +438,7 @@ function App() {
         {/* Current Projects Section */}
         <section id="current-projects" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="mb-12 text-center text-4xl font-bold">Lab</h2>
+            <SectionHeader title="Lab" className="mb-12 text-center" />
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
                 <a
@@ -444,7 +472,7 @@ function App() {
                     ))}
                   </div>
                   <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700">
-                    View Demo
+                    View App
                     <ArrowUpRight className="ml-1 h-4 w-4" />
                   </div>
                 </a>
@@ -456,9 +484,10 @@ function App() {
         {/* Work Section */}
         <section id="work" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16">
-              {content.work.title}
-            </h2>
+            <SectionHeader
+              title={content.work.title}
+              className="mb-8 sm:mb-16"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {content.work.projects.map((project, index) => (
                 <motion.div
@@ -504,9 +533,10 @@ function App() {
         {/* Testimonials Section */}
         <section id="testimonials" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16 text-center">
-              {content.testimonials.title}
-            </h2>
+            <SectionHeader
+              title={content.testimonials.title}
+              className="mb-8 sm:mb-16 text-center"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {content.testimonials.items.map((testimonial, index) => (
                 <motion.div
@@ -538,9 +568,10 @@ function App() {
         {/* Career Timeline Section */}
         <section id="career" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-16">
-              {content.career.title}
-            </h2>
+            <SectionHeader
+              title={content.career.title}
+              className="mb-8 sm:mb-16"
+            />
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-0 md:left-1/2 h-full w-px bg-gray-200" />
@@ -618,9 +649,10 @@ function App() {
         {/* Design System Section */}
         <section id="design-system" className="py-12 sm:py-20">
           <div className="container mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 dark:text-white">
-              Design System
-            </h2>
+            <SectionHeader
+              title="Design System"
+              className="mb-4 dark:text-white"
+            />
             <p className="text-lg text-muted-foreground mb-12 dark:text-white">
               Integrated with Figma Design Tokens, automatically syncing colors,
               typography, and spacing across design and code.
