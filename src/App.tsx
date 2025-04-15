@@ -100,7 +100,7 @@ function App() {
         "Various design ideas, principles, concepts, and philosophies with an OpenAI integration.",
       technologies: ["React", "Vite", "Tailwind"],
       demo: "https://designpanes.com",
-      image: "/img/design-principles.png",
+      image: "/img/design-panes.png",
     },
     {
       title: "Illustrator Profile and CMS",
