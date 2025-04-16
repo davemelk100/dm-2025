@@ -152,13 +152,6 @@ export const content = {
     title: "Career Journey",
     positions: [
       {
-        title: "Senior Application Developer",
-        company: "Delta Dental of Michigan",
-        period: "June 2016 - October 2011",
-        description:
-          "Led development of Individual Shopping platform, implementing responsive design and accessibility standards. Managed cross-functional teams and delivered high-quality user experiences for dental insurance shopping.",
-      },
-      {
         title: "Senior Product Designer",
         company: "Powerley",
         period: "January 2025 - Present",
@@ -192,6 +185,13 @@ export const content = {
         period: "October 2011 - June 2015",
         description:
           "Facilitated Federal Exchange (HealthCare.gov) UI/UX assessment and accessibility initiatives. Managed global team of 30 across multiple locations including Manila, New Delhi, and Hyderabad. Created responsive design framework using HTML/CSS/AngularJS and implemented Adobe Experience Manager CMS solutions.",
+      },
+      {
+        title: "Senior Application Developer",
+        company: "Delta Dental of Michigan",
+        period: "June 2016 - October 2011",
+        description:
+          "Led development of Individual Shopping platform, implementing responsive design and accessibility standards. Managed cross-functional teams and delivered high-quality user experiences for dental insurance shopping.",
       },
     ],
   },
