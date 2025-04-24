@@ -103,6 +103,14 @@ function App() {
       image: "/img/design-panes.png",
     },
     {
+      title: "Chatbot Samples",
+      description:
+        "Collection of chatbot interface designs and interaction patterns showcasing various conversational UI approaches.",
+      technologies: ["React", "AI", "UI/UX Design"],
+      demo: "https://chatbot-samples.netlify.app/",
+      image: "/img/agent-ui.png",
+    },
+    {
       title: "Illustrator Profile and CMS",
       description:
         "World class illustrator profile and CMS built as promotional tool.",
