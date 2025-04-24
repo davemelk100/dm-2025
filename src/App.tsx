@@ -111,14 +111,6 @@ function App() {
       image: "/img/agent-ui.png",
     },
     {
-      title: "Illustrator Profile and CMS",
-      description:
-        "World class illustrator profile and CMS built as promotional tool.",
-      technologies: ["React", "Vite", "AI", "Tailwind", "Figma"],
-      demo: "https://effervescent-duckanoo-3cafae.netlify.app/",
-      image: "/img/holloway.png",
-    },
-    {
       title: "Portfolio",
       description:
         "Previous portfolio with OpenAI and Figma Design Token integrations.",
