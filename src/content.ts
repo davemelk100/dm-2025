@@ -217,4 +217,37 @@ export const content = {
       },
     ],
   },
+
+  articles: {
+    title: "Articles",
+    items: [
+      {
+        title: "Information Architecture Is Not Sacred",
+        description:
+          "We all love structure. As designers and engineers, we thrive on systems, categories, and clean organization. But here's the thing: your users don't care about any of that.",
+        content: `They're not here for your beautifully planned sitemap. They just want to get what they need, quickly and easily. If that means putting a call-to-action right where a new idea is introduced - even if it was "supposed" to show up three sections later - then that's where it should go. Users don't follow your ideal flow. They follow their instincts.
+
+## Let the Structure Flex
+
+Think about how single-page apps became the standard. Instant content loads, no jarring page refresh. Behind the scenes, the code is clean and modular - but to the user, it just feels seamless. That's the kind of responsiveness users expect everywhere now. Yes, your design system is great. It helps you stay consistent and scale across screens and platforms. But users don't care about that either. They just want to find the answer, take the next step, or solve their problem - without digging for it.
+
+## Information Architecture Shouldn't Be Set in Stone
+
+The UX process is iterative by nature. You design something, test it, learn from it, and then do it all over again. It's not a straight path, and your information architecture shouldn't be either. When real feedback shows that people are missing something, you move it. When analytics show that users are skipping entire sections, you streamline. The structure should serve the user, not hold them back.
+
+## Build for Real Behavior
+
+The best organizations don't let ego or outdated documents dictate the user experience. They know great UX means anticipating what the user needs - sometimes before they even know it themselves - and meeting them there.
+
+So go ahead: break your own architecture if it makes the experience better. That's not sloppy - it's smart.
+
+## Your information architecture isn't a monument
+
+It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.`,
+        url: "#",
+        image: "/img/ia-flexible.png",
+        tags: ["Information Architecture", "UX Design", "User Experience"],
+      },
+    ],
+  },
 } as const;

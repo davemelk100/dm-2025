@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
 import ImageModal from "../components/ImageModal";
+import ArticleModal from "./components/ArticleModal";
 import designTokens from "./designTokens.json";
 import { ThemeProvider } from "./context/ThemeContext";
 import ThemeToggle from "./components/ThemeToggle";
@@ -66,6 +67,10 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedArticle, setSelectedArticle] = useState<{
+    title: string;
+    content: string;
+  } | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,6 +96,14 @@ function App() {
       closeMobileMenu();
       setShowScrollTop(true);
     }
+  };
+
+  const handleArticleClick = (
+    e: React.MouseEvent,
+    article: { title: string; content: string }
+  ) => {
+    e.preventDefault();
+    setSelectedArticle(article);
   };
 
   const projects = [
@@ -433,6 +446,63 @@ function App() {
               </span>
             </motion.div>
           </motion.div>
+        </section>
+
+        {/* Articles Section */}
+        <section id="articles" className="py-12 sm:py-20">
+          <div className="container mx-auto px-4 sm:px-8">
+            <SectionHeader title="Articles" className="mb-12 text-center" />
+            <div className="grid gap-8">
+              {content.articles.items.map((article, index) => (
+                <a
+                  key={index}
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) =>
+                    article.content &&
+                    handleArticleClick(e, {
+                      title: article.title,
+                      content: article.content,
+                    })
+                  }
+                  className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
+                >
+                  <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="mb-4 md:mb-0 aspect-video overflow-hidden rounded-lg cursor-pointer">
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="mb-2 text-2xl font-semibold dark:text-black">
+                        {article.title}
+                      </h3>
+                      <p className="mb-4 text-black dark:text-black">
+                        {article.description}
+                      </p>
+                      <div className="mb-4 flex flex-wrap gap-2">
+                        {article.tags.map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className="rounded-full bg-white px-3 py-1 text-sm dark:text-black"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700">
+                        Read Article
+                        <ArrowUpRight className="ml-1 h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Current Projects Section */}
@@ -842,6 +912,15 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Article Modal */}
+        {selectedArticle && (
+          <ArticleModal
+            title={selectedArticle.title}
+            content={selectedArticle.content}
+            onClose={() => setSelectedArticle(null)}
+          />
+        )}
 
         {/* Image Modal */}
         {selectedImage && (
