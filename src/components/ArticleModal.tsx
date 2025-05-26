@@ -5,6 +5,7 @@ interface ArticleModalProps {
   title: string;
   content: string;
   image?: string;
+  date?: string;
   onClose: () => void;
 }
 
@@ -12,6 +13,7 @@ export default function ArticleModal({
   title,
   content,
   image,
+  date = "March 19, 2024",
   onClose,
 }: ArticleModalProps) {
   const renderContent = (text: string) => {
@@ -63,7 +65,7 @@ export default function ArticleModal({
             <div className="flex items-center gap-4 mb-6 text-sm text-gray-600 dark:text-gray-400">
               <span>Dave Melkonian</span>
               <span>•</span>
-              <span>March 19, 2024</span>
+              <span>{date}</span>
             </div>
             {image && (
               <div className="mb-8 aspect-video overflow-hidden rounded-lg shadow-md">

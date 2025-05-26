@@ -71,6 +71,7 @@ function App() {
     title: string;
     content: string;
     image: string;
+    date: string;
   } | null>(null);
 
   useEffect(() => {
@@ -101,7 +102,7 @@ function App() {
 
   const handleArticleClick = (
     e: React.MouseEvent,
-    article: { title: string; content: string; image: string }
+    article: { title: string; content: string; image: string; date: string }
   ) => {
     e.preventDefault();
     setSelectedArticle(article);
@@ -466,6 +467,7 @@ function App() {
                       title: article.title,
                       content: article.content,
                       image: article.image,
+                      date: article.date,
                     })
                   }
                   className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
@@ -485,7 +487,7 @@ function App() {
                       <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
                         <span>Dave Melkonian</span>
                         <span>•</span>
-                        <span>March 19, 2024</span>
+                        <span>{article.date}</span>
                       </div>
                       <p className="mb-4 text-black dark:text-black">
                         {article.description}
@@ -926,6 +928,7 @@ function App() {
             title={selectedArticle.title}
             content={selectedArticle.content}
             image={selectedArticle.image}
+            date={selectedArticle.date}
             onClose={() => setSelectedArticle(null)}
           />
         )}
