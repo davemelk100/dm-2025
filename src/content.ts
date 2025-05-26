@@ -13,6 +13,10 @@ export const content = {
     },
     links: [
       {
+        id: "articles",
+        text: "Articles",
+      },
+      {
         id: "current-projects",
         text: "Lab",
       },

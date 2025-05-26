@@ -1,6 +1,5 @@
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import ReactMarkdown from "react-markdown";
 
 interface ArticleModalProps {
   title: string;
@@ -67,11 +66,11 @@ export default function ArticleModal({
               <span>March 19, 2024</span>
             </div>
             {image && (
-              <div className="mb-8 aspect-video overflow-hidden rounded-lg">
+              <div className="mb-8 aspect-video overflow-hidden rounded-lg shadow-md">
                 <img
                   src={image}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             )}
