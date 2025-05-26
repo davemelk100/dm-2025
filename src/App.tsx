@@ -43,22 +43,9 @@ const SectionHeader = ({
   title: string;
   className?: string;
 }) => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <div className={`flex items-center justify-between ${className}`}>
       <h2 className="text-3xl sm:text-4xl font-bold">{title}</h2>
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={scrollToTop}
-        className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-        aria-label="Scroll to top"
-      >
-        <ArrowUp className="h-5 w-5" />
-      </motion.button>
     </div>
   );
 };
@@ -502,9 +489,8 @@ function App() {
                           </span>
                         ))}
                       </div>
-                      <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700">
+                      <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline">
                         Read Article
-                        <ArrowUpRight className="ml-1 h-4 w-4" />
                       </div>
                     </div>
                   </div>
@@ -550,7 +536,7 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700">
+                  <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline">
                     View App
                     <ArrowUpRight className="ml-1 h-4 w-4" />
                   </div>

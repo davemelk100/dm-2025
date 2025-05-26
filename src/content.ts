@@ -229,11 +229,25 @@ export const content = {
         title: "Information Architecture Is Not Sacred",
         description:
           "We all love structure. As designers and engineers, we thrive on systems, categories, and clean organization. But here's the thing: your users don't care about any of that.",
-        content: `They're not here for your beautifully planned sitemap. They just want to get what they need, quickly and easily. If that means putting a call-to-action right where a new idea is introduced - even if it was "supposed" to show up three sections later - then that's where it should go. Users don't follow your ideal flow. They follow their instincts.
+        content: `## Investing in User Testing
 
-## Let the Structure Flex
+A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
 
-Think about how single-page apps became the standard. Instant content loads, no jarring page refresh. Behind the scenes, the code is clean and modular - but to the user, it just feels seamless. That's the kind of responsiveness users expect everywhere now. Yes, your design system is great. It helps you stay consistent and scale across screens and platforms. But users don't care about that either. They just want to find the answer, take the next step, or solve their problem - without digging for it.
+Your users aren't just numbers in a database, they're partners in your product's journey. Their feedback, needs, and success should be at the heart of every decision you make.
+
+The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand them.
+
+We live in a world obsessed with numbers. Daily active users, conversion rates, churn percentages - they're all important, but they don't tell the whole story. Behind every metric is a real person trying to accomplish something with your product.
+
+When we cut corners on user experience, we're not just affecting numbers on a dashboard. We're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
+
+## Beyond the Bottom Line
+
+Yes, business needs to make money. And the best businesses understand that user value and business value aren't mutually exclusive. In fact, they're deeply connected. When you invest in understanding and serving your users better, you're not just doing the right thing - you're making a smart business decision.
+
+## The Value of Continuous Learning
+
+Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.
 
 ## Information Architecture Shouldn't Be Set in Stone
 
@@ -257,7 +271,13 @@ It's a living system that should evolve with your users. Keep it flexible. Keep 
         title: "How much are you willing to pay to know your users?",
         description:
           "In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",
-        content: `We live in a world obsessed with numbers. Daily active users, conversion rates, churn percentages - they're all important, but they don't tell the whole story. Behind every metric is a real person trying to accomplish something with your product.
+        content: `## Investing in User Testing
+
+A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
+
+Your users aren't just numbers in a database, they're partners in your product's journey. Their feedback, needs, and success should be at the heart of every decision you make.
+
+The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand them.
 
 When we cut corners on user experience, we're not just affecting numbers on a dashboard. We're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
 
@@ -265,13 +285,9 @@ When we cut corners on user experience, we're not just affecting numbers on a da
 
 Yes, business needs to make money. And the best businesses understand that user value and business value aren't mutually exclusive. In fact, they're deeply connected. When you invest in understanding and serving your users better, you're not just doing the right thing - you're making a smart business decision.
 
-Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.
+## The Value of Continuous Learning
 
-## Your Users Are Your Partners
-
-Your users aren't just numbers in a database, they're partners in your product's journey. Their feedback, needs, and success should be at the heart of every decision you make.
-
-The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand them.`,
+Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.`,
         url: "#",
         image: "/img/users-worth.png",
         tags: ["User Experience", "UX Design", "Product Design"],
