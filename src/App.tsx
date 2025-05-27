@@ -61,6 +61,13 @@ function App() {
     date: string;
   } | null>(null);
 
+  // Format today's date
+  const today = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -87,11 +94,12 @@ function App() {
     }
   };
 
-  const handleArticleClick = (
-    e: React.MouseEvent,
-    article: { title: string; content: string; image: string; date: string }
-  ) => {
-    e.preventDefault();
+  const handleArticleClick = (article: {
+    title: string;
+    content: string;
+    image: string;
+    date: string;
+  }) => {
     setSelectedArticle(article);
   };
 
@@ -448,15 +456,10 @@ function App() {
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) =>
-                    article.content &&
-                    handleArticleClick(e, {
-                      title: article.title,
-                      content: article.content,
-                      image: article.image,
-                      date: article.date,
-                    })
-                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    article.content && handleArticleClick(article);
+                  }}
                   className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
                 >
                   <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -481,7 +484,10 @@ function App() {
                       </p>
                       <div
                         className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline"
-                        onClick={() => handleArticleClick(e, article)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleArticleClick(article);
+                        }}
                       >
                         Read Article
                       </div>
@@ -489,6 +495,67 @@ function App() {
                   </div>
                 </a>
               ))}
+              {/* New Article Card */}
+              <div className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="mb-4 md:mb-0 aspect-video overflow-hidden rounded-lg">
+                    <img
+                      src="/img/art-music.png"
+                      alt="Design Genres"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-2xl font-semibold dark:text-black">
+                      Design Genres
+                    </h3>
+                    <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
+                      <span>Dave Melkonian</span>
+                      <span>•</span>
+                      <span>{today}</span>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      From minimalist to progressive, each design genre tells a
+                      story. Digital and musical creativity mirror one another
+                      in unique ways.
+                    </p>
+                    <div
+                      className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline cursor-pointer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleArticleClick({
+                          title: "Design Genres",
+                          content: `When your product performs, who is watching? And why are they there in the first place? 
+
+Unless you're Jackson Pollock or Andy Warhol, user aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it. So they go to an application to quickly execute a task and get back to living their lives.
+
+Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
+
+How often does my subjective creativity get in the way of my objective vision? Well, never. At least not on purpose. 
+
+I mean, make sure my tombstone uses Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
+
+## Subgenres, Subjectivity, and Subcultures
+
+Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in waysthat aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
+
+If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? And do they still play Chemical Warfare live?
+
+When you have a niche audience, it is imperative to keep your finger on the proverbial pulse of that subcultures' expectations. It is a luxury to have a user base that can be identified, measured, and one within you can culturally embed. You inherit empathy. These users can tell you purposefully understand them.
+
+## The Power of Genre Awareness
+
+This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.`,
+                          image: "/img/art-music.png",
+                          date: today,
+                        });
+                      }}
+                    >
+                      Read Article
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

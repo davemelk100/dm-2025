@@ -37,6 +37,27 @@ export default function ArticleModal({
           </h2>
         );
       }
+      if (paragraph.includes("I mean, make sure my tombstone uses Helvetica")) {
+        return (
+          <>
+            <p key={index} className="mb-4 dark:text-gray-200">
+              {paragraph}
+            </p>
+            <div
+              key={`quote-${index}`}
+              className="my-12 p-8 border-l-4 border-primary bg-gray-50 dark:bg-gray-800 text-2xl relative font-serif"
+            >
+              <span className="absolute -top-4 -left-4 text-6xl text-primary/20">
+                "
+              </span>
+              {paragraph}
+              <span className="absolute -bottom-8 -right-4 text-6xl text-primary/20">
+                "
+              </span>
+            </div>
+          </>
+        );
+      }
       return (
         <p key={index} className="mb-4 dark:text-gray-200">
           {paragraph}
@@ -93,7 +114,7 @@ export default function ArticleModal({
                 />
               </div>
             )}
-            <div className="prose dark:prose-invert max-w-none">
+            <div className="prose prose-lg dark:prose-invert max-w-none">
               {renderContent(content)}
             </div>
           </div>
