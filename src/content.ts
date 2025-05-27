@@ -127,6 +127,24 @@ export const content = {
     items: [
       {
         quote:
+          "It was a privilege to work alongside David at several companies, including Meridian. David consistently displayed exceptional dedication, a strong work ethic, and remarkable attention to detail. His talent for analyzing challenges and devising innovative solutions was very influential to our team. David's commitment to excellence and his adaptability in dynamic situations also stood out. His strong communication skills enabled seamless collaboration with cross-functional team, along with stakeholders and business leaders. David is a natural team player and brought a collaborative spirit and a positive attitude to every project. He actively participated in discussions, offered valuable insights, and went above and beyond to ensure success. His expertise in research, design and development played a pivotal role in helping our team communicate our vision effectively.",
+        author: "Matthew Petoskey",
+        role: "Customer Experience (CX) Strategist & UX Leader",
+      },
+      {
+        quote:
+          "I had the privilege of working alongside Dave at two different companies, where I had the opportunity to lead him on multiple projects. Dave possesses a unique ability to not only lead and mentor junior staff but also to collaborate effectively with peers on complex tasks. His passion for development is evident in his work, coupled with a remarkable attention to detail that ensures high-quality outcomes. He demonstrates a genuine interest in enhancing user experience, which makes him an exceptional asset to any team.",
+        author: "Chris Bellinger",
+        role: "Director at Delta Dental of Michigan",
+      },
+      {
+        quote:
+          "Dave has a rare combination of artistic ability and technical competency that make him an amazing UX designer. I worked with Dave for about a year at Propio and during that time he revamped multiple old web and mobile applications with slick modern interfaces, pushing our user experience beyond what our competitors were doing. He's a wizard with Figma, CSS/HTML, various design paradigms, graphics and sound, and is always a pleasure to work with. He has a great eye for usability and accessibility, and has many times shocked me with a clever design for something I thought would be difficult. He heartily recommend Dave for any UX position.",
+        author: "Mike Slavik",
+        role: "Platform Engineer at Propio",
+      },
+      {
+        quote:
           "Dave's expertise spans usability, accessibility, and Agile methodologies, making him a seamless and proactive contributor within cross-functional teams and an effective collaborator with leadership. His unique blend of design and technical skills allows him to create visually engaging, user-friendly experiences that meet and often exceed client expectations.",
         author: "Brian Singer",
         role: "CTO/CIO, Angels of Care Pediatric Home Health",
