@@ -99,7 +99,7 @@ export const content = {
           "Digital art piece exploring color theory through hex codes.",
         categories: "Graphic Design, CSS",
         image:
-          "https://cdn.dribbble.com/userupload/42714493/file/original-c195fc10c35f0cdfae246c54e244e472.png?resize=1024x494&vertical=center",
+          "https://cdn.dribbble.com/userupload/42891405/file/original-5fd288822ac6f3de3dfbb9eab7bdb36a.png?resize=1444x696&vertical=center",
         alt: "Hex Code Pop Art",
       },
       {
@@ -241,11 +241,9 @@ I mean, make sure my tombstone uses Helvetica, but if my user wants Comic Sans, 
 
 ## Subgenres, Subjectivity, and Subcultures
 
-Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. 
+Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
-Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
-
-If the new Slayer album's layout is using Poppins font, I'm going to question not only my entire existence, but why someone thought Slayer needed a rebrand. Is it the same Slayer? Same features? Same drummer? And do they still play Chemical Warfare live? I digress.
+If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? And do they still play Chemical Warfare live?
 
 When you have a niche audience, it is imperative to keep your finger on the proverbial pulse of that subcultures' expectations. It is a luxury to have a user base that can be identified, measured, and one within you can culturally embed. You inherit empathy. These users can tell you purposefully understand them.
 
@@ -253,7 +251,7 @@ When you have a niche audience, it is imperative to keep your finger on the prov
 
 This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.`,
         image: "/img/art-music.png",
-        date: "March 19, 2024",
+        date: "May 27, 2024",
       },
       {
         title: "Information Architecture Is Not Sacred",
@@ -298,7 +296,7 @@ It's a living system that should evolve with your users. Keep it flexible. Keep 
         date: "March 19, 2024",
       },
       {
-        title: "How much are you willing to pay to know your users?",
+        title: "What are you willing to do understand your users?",
         description:
           "In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",
         content: `## Investing in User Testing

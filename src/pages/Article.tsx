@@ -150,7 +150,7 @@ export default function Article() {
           {renderContent(article.content)}
         </div>
         <div className="relative mt-12">
-          <ShareWidget url={window.location.href} title={article.title} />
+          <ShareWidget url={window.location.href} />
         </div>
       </div>
     </div>

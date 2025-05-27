@@ -125,7 +125,9 @@ export default function ArticleModal({
             <div className="prose prose-lg dark:prose-invert max-w-none">
               {renderContent(content)}
             </div>
-            <ShareWidget url={window.location.href} title={title} />
+            <div className="relative mt-12">
+              <ShareWidget url={window.location.href} />
+            </div>
           </div>
         </motion.div>
       </motion.div>

@@ -3,10 +3,9 @@ import { useState } from "react";
 
 interface ShareWidgetProps {
   url: string;
-  title: string;
 }
 
-export default function ShareWidget({ url, title }: ShareWidgetProps) {
+export default function ShareWidget({ url }: ShareWidgetProps) {
   const [showCopied, setShowCopied] = useState(false);
 
   const handleCopy = () => {
