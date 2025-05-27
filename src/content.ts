@@ -226,10 +226,44 @@ export const content = {
     title: "Articles",
     items: [
       {
+        title: "Design Genres",
+        description:
+          "From minimalist to progressive, each design genre tells a story. Digital and musical creativity mirror one another in unique ways.",
+        content: `When your product performs, who is watching? And why are they there in the first place? 
+
+Unless you're Jackson Pollock or Andy Warhol, user aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it. So they go to an application to quickly execute a task and get back to living their lives.
+
+Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
+
+How often does my subjective creativity get in the way of my objective vision? Well, never. At least not on purpose. 
+
+I mean, make sure my tombstone uses Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
+
+## Subgenres, Subjectivity, and Subcultures
+
+Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. 
+
+Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
+
+If the new Slayer album's layout is using Poppins font, I'm going to question not only my entire existence, but why someone thought Slayer needed a rebrand. Is it the same Slayer? Same features? Same drummer? And do they still play Chemical Warfare live? I digress.
+
+When you have a niche audience, it is imperative to keep your finger on the proverbial pulse of that subcultures' expectations. It is a luxury to have a user base that can be identified, measured, and one within you can culturally embed. You inherit empathy. These users can tell you purposefully understand them.
+
+## The Power of Genre Awareness
+
+This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.`,
+        image: "/img/art-music.png",
+        date: "March 19, 2024",
+      },
+      {
         title: "Information Architecture Is Not Sacred",
         description:
           "We all love structure. As designers and engineers, we thrive on systems, categories, and clean organization. But here's the thing: your users don't care about any of that.",
-        content: `## Investing in User Testing
+        content: `## Your IA Shouldn't Be Set in Stone
+
+The UX process is iterative by nature. You design something, test it, learn from it, and then do it all over again. It's not a straight path, and your information architecture shouldn't be either. When real feedback shows that people are missing something, you move it. When analytics show that users are skipping entire sections, you streamline. The structure should serve the user, not hold them back.
+
+## Investing in User Testing
 
 A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
 
@@ -248,10 +282,6 @@ Yes, business needs to make money. And the best businesses understand that user 
 ## The Value of Continuous Learning
 
 Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.
-
-## Information Architecture Shouldn't Be Set in Stone
-
-The UX process is iterative by nature. You design something, test it, learn from it, and then do it all over again. It's not a straight path, and your information architecture shouldn't be either. When real feedback shows that people are missing something, you move it. When analytics show that users are skipping entire sections, you streamline. The structure should serve the user, not hold them back.
 
 ## Build for Real Behavior
 
