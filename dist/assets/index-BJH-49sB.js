@@ -157,7 +157,7 @@ So go ahead: break your own architecture if it makes the experience better. That
 
 ## Your information architecture isn't a monument
 
-It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.`,url:"#",image:"/img/ia-flexible.png",tags:["Information Architecture","UX Design","User Experience"],date:"March 19, 2024"},{title:"What are you willing to do understand your users?",description:"In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",content:`## Investing in User Testing
+It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.`,url:"#",image:"/img/ia-flexible.png",tags:["Information Architecture","UX Design","User Experience"],date:"March 19, 2024"},{title:"What are you willing to do understand your users?",description:"In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",content:`## Investing in Your Users
 
 A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
 
