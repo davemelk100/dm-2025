@@ -323,7 +323,7 @@ It's a living system that should evolve with your users. Keep it flexible. Keep 
         title: "What are you willing to do understand your users?",
         description:
           "In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",
-        content: `## Investing in User Testing
+        content: `## Investing in Your Users
 
 A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
 
