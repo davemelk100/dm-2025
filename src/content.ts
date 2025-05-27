@@ -239,7 +239,7 @@ The real question isn't what your users are worth to you - it's what you're will
 
 We live in a world obsessed with numbers. Daily active users, conversion rates, churn percentages - they're all important, but they don't tell the whole story. Behind every metric is a real person trying to accomplish something with your product.
 
-When we cut corners on user experience, we're not just affecting numbers on a dashboard. We're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
+Cutting corners on UX doesn't just affect numbers on a dashboard. You're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
 
 ## Beyond the Bottom Line
 
