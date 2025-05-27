@@ -451,19 +451,12 @@ function App() {
             <SectionHeader title="Articles" className="mb-12 text-center" />
             <div className="grid gap-8">
               {content.articles.items.map((article, index) => (
-                <a
+                <div
                   key={index}
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    article.content && handleArticleClick(article);
-                  }}
-                  className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80 block"
+                  className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80"
                 >
                   <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div className="mb-4 md:mb-0 aspect-video overflow-hidden rounded-lg cursor-pointer">
+                    <div className="mb-4 md:mb-0 aspect-video overflow-hidden rounded-lg">
                       <img
                         src={article.image}
                         alt={article.title}
@@ -483,7 +476,7 @@ function App() {
                         {article.description}
                       </p>
                       <div
-                        className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline"
+                        className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline cursor-pointer"
                         onClick={(e) => {
                           e.preventDefault();
                           handleArticleClick(article);
@@ -493,7 +486,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
               {/* New Article Card */}
               <div className="group relative overflow-hidden rounded-lg bg-gray-100/80 p-6 transition-all duration-300 hover:bg-gray-200/80">

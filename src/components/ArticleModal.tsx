@@ -32,17 +32,41 @@ export default function ArticleModal({
       if (paragraph.includes("I mean, make sure my tombstone uses Helvetica")) {
         return (
           <>
-            <p key={index} className="mb-4 dark:text-gray-200">
-              {paragraph}
-            </p>
             <div
               key={`quote-${index}`}
-              className="my-12 p-8 border-l-4 border-primary bg-gray-50 dark:bg-gray-800 text-2xl relative font-serif"
+              className="float-right w-1/2 ml-8 my-4 p-8 border-l-4 border-primary bg-gray-50 dark:bg-gray-800 text-2xl relative font-serif"
             >
               <span className="absolute -top-4 -left-4 text-6xl text-primary/20">
                 "
               </span>
               {paragraph}
+              <span className="absolute -bottom-8 -right-4 text-6xl text-primary/20">
+                "
+              </span>
+            </div>
+            <p key={index} className="mb-4 dark:text-gray-200">
+              {paragraph}
+            </p>
+          </>
+        );
+      }
+      if (paragraph.includes("if your product has 10,000 users")) {
+        return (
+          <>
+            <p key={index} className="mb-4 dark:text-gray-200">
+              {paragraph}
+            </p>
+            <div
+              key={`quote-${index}`}
+              className="float-right w-1/2 ml-8 my-4 p-8 border-l-4 border-primary bg-gray-50 dark:bg-gray-800 text-2xl relative font-serif"
+            >
+              <span className="absolute -top-4 -left-4 text-6xl text-primary/20">
+                "
+              </span>
+              Think about it: if your product has 10,000 users and each one
+              takes just 10 seconds to decide your experience isn't worth their
+              time, that's 10,000 potential customers walking away. What's that
+              worth to you?
               <span className="absolute -bottom-8 -right-4 text-6xl text-primary/20">
                 "
               </span>
@@ -90,7 +114,7 @@ export default function ArticleModal({
               <span>{date}</span>
             </div>
             {image && (
-              <div className="mb-8 aspect-video overflow-hidden rounded-lg shadow-md">
+              <div className="float-right ml-8 mb-4 w-1/2 aspect-video overflow-hidden rounded-lg shadow-md">
                 <img
                   src={image}
                   alt={title}
@@ -101,7 +125,7 @@ export default function ArticleModal({
             <div className="prose prose-lg dark:prose-invert max-w-none">
               {renderContent(content)}
             </div>
-            <ShareWidget title={title} url={window.location.href} />
+            <ShareWidget url={window.location.href} />
           </div>
         </motion.div>
       </motion.div>
