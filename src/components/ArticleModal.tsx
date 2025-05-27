@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 interface ArticleModalProps {
   title: string;
@@ -16,6 +17,14 @@ export default function ArticleModal({
   date = "March 19, 2024",
   onClose,
 }: ArticleModalProps) {
+  const [showCopied, setShowCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+  };
+
   const renderContent = (text: string) => {
     return text.split("\n\n").map((paragraph, index) => {
       if (paragraph.startsWith("## ")) {
@@ -52,16 +61,24 @@ export default function ArticleModal({
           className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-lg shadow-xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-            aria-label="Close modal"
-          >
-            <X className="h-6 w-6" />
-          </button>
-
           <div className="p-8">
-            <h2 className="text-3xl font-bold mb-2 dark:text-white">{title}</h2>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-3xl font-bold dark:text-white">{title}</h2>
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={handleCopyLink}
+                  className="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 relative"
+                >
+                  {showCopied ? "Copied!" : "Copy Link"}
+                </button>
+                <button
+                  onClick={onClose}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+            </div>
             <div className="flex items-center gap-4 mb-6 text-sm text-gray-600 dark:text-gray-400">
               <span>Dave Melkonian</span>
               <span>•</span>
