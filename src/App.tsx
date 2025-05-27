@@ -476,20 +476,13 @@ function App() {
                         <span>•</span>
                         <span>{article.date}</span>
                       </div>
-                      <p className="mb-4 text-black dark:text-black">
+                      <p className="text-gray-600 dark:text-gray-400 mb-4">
                         {article.description}
                       </p>
-                      <div className="mb-4 flex flex-wrap gap-2">
-                        {article.tags.map((tag, tagIndex) => (
-                          <span
-                            key={tagIndex}
-                            className="rounded-full bg-white px-3 py-1 text-sm dark:text-black"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline">
+                      <div
+                        className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline"
+                        onClick={() => handleArticleClick(e, article)}
+                      >
                         Read Article
                       </div>
                     </div>
