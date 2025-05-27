@@ -62,13 +62,6 @@ function App() {
     date?: string;
   } | null>(null);
 
-  // Format today's date
-  const today = new Date().toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
   };
