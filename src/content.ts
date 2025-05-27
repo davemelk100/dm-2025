@@ -127,6 +127,12 @@ export const content = {
     items: [
       {
         quote:
+          "I highly recommend David for his exceptional expertise in UX/UI design. With experience as a User Experience Manager, Senior Designer, and Interface Developer, he has consistently delivered user-centered, innovative, and seamless digital experiences. David excels at aligning user needs with business goals, fostering collaboration, and solving complex challenges with creative, effective solutions. His technical proficiency and ability to implement clean, efficient designs make him a invaluable asset to any team.",
+        author: "Keerthi Baliga",
+        role: "Product Owner at Propio Language Services",
+      },
+      {
+        quote:
           "It was a privilege to work alongside David at several companies, including Meridian. David consistently displayed exceptional dedication, a strong work ethic, and remarkable attention to detail. His talent for analyzing challenges and devising innovative solutions was very influential to our team. David's commitment to excellence and his adaptability in dynamic situations also stood out. His strong communication skills enabled seamless collaboration with cross-functional team, along with stakeholders and business leaders. David is a natural team player and brought a collaborative spirit and a positive attitude to every project. He actively participated in discussions, offered valuable insights, and went above and beyond to ensure success. His expertise in research, design and development played a pivotal role in helping our team communicate our vision effectively.",
         author: "Matthew Petoskey",
         role: "Customer Experience (CX) Strategist & UX Leader",
