@@ -149,7 +149,9 @@ export default function Article() {
         <div className="prose prose-lg dark:prose-invert max-w-none">
           {renderContent(article.content)}
         </div>
-        <ShareWidget url={window.location.href} title={article.title} />
+        <div className="relative mt-12">
+          <ShareWidget url={window.location.href} title={article.title} />
+        </div>
       </div>
     </div>
   );
