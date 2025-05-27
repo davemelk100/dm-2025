@@ -4,18 +4,20 @@ import Toast from "./Toast";
 
 interface ShareWidgetProps {
   url: string;
+  title: string;
 }
 
-export default function ShareWidget({ url }: ShareWidgetProps) {
+export default function ShareWidget({ url, title }: ShareWidgetProps) {
   const [showToast, setShowToast] = useState(false);
 
   const handleShare = (platform: string) => {
     const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(title);
 
     switch (platform) {
       case "linkedin":
         window.open(
-          `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+          `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}&title=${encodedTitle}`,
           "_blank"
         );
         break;
