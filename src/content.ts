@@ -269,8 +269,6 @@ Here's what's really interesting: Stitch is changing how we work. Instead of get
 
 Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
 
-## The Future of Design
-
 The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.`,
         image: "/img/google-stitch.png",
         date: "May 27, 2024",
