@@ -285,7 +285,7 @@ Artists get into trouble when they make art to impress other artists. Designers 
 
 How often does my subjective creativity get in the way of my objective vision? Well, never. At least not on purpose. 
 
-I mean, make sure my tombstone uses Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
+I mean, make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
 
 ## Subgenres, Subjectivity, and Subcultures
 
