@@ -283,7 +283,7 @@ I mean, make sure my tombstone text is Helvetica, but if my user wants Comic San
 
 ## The Power of Genre Awareness
 
-> Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
+Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
 
 Shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
