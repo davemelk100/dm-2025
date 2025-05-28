@@ -263,7 +263,9 @@ While Stitch isn't exactly mindblowingly creative yet - you can see where it's g
 
 Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
 
-The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.`,
+The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.
+
+*May 27, 2024*`,
         image: "/img/google-stitch.png",
         date: "May 27, 2024",
       },
@@ -273,25 +275,24 @@ The trick is finding that sweet spot between AI help and human creativity. Stitc
           "When your users want AC/DC, don't give them King Crimson.",
         content: `When your product performs, who is watching? And why are they there in the first place? 
 
-Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it. So they go to an application to quickly execute a task and get back to living their lives.
+Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it.
 
 Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
 I mean, make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
 
-## Subgenres, Subjectivity, and Subcultures
+## The Power of Genre Awareness
+
+> Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
 
 Shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
-If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? Do they still play Chemical Warfare live?
+This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.
 
-Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
-
-## The Power of Genre Awareness
-
-This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.`,
+*May 27, 2024*`,
         image: "/img/art-music.png",
         date: "May 27, 2024",
+        tags: ["Design", "UX Design", "User Experience"],
       },
       {
         title: "Information Architecture Is Not Sacred",
@@ -329,32 +330,13 @@ So go ahead: break your own architecture if it makes the experience better. That
 
 ## Your information architecture isn't a monument
 
-It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.`,
+It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.
+
+*March 19, 2024*`,
         url: "#",
         image: "/img/ia-flexible.png",
         tags: ["Information Architecture", "UX Design", "User Experience"],
         date: "March 19, 2024",
-      },
-      {
-        title: "What are you willing to do understand your users?",
-        description: "Understanding your users is worth every penny.",
-        content: `## Investing in User Testing
-
-A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
-
-Your users aren't just numbers in a database, they're partners in your product's journey. Their feedback, needs, and success should be at the heart of every decision you make. The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand them.
-
-When we cut corners on user experience, we're not just affecting numbers on a dashboard. We're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
-
-## Beyond the Bottom Line
-
-Yes, business needs to make money. And the best businesses understand that user value and business value aren't mutually exclusive. In fact, they're deeply connected. When you invest in understanding and serving your users better, you're not just doing the right thing - you're making a smart business decision.
-
-Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.`,
-        url: "#",
-        image: "/img/users-worth.png",
-        tags: ["User Experience", "UX Design", "Product Design"],
-        date: "March 20, 2024",
       },
     ],
   },
