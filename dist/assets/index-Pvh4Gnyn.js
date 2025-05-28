@@ -131,7 +131,7 @@ I mean, make sure my tombstone text is Helvetica, but if my user wants Comic San
 
 ## Subgenres, Subjectivity, and Subcultures
 
-Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
+Shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
 If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? Do they still play Chemical Warfare live?
 
