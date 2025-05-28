@@ -252,7 +252,7 @@ export const content = {
       {
         title: "Google's Stitch: The (Current) Future of AI-Assisted Design",
         description:
-          "tl;dr - You can copy and paste AI generated Figma objects into your Figma files.",
+          "TL;DR - Stitch generates Figma objects that you can copy and paste into your Figma files.",
         content: `## The Evolution of Design Tools
 
 Google's Stitch project is not your typical design tool - it's giving us a peek into how AI might completely transform how we create. It's like having a design partner who not only gets your vision but can help bring it to life in ways that might not have occurred to you.
@@ -283,17 +283,15 @@ Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your per
 
 Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
-How often does my subjective creativity get in the way of my objective vision? Well, never. At least not on purpose. 
-
 I mean, make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
 
 ## Subgenres, Subjectivity, and Subcultures
 
 Some musicians can adapt to audiences seemlessly; but shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
-If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? And do they still play Chemical Warfare live?
+If the new Slayer album is using Poppins as the cover font, I'm going to question not only my entire existence, but also why I wasn't aware of the rebranding of a product I've been using for years. Is it the same Slayer? Does it have the same features? Do they still play Chemical Warfare live?
 
-When you have a niche audience, it is imperative to keep your finger on the proverbial pulse of that subcultures' expectations. It is a luxury to have a user base that can be identified, measured, and one within you can culturally embed. You inherit empathy. These users can tell you purposefully understand them.
+Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
 
 ## The Power of Genre Awareness
 
