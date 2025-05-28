@@ -276,10 +276,10 @@ The trick is finding that sweet spot between AI help and human creativity. Stitc
       {
         title: "Design Genres",
         description:
-          "From minimalist to progressive, each design genre tells a story. Digital and musical creativity mirror one another in unique ways.",
+          "When your users want AC/DC, don't give them King Crimson.",
         content: `When your product performs, who is watching? And why are they there in the first place? 
 
-Unless you're Jackson Pollock or Andy Warhol, user aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it. So they go to an application to quickly execute a task and get back to living their lives.
+Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it. So they go to an application to quickly execute a task and get back to living their lives.
 
 Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
@@ -304,7 +304,7 @@ This isn't selling out or pandering - you have been blessed with an audience and
       {
         title: "Information Architecture Is Not Sacred",
         description:
-          "We all love structure. As designers and engineers, we thrive on systems, categories, and clean organization. But here's the thing: your users don't care about any of that.",
+          "Your IA should evolve with your users, not stay set in stone.",
         content: `## Your IA Shouldn't Be Set in Stone
 
 The UX process is iterative by nature. You design something, test it, learn from it, and then do it all over again. It's not a straight path, and your information architecture shouldn't be either. When real feedback shows that people are missing something, you move it. When analytics show that users are skipping entire sections, you streamline. The structure should serve the user, not hold them back.
@@ -345,9 +345,8 @@ It's a living system that should evolve with your users. Keep it flexible. Keep 
       },
       {
         title: "What are you willing to do understand your users?",
-        description:
-          "In the rush to ship features and meet deadlines, it's easy to lose sight of what really matters: the people who use your product. Understanding your users is worth every penny.",
-        content: `## Investing in Your Users
+        description: "Understanding your users is worth every penny.",
+        content: `## Investing in User Testing
 
 A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
 
