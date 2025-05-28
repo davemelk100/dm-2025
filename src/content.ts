@@ -250,6 +250,32 @@ export const content = {
     title: "Articles",
     items: [
       {
+        title: "Google's Stitch: The (Current) Future of AI-Assisted Design",
+        description:
+          "tl;dr - You can copy and paste AI generated Figma objects into your Figma files.",
+        content: `## The Evolution of Design Tools
+
+Google's Stitch project is not your typical design tool - it's giving us a peek into how AI might completely transform how we create. It's like having a design partner who not only gets your vision but can help bring it to life in ways that might not have occurred to you.
+
+The coolest thing about Stitch? It creates actual Figma objects that you can copy and paste directly into your Figma files. For teams living in Figma, this is a total game-changer.
+
+While Stitch isn't exactly blowing minds with its creative output yet - it's still pretty basic and predictable - you can't help but see where it's going. The way it understands context and keeps things consistent shows real promise.
+
+## The Impact on Design Workflows
+
+Here's what's really interesting: Stitch is changing how we work. Instead of getting bogged down in the nitty-gritty, we can focus on the big picture stuff. The AI takes care of the details, giving us more room to experiment and try new things.
+
+## The Future of Design
+
+Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
+
+## The Future of Design
+
+The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.`,
+        image: "/img/google-stitch.png",
+        date: "May 27, 2024",
+      },
+      {
         title: "Design Genres",
         description:
           "From minimalist to progressive, each design genre tells a story. Digital and musical creativity mirror one another in unique ways.",
