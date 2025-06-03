@@ -304,21 +304,17 @@ The UX process is iterative by nature. You design something, test it, learn from
 
 ## Investing in User Testing
 
-A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into user behavior and pain points. It's a small investment that helps prevent the much larger cost of losing potential customers.
+A user testing platform subscription costs less than your office snacks budget, yet provides invaluable insights into how users navigate your information architecture. It's a small investment that helps prevent the much larger cost of losing potential customers due to poor content organization.
 
-Your users aren't just numbers in a database, they're partners in your product's journey. Their feedback, needs, and success should be at the heart of every decision you make.
+Your users aren't just numbers in a database, they're partners in your product's journey. Their navigation patterns, content discovery struggles, and information-seeking behaviors should directly inform your IA decisions.
 
-The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand them.
+The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand how they think about and organize your content.
 
-We live in a world obsessed with numbers. Daily active users, conversion rates, churn percentages - they're all important, but they don't tell the whole story. Behind every metric is a real person trying to accomplish something with your product.
-
-Cutting corners on UX doesn't just affect numbers on a dashboard. You're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide your experience isn't worth their time, that's 10,000 potential customers walking away. What's that worth to you?
+Cutting corners on IA doesn't just affect numbers on a dashboard. You're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide they can't find what they're looking for, that's 10,000 potential customers walking away. What's that worth to you?
 
 ## Beyond the Bottom Line
 
 Yes, business needs to make money. And the best businesses understand that user value and business value aren't mutually exclusive. In fact, they're deeply connected. When you invest in understanding and serving your users better, you're not just doing the right thing - you're making a smart business decision.
-
-## The Value of Continuous Learning
 
 Every interaction with your product is an opportunity to build or break trust. When users feel understood and valued, they become your biggest advocates. They'll stick with you through rough patches and bring others along. That kind of loyalty is priceless.
 
@@ -326,17 +322,40 @@ Every interaction with your product is an opportunity to build or break trust. W
 
 The best organizations don't let ego or outdated documents dictate the user experience. They know great UX means anticipating what the user needs - sometimes before they even know it themselves - and meeting them there.
 
-So go ahead: break your own architecture if it makes the experience better. That's not sloppy - it's smart.
-
-## Your information architecture isn't a monument
-
-It's a living system that should evolve with your users. Keep it flexible. Keep it human. And most of all, keep it useful.
+So go ahead: break your own architecture if it makes the experience better. That's not sloppy - it's smart. It's a living system that should evolve with your users. Keep it flexible. Keep it human.
 
 *March 19, 2024*`,
         url: "#",
         image: "/img/ia-flexible.png",
         tags: ["Information Architecture", "UX Design", "User Experience"],
         date: "March 19, 2024",
+      },
+      {
+        title: "Bolt.new: The Future of Rapid Prototyping",
+        description:
+          "For my money, bolt.new and its ecosystem is the leader in the AI-assisted development and design space.",
+        content: `## The Speed of Thought
+
+You know that feeling when you have a great idea, but getting it into something you can actually show people takes forever? Bolt.new does. It's like having a superpower for turning ideas into real things, fast.
+
+bolt.new isn't just quick - it's that it looks good while being quick. The interface is slick, everything moves smoothly, and the CTAs know what I want before I do.
+
+Remember when you had to juggle a bunch of different tools? One for rough sketches, another for fancy designs, and something else for making it interactive? Bolt.new puts all that in one place. You're not just saving time - you're saving your sanity by not having to switch between a million different apps.
+
+## The Real Magic
+
+The best part about bolt.new isn't the tech - it's how it changes the way you talk about ideas. Instead of trying to explain what you're thinking, you can just show it. That changes everything about how you get feedback and make things better.
+
+## Looking Forward
+
+Tools like bolt.new aren't just about speed - they're about making better stuff. When you can focus on solving problems instead of fighting with your tools, that's when the real magic happens.
+
+And the best part? This is just the start. As bolt.new keeps getting better, we're seeing a future where the line between design and development gets blurrier - and that's exactly what we need.
+
+*June 3, 2024*`,
+        image: "/img/bolt-new.png",
+        date: "June 3, 2024",
+        tags: ["Design Tools", "Prototyping", "UX Design"],
       },
     ],
   },
