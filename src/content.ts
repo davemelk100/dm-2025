@@ -331,7 +331,7 @@ So go ahead: break your own architecture if it makes the experience better. That
         date: "March 19, 2024",
       },
       {
-        title: "Bolt.new: The Leader in the Rapid Prototyping Clubhouse",
+        title: "bolt.new: The Leader in the Rapid Prototyping Clubhouse",
         description:
           "For my money, bolt.new and its ecosystem is the leader in the AI-assisted development and design space.",
         content: `## The Speed of Thought
