@@ -279,7 +279,8 @@ Design, like music, has its genres. And just like you wouldn't play death metal 
 
 Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
-I mean, make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
+
+Don't get me wrong - make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
 
 ## The Power of Genre Awareness
 
