@@ -276,7 +276,7 @@ June 4, 2024`,
       {
         title: "Vibe Engineering vs Vibe Coding",
         description:
-          "The subtle art of making things feel right, not just work right.",
+          "The subtle art of making things work right, not just feel right.",
         content: `## The Vibe Check
 
 Look, I know - the word "vibe" makes me cringe too. But stick with me here, because there's something important about how things feel when you use them, even if we have to use a slightly cringey word to talk about it.
