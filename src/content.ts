@@ -250,52 +250,179 @@ export const content = {
     title: "Articles",
     items: [
       {
-        title: "Google's Stitch: The (Current) Future of AI-Assisted Design",
-        description:
-          "TL;DR - Stitch generates Figma objects that you can copy and paste into your Figma files.",
-        content: `Google's Stitch project is giving us a peek into how AI might completely transform how we create.
+        title: "Seven Interviews?",
+        description: "Hiring practices are as egregious as they are insincere.",
+        content: `## The Interview Gauntlet
 
-It's eerily close to *thinking* a design into existence.
+You've probably been there. You apply for a job, and suddenly you're in scheduled for weekly interviews and meaningless discussions. What exactly are we trying to prove here? 
 
-It creates actual Figma objects you can copy and paste directly into your Figma files. For teams living in Figma, this is a total game-changer.
+Let's be honest - most of these interviews aren't adding much value. They're often more about process than purpose. We've created elaborate interview rituals that take up everyone's time without necessarily helping us make better decisions. It's not that anyone means to waste time - it's that we've lost sight of what we're actually trying to accomplish.
 
-While Stitch isn't exactly mindblowingly creative yet - you can see where it's going. The way it understands context and provides granularity is clearly indicative of its direction. The agent's UI is already a step above many of the top dogs in today's race.
+Think about what we're asking of candidates: taking time off from their current job, preparing for hours of interviews, doing take-home assignments, waiting weeks for feedback, jumping through increasingly absurd hoops. All while we pretend this is normal. It's not.
 
-Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
+## A Better Way
 
-The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.
+Here's a radical idea: what if we actually respected people's time? What if we did our homework before the interview, made decisions quickly, gave real feedback, paid for take-home assignments, and actually knew what we were looking for?
 
-May 27, 2024`,
-        image: "/img/google-stitch.png",
-        date: "May 27, 2024",
+Most hiring decisions are made in the first 15 minutes of the first interview. The rest is just CYA theater. We're not being thorough - we're being indecisive.
+
+If you're running a hiring process, ask yourself: Would I want to go through this process? What are we actually learning in each interview? Could we make this decision faster? Are we treating candidates like humans or like lab rats?
+
+June 4, 2024`,
+        image: "/img/hiring-process.png",
+        date: "June 4, 2024",
+        tags: ["Career", "Hiring", "Workplace Culture"],
       },
       {
-        title: "Design Genres",
+        title: "Vibe Engineering vs Vibe Coding",
         description:
-          "When your users want AC/DC, don't give them King Crimson.",
-        content: `When your product performs, who is watching? And why are they there in the first place? 
+          "The subtle art of making things feel right, not just work right.",
+        content: `## The Vibe Check
 
-Design, like music, has its genres. And just like you wouldn't play death metal at a jazz club, you need to match your design to your audience's expectations. 
+Look, I know - the word "vibe" makes me cringe too. But stick with me here, because there's something important about how things feel when you use them, even if we have to use a slightly cringey word to talk about it.
 
-Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it.
+After spending countless hours working with AI to build things, I've learned that the difference between success and failure often comes down to how you frame your requests. Vibe engineering is about building the right thing from the ground up. You're not just building features; you're crafting an experience. Think of it as architecture with soul. The loading states are thoughtful, the transitions are smooth, and the micro-interactions make sense. It's not about adding personality - it's about having personality built in.
 
-Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
+Vibe coding is what happens when you try to fix a vibe problem with code. It's like putting a band-aid on a broken leg. Sure, you might make it look better, but you're not solving the real problem. You know what I mean - adding a loading spinner to hide slow performance, or throwing in some animations to make up for clunky navigation. It's the digital equivalent of putting lipstick on a pig.
 
+## The Real Difference
 
-Don't get me wrong - make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
+The best products come from a mix of both approaches. You need the solid foundation of vibe engineering, but sometimes you need a little vibe coding to polish the edges. The trick is knowing which is which.
 
-## The Power of Genre Awareness
+When working with AI, this distinction becomes crucial. I've learned the hard way that if you don't specify the right constraints and context upfront, you'll end up with technically correct but fundamentally flawed solutions. It's like telling AI to "make it look better" versus explaining exactly how the user should feel when they interact with it.
 
-Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
+The real skill isn't just knowing when to use vibe coding - it's knowing when to undo it. Sometimes you'll start down a path of quick fixes and realize you're just making things worse. That's when you need to step back, undo those changes, and take the time to engineer the solution properly. Other times, you'll find that a small vibe coding tweak is exactly what you need to push something from good to great.
 
-Shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
+Vibe engineering feels natural and solves real problems. It's about the user and builds trust. Vibe coding feels forced and often just hides problems. It's more about the developer than the user experience.
 
-This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.
+Next time you're building something, ask yourself: am I engineering the vibe, or am I just coding it? Because in the end, users don't care about your clever solutions - they care about how it feels to use your product. And if you're using AI to help build it, make sure you're asking for the right kind of help.
 
-May 27, 2024`,
-        image: "/img/art-music.png",
-        date: "May 27, 2024",
-        tags: ["Design", "UX Design", "User Experience"],
+June 4, 2024`,
+        image: "/img/vibe-engineering.png",
+        date: "June 4, 2024",
+        tags: ["UX Design", "Development", "Product Design"],
+      },
+      {
+        title: "When AI Hallucinates: A Practical Guide",
+        description:
+          "How to spot, handle, and prevent AI from making stuff up.",
+        content: `## The AI Confidence Trap
+
+You know that feeling when your AI assistant sounds super confident about something, but you're pretty sure it's making it up? That's a hallucination - when AI confidently presents false information as fact. It's like that friend who always has an answer, even when they're completely wrong.
+
+## Spotting the Signs
+
+Hallucinations usually come with some telltale signs:
+- Overly specific details about things that don't exist
+- References to "studies" or "research" that you can't find
+- Confident answers about topics the AI shouldn't know about
+- Inconsistent information across different responses
+
+## The Fix
+
+When you catch an AI hallucinating, here's what to do:
+
+1. Call it out directly: "I think you might be hallucinating here"
+2. Ask for sources or citations
+3. Break the problem into smaller pieces
+4. Give it more context
+5. If all else fails, start fresh with a new conversation
+
+## Prevention is Better Than Cure
+
+The best way to deal with hallucinations is to prevent them:
+- Be specific about what you need
+- Provide relevant context
+- Ask for step-by-step reasoning
+- Request sources or citations upfront
+- Use follow-up questions to verify information
+
+## The Human Touch
+
+Remember, AI is a tool, not a replacement for human judgment. When something feels off, trust your gut. The best AI interactions happen when we work together - you bring the critical thinking, and the AI brings the processing power.
+
+## Always Test, Always Verify
+
+Here's a hard truth: even when AI gives you exactly what you asked for, you still need to test it. Every time. I've seen AI-generated code that looked perfect but broke existing functionality. That's why regression testing is non-negotiable - especially when working with AI. It's not about distrusting the AI; it's about respecting the complexity of the systems we're building.
+
+## The Art of Prompting
+
+One of the trickiest parts of working with AI is knowing when to be specific and when to be vague. Need a specific implementation? Be precise with your requirements. Looking for creative solutions? Leave some room for the AI to surprise you. It's like the difference between asking for "a blue button" versus "something that draws attention to this action." Sometimes the AI's interpretation is better than what you had in mind.
+
+## Breaking It Down
+
+Here's something I've learned the hard way: multi-step changes are risky. When you ask AI to make several changes at once, it's like playing a game of telephone - each step can introduce new errors or misunderstandings. Instead, break complex changes into single, focused steps. Test each step before moving to the next. It might feel slower, but it's much faster than fixing a cascade of issues later.
+
+## Moving Forward
+
+Hallucinations aren't going away anytime soon. They're part of how these models work. The key is to develop a healthy skepticism and know how to work around them. Think of it like proofreading - you don't trust spell check completely, you use it as a tool.
+
+June 4, 2024`,
+        image: "/img/ai-hallucination.png",
+        date: "June 4, 2024",
+        tags: ["AI", "Productivity", "Best Practices"],
+      },
+      {
+        title: "Users Don't Ask Much of Us",
+        description: "Successful design is often less complex than we think.",
+        content: `## The Bare Minimum
+
+Users don't ask for much. They just want to get their stuff done without thinking about it. No one wakes up thinking, "I can't wait to use that new app today!" They wake up thinking, "I need to get this thing done, and hopefully it won't be a pain in the ass."
+
+## What Users Actually Want
+
+Let's be real - users want:
+- Stuff that works
+- Stuff that's fast
+- Stuff that doesn't make them feel stupid
+
+That's it. That's the list. They don't care about your fancy animations, your clever micro-interactions, or your beautiful typography. They care about getting from point A to point B without getting lost or frustrated.
+
+## The Great Disconnect
+
+We spend hours debating button colors, animation timings, and interaction patterns. Meanwhile, users are just trying to find the "submit" button. We obsess over the perfect shade of blue, while they're wondering why the form keeps resetting when they hit back.
+
+## The Real Challenge
+
+The hardest part of design isn't making things beautiful - it's making them invisible. The best interfaces are the ones users don't even notice. They just work, and that's all anyone really wants.
+
+## A Modest Proposal
+
+Maybe instead of trying to wow users with our design skills, we should focus on not making them think. Stop trying to be clever. Stop trying to be different. Just be clear, be fast, and be reliable.
+
+That's not to say we shouldn't care about aesthetics. But let's get the basics right first. Make it work. Make it fast. Make it obvious. Then, if you must, make it pretty.
+
+June 4, 2024`,
+        image: "/img/user-expectations.png",
+        date: "June 4, 2024",
+        tags: ["UX Design", "User Experience", "Design Philosophy"],
+      },
+      {
+        title: "bolt.new: The Leader in the Rapid Prototyping Clubhouse",
+        description:
+          "For my money, bolt.new and its ecosystem is the leader in the AI-assisted development and design space.",
+        content: `## The Speed of Thought
+
+You know that feeling when you have a great idea, but getting it into something you can actually show people takes forever? Bolt.new does. It's like having a superpower for turning ideas into real things, fast.
+
+bolt.new isn't just quick - it's that it looks good while being quick. The interface is slick, everything moves smoothly, and the CTAs know what I want before I do. Sure, it can get a bit sluggish when you're pushing it hard - we're talking about AI here, after all - but that's a small price to pay for what it gives you in return.
+
+Remember when you had to juggle a bunch of different tools? One for rough sketches, another for fancy designs, and something else for making it interactive? Bolt.new puts all that in one place. You're not just saving time - you're saving your sanity by not having to switch between a million different apps.
+
+## The Real Magic
+
+The best part about bolt.new isn't the tech - it's how it changes the way you talk about ideas. Instead of trying to explain what you're thinking, you can just show it. That changes everything about how you get feedback and make things better.
+
+## Looking Forward
+
+Tools like bolt.new aren't just about speed - they're about making better stuff. When you can focus on solving problems instead of fighting with your tools, that's when the real magic happens.
+
+And the best part? This is just the start. As bolt.new keeps getting better, we're seeing a future where the line between design and development gets blurrier - and that's exactly what we need.
+
+June 3, 2024`,
+        image: "/img/bolt-new.png",
+        date: "June 3, 2024",
+        tags: ["Design Tools", "Prototyping", "UX Design"],
       },
       {
         title: "Information Architecture Is Not Sacred",
@@ -334,31 +461,52 @@ March 19, 2024`,
         date: "March 19, 2024",
       },
       {
-        title: "bolt.new: The Leader in the Rapid Prototyping Clubhouse",
+        title: "Design Genres",
         description:
-          "For my money, bolt.new and its ecosystem is the leader in the AI-assisted development and design space.",
-        content: `## The Speed of Thought
+          "When your users want AC/DC, don't give them King Crimson.",
+        content: `When your product performs, who is watching? And why are they there in the first place? 
 
-You know that feeling when you have a great idea, but getting it into something you can actually show people takes forever? Bolt.new does. It's like having a superpower for turning ideas into real things, fast.
+Design, like music, has its genres. And just like you wouldn't play death metal at a jazz club, you need to match your design to your audience's expectations. 
 
-bolt.new isn't just quick - it's that it looks good while being quick. The interface is slick, everything moves smoothly, and the CTAs know what I want before I do.
+Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it.
 
-Remember when you had to juggle a bunch of different tools? One for rough sketches, another for fancy designs, and something else for making it interactive? Bolt.new puts all that in one place. You're not just saving time - you're saving your sanity by not having to switch between a million different apps.
+Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
-## The Real Magic
 
-The best part about bolt.new isn't the tech - it's how it changes the way you talk about ideas. Instead of trying to explain what you're thinking, you can just show it. That changes everything about how you get feedback and make things better.
+Don't get me wrong - make sure my tombstone text is Helvetica, but if my user wants Comic Sans, I'm going to give them all the Comic Sans they can handle.
 
-## Looking Forward
+## The Power of Genre Awareness
 
-Tools like bolt.new aren't just about speed - they're about making better stuff. When you can focus on solving problems instead of fighting with your tools, that's when the real magic happens.
+Having a niche audience is a gift. You know exactly who your users are and what they expect. This deep understanding creates natural empathy - your users can feel when you truly get them.
 
-And the best part? This is just the start. As bolt.new keeps getting better, we're seeing a future where the line between design and development gets blurrier - and that's exactly what we need.
+Shoe-horning in your personal creative signature can damage your product in ways that aren't even tangible. Most users don't want King Crimson. They might tolerate Radiohead, but they really just want AC/DC. And if we don't give them AC/DC, then shame on us.
 
-June 3, 2024`,
-        image: "/img/bolt-new.png",
-        date: "June 3, 2024",
-        tags: ["Design Tools", "Prototyping", "UX Design"],
+This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.
+
+May 27, 2024`,
+        image: "/img/art-music.png",
+        date: "May 27, 2024",
+        tags: ["Design", "UX Design", "User Experience"],
+      },
+      {
+        title: "Google's Stitch: The (Current) Future of AI-Assisted Design",
+        description:
+          "TL;DR - Stitch generates Figma objects that you can copy and paste into your Figma files.",
+        content: `Google's Stitch project is giving us a peek into how AI might completely transform how we create.
+
+It's eerily close to *thinking* a design into existence.
+
+It creates actual Figma objects you can copy and paste directly into your Figma files. For teams living in Figma, this is a total game-changer.
+
+While Stitch isn't exactly mindblowingly creative yet - you can see where it's going. The way it understands context and provides granularity is clearly indicative of its direction. The agent's UI is already a step above many of the top dogs in today's race.
+
+Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
+
+The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.
+
+May 27, 2024`,
+        image: "/img/google-stitch.png",
+        date: "May 27, 2024",
       },
     ],
   },
