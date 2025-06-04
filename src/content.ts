@@ -265,7 +265,7 @@ Tools like Stitch are showing us a future where AI and human creativity work tog
 
 The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.
 
-*May 27, 2024*`,
+May 27, 2024`,
         image: "/img/google-stitch.png",
         date: "May 27, 2024",
       },
@@ -289,7 +289,7 @@ Shoe-horning in your personal creative signature can damage your product in ways
 
 This isn't selling out or pandering - you have been blessed with an audience and they have expectations. Our product needs to map to their expectations. The genre isn't one of our choosing; it's a hand we've been fortunate enough to have been dealt.
 
-*May 27, 2024*`,
+May 27, 2024`,
         image: "/img/art-music.png",
         date: "May 27, 2024",
         tags: ["Design", "UX Design", "User Experience"],
@@ -324,7 +324,7 @@ The best organizations don't let ego or outdated documents dictate the user expe
 
 So go ahead: break your own architecture if it makes the experience better. That's not sloppy - it's smart. It's a living system that should evolve with your users. Keep it flexible. Keep it human.
 
-*March 19, 2024*`,
+March 19, 2024`,
         url: "#",
         image: "/img/ia-flexible.png",
         tags: ["Information Architecture", "UX Design", "User Experience"],
@@ -352,7 +352,7 @@ Tools like bolt.new aren't just about speed - they're about making better stuff.
 
 And the best part? This is just the start. As bolt.new keeps getting better, we're seeing a future where the line between design and development gets blurrier - and that's exactly what we need.
 
-*June 3, 2024*`,
+June 3, 2024`,
         image: "/img/bolt-new.png",
         date: "June 3, 2024",
         tags: ["Design Tools", "Prototyping", "UX Design"],
