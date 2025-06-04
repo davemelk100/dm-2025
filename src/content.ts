@@ -289,9 +289,9 @@ Think of vibe coding like dictating your mental notes to a robot. You're essenti
 
 It's the same problem we've seen for decades with WYSIWYG editors - when something breaks, you're stuck. You can't just pop the hood and fix it because you never really understood how it worked in the first place. You were just clicking buttons and dragging things around, hoping for the best. Vibe coding is the same trap - you're letting the tool make decisions you don't fully understand, and when those decisions need to be undone or modified, you're left with a mess you can't easily clean up.
 
-## The Real Difference
+And let's talk about token efficiency. Every time you ask AI to fix something you could have figured out yourself, you're burning through tokens and time. It's like calling a plumber to change a light bulb - sure, they can do it, but it's a waste of resources. Learning to troubleshoot your own vibe issues not only saves tokens but makes you a better designer. You start to understand the patterns, the why behind the what, and suddenly you're making fewer requests because you're thinking more deeply about the problems.
 
-The best products come from a mix of both approaches. You need the solid foundation of vibe engineering, but sometimes you need a little vibe coding to polish the edges. The trick is knowing which is which.
+## The Real Difference
 
 When working with AI, this distinction becomes crucial. I've learned the hard way that if you don't specify the right constraints and context upfront, you'll end up with technically correct but fundamentally flawed solutions. It's like telling AI to "make it look better" versus explaining exactly how the user should feel when they interact with it.
 
