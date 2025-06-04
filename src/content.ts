@@ -275,7 +275,7 @@ May 27, 2024`,
           "When your users want AC/DC, don't give them King Crimson.",
         content: `When your product performs, who is watching? And why are they there in the first place? 
 
-Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it.
+Design, like music, has its genres. And just like you wouldn't play death metal at a jazz club, you need to match your design to your audience's expectations. Unless you're Jackson Pollock or Andy Warhol, users aren't there to see your personal creative endeavors. They have something they need done, and likely don't even feel like doing it.
 
 Artists get into trouble when they make art to impress other artists. Designers get into trouble when they make products to impress other designers.
 
