@@ -307,7 +307,7 @@ June 4, 2024`,
       {
         title: "AI Hallucination Prevention",
         description:
-          "How to spot, handle, and prevent AI from making stuff up.",
+          "How to spot, handle, and stop the AI needle from skipping.",
         content: `## The AI Confidence Trap
 
 You know that feeling when your AI assistant sounds super confident about something, but you're pretty sure it's making it up? That's a hallucination - when AI confidently presents false information as fact. It's like that friend who always has an answer, even when they're completely wrong.
