@@ -274,7 +274,7 @@ June 4, 2024`,
         tags: ["Career", "Hiring", "Workplace Culture"],
       },
       {
-        title: "Vibe Engineering vs Vibe Coding",
+        title: "Vibe Coding vs Vibe Engineering",
         description:
           "The subtle art of making things work right, not just feel right.",
         content: `## The Vibe Check
