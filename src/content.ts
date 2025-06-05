@@ -287,11 +287,9 @@ Think of vibe coding like dictating your mental notes to a robot. You're essenti
 
 Maybe we should call it "surface coding" instead of "vibe coding" - it's more honest about what's really happening. You're just coding the surface, the appearance, without touching the underlying structure. Sure, it looks better from the street, but the problems are still there, just hidden under a new layer.
 
-We've seen for decades with WYSIWYG editors - when something breaks, you're stuck. You can't just pop the proverbial hood and fix it because you never really understood how it worked in the first place. You were just clicking buttons and dragging things around, hoping for the best. Vibe coding is the same trap - you're letting the tool make decisions you don't fully understand, and when those decisions need to be undone or modified, you're left with a mess you can't easily clean up.
+We've seen this for decades with WYSIWYG editors - when something breaks, you're stuck. You can't just pop the proverbial hood and fix it because you never really understood how it worked in the first place. You were just clicking buttons and dragging things around, hoping for the best. Vibe coding is the same trap - you're letting the tool make decisions you don't fully understand, and when those decisions need to be undone or modified, you're left with a mess you can't easily clean up.
 
 And let's talk about token efficiency. Every time you ask AI to fix something you could have figured out yourself, you're burning through tokens and time. It's like calling a plumber to change a light bulb - sure, they can do it, but it's a waste of resources. Learning to troubleshoot your own vibe issues not only saves tokens but makes you a better designer. You start to understand the patterns, the why behind the what, and suddenly you're making fewer requests because you're thinking more deeply about the problems.
-
-## The Real Difference
 
 When working with AI, this distinction becomes crucial. I've learned the hard way that if you don't specify the right constraints and context upfront, you'll end up with technically correct but fundamentally flawed solutions. It's like telling AI to "make it look better" versus explaining exactly how the user should feel when they interact with it.
 
