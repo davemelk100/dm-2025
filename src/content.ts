@@ -279,7 +279,7 @@ June 4, 2024`,
           "The subtle art of making things work right, not just feel right.",
         content: `## The Vibe Check
 
-Look, I know - the word "vibe" makes me cringe too. But stick with me here, because there's something important about how things feel when you use them, even if we have to use a slightly cringey word to talk about it.
+Look, I know - the word "vibe" makes me cringe too. But stick with me here, because there's something important about how things feel when you use them, even if we have to use an uncomfortable word to talk about it.
 
 After years of building with AI, I've learned that success isn't about the tools - it's about the intent. Vibe engineering isn't (even) another buzzword; it's the difference between slapping features together and crafting something that feels right. It's about understanding that every loading state, every transition, every micro-interaction is a chance to build trust with your users. You're not just coding - you're creating an experience that feels natural, not forced. The personality isn't something you add at the end; it's woven into the fabric of what you're building from day one.
 
@@ -292,6 +292,8 @@ We've seen this for decades with WYSIWYG editors - when something breaks, you're
 And let's talk about token efficiency. Every time you ask AI to fix something you could have figured out yourself, you're burning through tokens and time. It's like calling a plumber to change a light bulb - sure, they can do it, but it's a waste of resources. Learning to troubleshoot your own vibe issues not only saves tokens but makes you a better designer. You start to understand the patterns, the why behind the what, and suddenly you're making fewer requests because you're thinking more deeply about the problems.
 
 When working with AI, this distinction becomes crucial. I've learned the hard way that if you don't specify the right constraints and context upfront, you'll end up with technically correct but fundamentally flawed solutions. It's like telling AI to "make it look better" versus explaining exactly how the user should feel when they interact with it.
+
+This is where real UI development experience pays off. When you've spent years wrestling with CSS properties and JavaScript behaviors, you know exactly what values to ask for. You can tell AI to "adjust the transition-timing-function to cubic-bezier(0.4, 0, 0.2, 1)" instead of just saying "make it smoother." You understand that "add a subtle shadow" means "box-shadow: 0 2px 4px rgba(0,0,0,0.1)" and not some arbitrary darkening effect. This precision saves time, reduces iterations, and leads to more consistent results.
 
 The real skill isn't just knowing when to use vibe coding - it's knowing when to undo it. Sometimes you'll start down a path of quick fixes and realize you're just making things worse. That's when you need to step back, undo those changes, and take the time to engineer the solution properly. Other times, you'll find that a small vibe coding tweak is exactly what you need to push something from good to great.
 
@@ -318,7 +320,7 @@ When you catch an AI hallucinating, call it out directly: "I think you might be 
 
 The best way to prevent hallucinations is to be specific about what you need, provide relevant context, ask for step-by-step reasoning, request sources or citations upfront, and use follow-up questions to verify information.
 
-Remember, AI is a tool, not a replacement for human judgment. When something feels off, trust your gut. The best AI interactions happen when we work together - you bring the critical thinking, and the AI brings the processing power.
+Remember, it's not just what you ask - it's how you ask it. Telling AI to "create a login form" might get you something that looks right but doesn't actually work. Instead, try "create a login form with email validation, password requirements, and error handling for invalid credentials." The more specific your request, the less room there is for the AI to fill in the gaps with made-up details. It's like the difference between asking someone to "make it look nice" versus "use a 16px font size with 1.5 line height and 24px margins."
 
 Here's a hard truth: even when AI gives you exactly what you asked for, you still need to test it. Every time. I've seen AI-generated code that looked perfect but broke existing functionality. That's why regression testing is non-negotiable - especially when working with AI. It's not about distrusting the AI; it's about respecting the complexity of the systems we're building.
 
@@ -482,6 +484,45 @@ The trick is finding that sweet spot between AI help and human creativity. Stitc
 May 27, 2024`,
         image: "/img/google-stitch.png",
         date: "May 27, 2024",
+      },
+      {
+        title: "Say This = Not That - Generative AI Subtleties",
+        description:
+          "The difference between getting what you want and getting what you asked for.",
+        content: `## The Language of AI
+
+We've all been there - you ask AI for something, and it gives you something else. Not wrong, exactly, just... not what you meant. It's like ordering a "light beer" and getting a Bud Light when you wanted a craft pilsner. The AI isn't wrong - it's just not reading between the lines.
+
+## Say This, Not That
+
+Instead of: "Make it look modern"
+Say: "Use a clean sans-serif font, 16px base size, with 24px line height and 40px section spacing"
+
+Instead of: "Add some animations"
+Say: "Add a 300ms ease-out transition to the hover state, with a subtle scale transform"
+
+Instead of: "Make it responsive"
+Say: "Implement a mobile-first layout with breakpoints at 640px, 768px, and 1024px"
+
+Instead of: "Fix the performance"
+Say: "Implement lazy loading for images below the fold and add a loading skeleton for dynamic content"
+
+## Why This Matters
+
+The difference isn't just about being specific - it's about speaking AI's language. When you use precise technical terms and exact measurements, you're giving the AI a clear blueprint instead of a vague idea. It's the difference between telling a chef "make it spicy" versus "add 1/4 teaspoon of cayenne pepper."
+
+## The Real Secret
+
+The best AI interactions happen when you think like a developer writing documentation. You're not just describing what you want - you're creating a specification. The more you can break down your request into specific, measurable components, the less room there is for interpretation (and misinterpretation).
+
+## Moving Forward
+
+Start keeping a mental (or actual) list of successful AI prompts. Notice which ones get you exactly what you want, and which ones lead to endless iterations. The patterns will emerge quickly - specificity wins, every time.
+
+June 4, 2024`,
+        image: "/img/ai-subtleties.png",
+        date: "June 4, 2024",
+        tags: ["AI", "Development", "Best Practices"],
       },
     ],
   },
