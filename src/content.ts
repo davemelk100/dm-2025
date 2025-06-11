@@ -259,7 +259,7 @@ Many candidates have experienced the extended interview process: multiple rounds
 
 The reality is that many interview processes have become more focused on procedure than meaningful assessment. Complex interview rituals have been developed that consume significant time without necessarily improving hiring decisions. This isn't about intentional inefficiency - it's about losing sight of what the process is actually trying to accomplish: finding the right person for the role while respecting everyone's time and effort.
 
-Consider the candidate's perspective: taking time away from their current role, preparing extensively for multiple interviews, completing take-home assignments, waiting for feedback, and navigating an increasingly complex process. This approach has become normalized, but it doesn't have to be this way. After experiencing seven rounds of interviews for a single position, the question becomes: what value is each additional interview adding?
+Consider the candidate's perspective: taking time away from their current role, preparing extensively for multiple interviews, completing take-home assignments, waiting for feedback, and navigating an increasingly complex process. After experiencing seven rounds of interviews for a single position, the question becomes: what value is each additional interview adding?
 
 ## A More Efficient Approach
 
