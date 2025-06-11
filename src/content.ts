@@ -251,22 +251,32 @@ export const content = {
     items: [
       {
         title: "Seven Interviews?",
-        description: "Hiring practices are as egregious as they are insincere.",
-        content: `## The Interview Gauntlet
+        description:
+          "Examining modern hiring practices and their impact on both candidates and organizations.",
+        content: `## The Interview Process
 
-You've probably been there. You apply for a job, and suddenly you're scheduled for weekly interviews and duplicative discussions. What exactly are we trying to prove here? 
+Many of us have experienced the extended interview process: multiple rounds of interviews, repeated discussions, and lengthy timelines. While thorough evaluation is important, we need to question whether our current approach truly serves its purpose.
 
-Let's be honest - most of these interviews aren't adding much value. They're often more about process than purpose. We've created elaborate interview rituals that take up everyone's time without necessarily helping us make better decisions. It's not that anyone means to waste time - it's that we've lost sight of what we're actually trying to accomplish.
+The reality is that many interview processes have become more focused on procedure than meaningful assessment. We've developed complex interview rituals that consume significant time without necessarily improving our hiring decisions. This isn't about intentional inefficiency - it's about losing sight of our core objectives.
 
-Think about what we're asking of candidates: taking time off from their current job, preparing for hours of interviews, doing take-home assignments, waiting weeks for feedback, jumping through increasingly absurd hoops. All while we pretend this is normal. It's not.
+Consider the candidate's perspective: taking time away from their current role, preparing extensively for multiple interviews, completing take-home assignments, waiting for feedback, and navigating an increasingly complex process. This approach has become normalized, but it doesn't have to be this way.
 
-## A Better Way
+## A More Efficient Approach
 
-Here's a radical idea: what if we actually respected people's time? What if we did our homework before the interview, made decisions quickly, gave real feedback, paid for take-home assignments, and actually knew what we were looking for?
+What if we reimagined the hiring process with respect for everyone's time? What if we:
+- Conducted thorough research before interviews
+- Made decisions promptly
+- Provided meaningful feedback
+- Compensated candidates for take-home work
+- Clearly defined our requirements upfront
 
-Most hiring decisions are made in the first 15 minutes of the first interview. The rest is just CYA theater. We're not being thorough - we're being indecisive.
+Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery. We're not necessarily being more thorough - we're being less decisive.
 
-If you're running a hiring process, ask yourself: Would I want to go through this process? What are we actually learning in each interview? Could we make this decision faster? Are we treating candidates like humans or like lab rats?
+For those managing hiring processes, consider these questions:
+- Would you want to experience this process as a candidate?
+- What specific insights are we gaining from each interview round?
+- Could we streamline our decision-making process?
+- Are we treating candidates with the respect they deserve?
 
 June 4, 2024`,
         image: "/img/hiring-process.png",
