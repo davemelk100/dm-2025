@@ -254,7 +254,7 @@ export const content = {
         description: "Hiring practices are as egregious as they are insincere.",
         content: `## The Interview Gauntlet
 
-You've probably been there. You apply for a job, and suddenly you're in scheduled for weekly interviews and meaningless discussions. What exactly are we trying to prove here? 
+You've probably been there. You apply for a job, and suddenly you're scheduled for weekly interviews and duplicative discussions. What exactly are we trying to prove here? 
 
 Let's be honest - most of these interviews aren't adding much value. They're often more about process than purpose. We've created elaborate interview rituals that take up everyone's time without necessarily helping us make better decisions. It's not that anyone means to waste time - it's that we've lost sight of what we're actually trying to accomplish.
 
@@ -514,6 +514,8 @@ The difference isn't just about being specific - it's about speaking AI's langua
 ## The Real Secret
 
 The best AI interactions happen when you think like a developer writing documentation. You're not just describing what you want - you're creating a specification. The more you can break down your request into specific, measurable components, the less room there is for interpretation (and misinterpretation).
+
+But here's the thing - sometimes it's worth letting the AI explore first. Ask it to "suggest three different approaches" or "show me what you think would work best." You might be surprised by what it comes up with. The AI might suggest a solution you hadn't considered, or it might hallucinate something that sparks a better idea. Your expertise comes in when you spot the hallucinations and know which parts to keep. It's like having a brainstorming partner who sometimes goes off the rails - you don't want to follow them into the weeds, but their wild ideas might lead you somewhere interesting.
 
 ## Moving Forward
 
