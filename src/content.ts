@@ -255,28 +255,28 @@ export const content = {
           "Examining modern hiring practices and their impact on both candidates and organizations.",
         content: `## The Interview Process
 
-Many of us have experienced the extended interview process: multiple rounds of interviews, repeated discussions, and lengthy timelines. While thorough evaluation is important, we need to question whether our current approach truly serves its purpose.
+Many candidates have experienced the extended interview process: multiple rounds of interviews, repeated discussions, and lengthy timelines. While thorough evaluation is important, it's worth questioning whether the current approach truly serves its purpose.
 
-The reality is that many interview processes have become more focused on procedure than meaningful assessment. We've developed complex interview rituals that consume significant time without necessarily improving our hiring decisions. This isn't about intentional inefficiency - it's about losing sight of our core objectives.
+The reality is that many interview processes have become more focused on procedure than meaningful assessment. Complex interview rituals have been developed that consume significant time without necessarily improving hiring decisions. This isn't about intentional inefficiency - it's about losing sight of what the process is actually trying to accomplish: finding the right person for the role while respecting everyone's time and effort.
 
 Consider the candidate's perspective: taking time away from their current role, preparing extensively for multiple interviews, completing take-home assignments, waiting for feedback, and navigating an increasingly complex process. This approach has become normalized, but it doesn't have to be this way.
 
 ## A More Efficient Approach
 
-What if we reimagined the hiring process with respect for everyone's time? What if we:
+What if the hiring process was reimagined with respect for everyone's time? What if organizations:
 - Conducted thorough research before interviews
 - Made decisions promptly
 - Provided meaningful feedback
 - Compensated candidates for take-home work
-- Clearly defined our requirements upfront
+- Clearly defined requirements upfront
 
-Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery. We're not necessarily being more thorough - we're being less decisive.
+Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery. The process isn't necessarily being more thorough - it's being less decisive.
 
 For those managing hiring processes, consider these questions:
 - Would you want to experience this process as a candidate?
-- What specific insights are we gaining from each interview round?
-- Could we streamline our decision-making process?
-- Are we treating candidates with the respect they deserve?
+- What specific insights are being gained from each interview round?
+- Could the decision-making process be streamlined?
+- Are candidates being treated with the respect they deserve?
 
 June 4, 2024`,
         image: "/img/hiring-process.png",
