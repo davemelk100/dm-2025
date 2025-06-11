@@ -272,6 +272,17 @@ What if the hiring process was reimagined with respect for everyone's time? What
 
 Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery. The process isn't necessarily being more thorough - it's being less decisive.
 
+## The Cost of Ineffective Hiring
+
+The financial impact of a poor hiring decision extends far beyond the interview process. When a candidate is hired but later terminated due to skill mismatches, the costs are substantial:
+- Time and resources spent on onboarding and training
+- Lost productivity during the learning period
+- Impact on team morale and workflow
+- Additional recruitment costs to fill the position again
+- Potential legal and administrative costs of termination
+
+This makes effective skill assessment during the interview process crucial. Rather than extending the interview timeline, organizations should focus on targeted assessments that directly evaluate the required competencies. A well-structured technical interview or practical assessment can often reveal more about a candidate's capabilities than multiple rounds of general discussion.
+
 For those managing hiring processes, consider these questions:
 - Would you want to experience this process as a candidate?
 - What specific insights are being gained from each interview round?
