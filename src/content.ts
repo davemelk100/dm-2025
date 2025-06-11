@@ -272,20 +272,17 @@ What if the hiring process was reimagined with respect for everyone's time? What
 
 Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery. The process isn't necessarily being more thorough - it's being less decisive.
 
+## The Trust Factor
+
+Another factor driving extended interview processes is the lack of trust in peer judgment. When leadership feels the need to personally interview every candidate, it suggests a deeper issue: they don't trust their team's ability to make sound hiring decisions. This creates a cascade of interviews as each level of management feels compelled to add their own assessment. The result is a process that's more about organizational politics than candidate evaluation.
+
 ## The Cost of Ineffective Hiring
 
-The financial impact of a poor hiring decision extends far beyond the interview process. When a candidate is hired but later terminated due to skill mismatches, the costs are substantial:
-- Time and resources spent on onboarding and training
-- Lost productivity during the learning period
-- Additional recruitment costs to fill the position again
+Poor hiring decisions are expensive. Beyond the interview process, organizations face significant costs when a candidate is hired but later terminated due to skill mismatches: onboarding expenses, lost productivity, and the cost of starting the recruitment process again.
 
-This makes effective skill assessment during the interview process crucial. Rather than extending the interview timeline, organizations should focus on targeted assessments that directly evaluate the required competencies. A well-structured technical interview or practical assessment can often reveal more about a candidate's capabilities than multiple rounds of general discussion.
+This makes effective skill assessment crucial. A single well-structured technical interview or practical assessment often reveals more about a candidate's capabilities than multiple rounds of general discussion.
 
-For those managing hiring processes, consider these questions:
-- Would you want to experience this process as a candidate?
-- What specific insights are being gained from each interview round?
-- Could the decision-making process be streamlined?
-- Are candidates being treated with the respect they deserve?
+For hiring managers, consider: Would you want to experience this process? What insights are gained from each interview? Could decisions be made faster? Are candidates being treated with respect?
 
 June 4, 2024`,
         image: "/img/hiring-process.png",
