@@ -310,7 +310,7 @@ Think of vibe coding like telling a robot "make this room cozier" instead of und
 
 When working with AI, this distinction is crucial. If you don't specify the right constraints upfront, you'll end up with technically correct but fundamentally flawed solutions. It's like telling AI to "make it look better" versus explaining exactly how the user should feel.
 
-This is where real UI development experience pays off. You can tell AI to "adjust the transition-timing-function to cubic-bezier(0.4, 0, 0.2, 1)" instead of just saying "make it smoother." This precision saves time and leads to better results.
+This is where real UI development experience pays off. You can tell AI to "add a 2px border with rounded corners" instead of just saying "make it pop." This precision saves time and leads to better results.
 
 Vibe engineering solves real problems while feeling natural. Vibe coding makes things feel right but might miss the underlying issues. Next time you're building something, ask yourself: am I engineering the vibe, or am I just coding it?
 
