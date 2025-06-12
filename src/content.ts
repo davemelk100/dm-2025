@@ -291,9 +291,9 @@ For hiring managers, consider:
 
 The best hiring processes are those that efficiently identify the right candidate while treating everyone involved with dignity and respect.
 
-June 4, 2024`,
+June 7, 2024`,
         image: "/img/hiring-process.png",
-        date: "June 4, 2024",
+        date: "June 7, 2024",
         tags: ["Career", "Hiring", "Workplace Culture"],
       },
       {
@@ -324,9 +324,9 @@ Vibe engineering feels natural and solves real problems. It's about the user and
 
 Next time you're building something, ask yourself: am I engineering the vibe, or am I just coding it? Because in the end, users don't care about your clever solutions - they care about how it feels to use your product. And if you're using AI to help build it, make sure you're asking for the right kind of help.
 
-June 4, 2024`,
+June 8, 2024`,
         image: "/img/vibe-engineering.png",
-        date: "June 4, 2024",
+        date: "June 8, 2024",
         tags: ["UX Design", "Development", "Product Design"],
       },
       {
@@ -355,9 +355,9 @@ Here's something I've learned the hard way: multi-step changes are risky. When y
 
 Hallucinations aren't going away anytime soon. They're part of how these models work. The key is to develop a healthy skepticism and know how to work around them. Think of it like proofreading - you don't trust spell check completely, you use it as a tool.
 
-June 4, 2024`,
+May 30, 2024`,
         image: "/img/ai-hallucination.png",
-        date: "June 4, 2024",
+        date: "May 30, 2024",
         tags: ["AI", "Productivity", "Best Practices"],
       },
       {
@@ -419,9 +419,9 @@ Tools like bolt.new aren't just about speed - they're about making better stuff.
 
 And the best part? This is just the start. As bolt.new keeps getting better, we're seeing a future where the line between design and development gets blurrier - and that's exactly what we need.
 
-June 3, 2024`,
+June 1, 2024`,
         image: "/img/bolt-new.png",
-        date: "June 3, 2024",
+        date: "June 1, 2024",
         tags: ["Design Tools", "Prototyping", "UX Design"],
       },
       {
@@ -544,10 +544,10 @@ But here's the thing - sometimes it's worth letting the AI explore first. Ask it
 
 Start keeping a mental (or actual) list of successful AI prompts. Notice which ones get you exactly what you want, and which ones lead to endless iterations. The patterns will emerge quickly - specificity wins, every time.
 
-June 4, 2024`,
+June 2, 2024`,
         image: "/img/ai-subtleties.png",
-        date: "June 4, 2024",
-        tags: ["AI", "Development", "Best Practices"],
+        date: "June 2, 2024",
+        tags: ["AI", "Productivity", "Best Practices"],
       },
     ],
   },
