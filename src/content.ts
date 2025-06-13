@@ -360,8 +360,11 @@ Users don't ask for much. They just want to get their stuff done without thinkin
 ## What Users Actually Want
 
 Let's be real - users want:
+
 - Stuff that works
+
 - Stuff that's fast
+
 - Stuff that doesn't make them feel stupid
 
 That's it. That's the list. They don't care about your fancy animations, your clever micro-interactions, or your beautiful typography. They care about getting from point A to point B without getting lost or frustrated.
