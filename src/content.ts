@@ -564,13 +564,7 @@ Today's API tokens work in much the same way. Instead of physical tokens, we hav
 
 ## The Psychology of Tokens
 
-What's fascinating is how both systems tap into the same psychological principles:
-
-1. Tangible Value: Physical tokens made the cost of play visible. API tokens make the cost of service usage visible.
-
-2. Controlled Access: Arcades used tokens to manage access to games. APIs use tokens to manage access to services.
-
-3. Universal Language: Whether you were in New York or Los Angeles, arcade tokens worked the same way. API tokens work the same way across different services.
+What's fascinating is how both systems tap into the same psychological principles. Physical tokens made the cost of play visible, just as API tokens make the cost of service usage visible. Arcades used tokens to manage access to games, while APIs use tokens to manage access to services. Whether you were in New York or Los Angeles, arcade tokens worked the same way, and API tokens work the same way across different services.
 
 ## The Evolution of Token Systems
 
@@ -586,21 +580,7 @@ The arcade token system evolved from simple mechanical devices to sophisticated 
 
 ## Lessons from the Arcade
 
-The arcade token system taught us valuable lessons about user experience:
-
-1. Simplicity: The system had to be immediately understandable
-
-2. Fairness: Everyone played by the same rules
-
-3. Transparency: You always knew how many tokens you had left
-
-4. Immediate Feedback: You knew instantly if your token was accepted
-
-5. Limited Supply: You knew you had to use your tokens wisely
-
-6. Clear Value Exchange: You knew exactly what you were getting for your tokens
-
-7. Fairness: Everyone played by the same rules
+The arcade token system taught us valuable lessons about user experience. The system had to be immediately understandable, with everyone playing by the same rules. You always knew how many tokens you had left, and you knew instantly if your token was accepted. The limited supply meant you had to use your tokens wisely, and there was always a clear value exchange - you knew exactly what you were getting for your tokens.
 
 These same principles apply to modern API token systems. The best API implementations maintain this simplicity while adding necessary security and control.
 
