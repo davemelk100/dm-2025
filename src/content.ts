@@ -250,7 +250,9 @@ export const content = {
         title: "Seven Interviews?",
         description:
           "Examining modern hiring practices and their impact on both candidates and organizations.",
-        content: `## The Interview Process
+        content: `Seven Interviews?
+
+## The Interview Process
 
 Extended interview processes have become the norm: multiple rounds, repeated discussions, and lengthy timelines. While thorough evaluation is important, the current approach often prioritizes procedure over meaningful assessment. How many times should a candidate have to answer "tell me about yourself" before someone takes notes?
 
@@ -295,7 +297,9 @@ June 7, 2024`,
         title: "Vibe Coding vs Vibe Engineering",
         description:
           "The subtle art of making things work right, not just feel right.",
-        content: `## The Vibe Check
+        content: `Vibe Coding vs Vibe Engineering
+
+## The Vibe Check
 
 The word "vibe" might make you cringe, but there's something important about how things feel when you use them. Vibe engineering isn't another buzzword - it's the difference between making something feel right and making it work right. Every interaction is a chance to build trust with users.
 
@@ -318,7 +322,9 @@ June 8, 2024`,
         title: "AI Hallucination Prevention",
         description:
           "How to spot, handle, and stop the AI needle from skipping.",
-        content: `## The AI Confidence Trap
+        content: `AI Hallucination Prevention
+
+## The AI Confidence Trap
 
 You know that feeling when your AI assistant sounds super confident about something, but you're pretty sure it's making it up? That's a hallucination - when AI confidently presents false information as fact. It's like that friend who always has an answer, even when they're completely wrong.
 
@@ -348,7 +354,9 @@ May 30, 2024`,
       {
         title: "Users Don't Ask Much of Us",
         description: "Successful design is often less complex than we think.",
-        content: `## The Bare Minimum
+        content: `Users Don't Ask Much of Us
+
+## The Bare Minimum
 
 Users don't ask for much. They just want to get their stuff done without thinking about it. No one wakes up thinking, "I can't wait to use that new app today!" They wake up thinking, "I need to get this thing done, and hopefully it won't be a pain in the ass."
 
@@ -387,7 +395,9 @@ June 4, 2024`,
         title: "bolt.new: The Leader in the Rapid Prototyping Clubhouse",
         description:
           "For my money, bolt.new and its ecosystem is the leader in the AI-assisted development and design space.",
-        content: `## The Speed of Thought
+        content: `bolt.new: The Leader in the Rapid Prototyping Clubhouse
+
+## The Speed of Thought
 
 You know that feeling when you have a great idea, but getting it into something you can actually show people takes forever? Bolt.new is like having a superpower for turning ideas into real things, fast.
 
@@ -412,7 +422,9 @@ June 1, 2024`,
         title: "Information Architecture Is Not Sacred",
         description:
           "Your IA should evolve with your users, not stay set in stone.",
-        content: `## Your IA Shouldn't Be Set in Stone
+        content: `Information Architecture Is Not Sacred
+
+## Your IA Shouldn't Be Set in Stone
 
 The UX process is iterative by nature. You design something, test it, learn from it, and then do it all over again. It's not a straight path, and your information architecture shouldn't be either. When real feedback shows that people are missing something, you move it. When analytics show that users are skipping entire sections, you streamline. The structure should serve the user, not hold them back.
 
@@ -448,7 +460,9 @@ March 19, 2024`,
         title: "Design Genres",
         description:
           "When your users want AC/DC, don't give them King Crimson.",
-        content: `When your product performs, who is watching? And why are they there in the first place? 
+        content: `Design Genres
+
+When your product performs, who is watching? And why are they there in the first place? 
 
 Design, like music, has its genres. And just like you wouldn't play death metal at a jazz club, you need to match your design to your audience's expectations. 
 
@@ -473,122 +487,85 @@ May 27, 2024`,
         tags: ["Design", "UX Design", "User Experience"],
       },
       {
-        title: "Google's Stitch: The (Current) Future of AI-Assisted Design",
-        description:
-          "TL;DR - Stitch generates Figma objects that you can copy and paste into your Figma files.",
-        content: `Google's Stitch project is giving us a peek into how AI might completely transform how we create.
+        title: "Design Genres™, part 2",
+        description: "Because naming things is fun.",
+        content: `
 
-It's eerily close to *thinking* a design into existence.
+This was fun the first time around, so let's go ahead and run it back, this time with more details
+And more guitars.
 
-It creates actual Figma objects you can copy and paste directly into your Figma files. For teams living in Figma, this is a total game-changer.
+Why do we need catchy names for types of design? Because we don't have any yet. At least none that are any fun. So let's make some up.
 
-While Stitch isn't exactly mindblowingly creative yet - you can see where it's going. The way it understands context and provides granularity is clearly indicative of its direction. The agent's UI is already a step above many of the top dogs in today's race.
+## Dash™
 
-Tools like Stitch are showing us a future where AI and human creativity work together. It's not about AI taking over - it's about giving us superpowers to do what we do best: think creatively, solve problems, and really understand what users need.
+Users expect power, control, and maximum information density through heavy, complex interfaces with dense information, dark themes, high contrast, and industrial aesthetics.
 
-The trick is finding that sweet spot between AI help and human creativity. Stitch is showing us that the future isn't about choosing between human and AI - it's about using both to make something better than either could do alone.
+Think: Bloomberg Terminal, Trading Platforms
 
-May 27, 2024`,
-        image: "/img/google-stitch.png",
-        date: "May 27, 2024",
-      },
-      {
-        title: "Say This = Not That - Generative AI Subtleties",
-        description:
-          "The difference between getting what you want and getting what you asked for.",
-        content: `## The Language of AI
+Like listening to: Technical Metal (Meshuggah, Cynic) - complex, intense, and information-rich
 
-We've all been there - you ask AI for something, and it gives you something else. Not wrong, exactly, just... not what you meant. It's like ordering a "light beer" and getting a Bud Light when you wanted a craft pilsner. The AI isn't wrong - it's just not reading between the lines.
+Example: "The admin panel is getting too Dash-y - maybe we should split these controls into separate views?"
 
-## Say This, Not That
+## Routine™
 
-Instead of: "Make it look modern"
-Say: "Use a clean sans-serif font, 16px base size, with 24px line height and 40px section spacing"
+Users expect familiarity, reliability, and professional polish through clean, safe, and universally appealing designs featuring blue and white color schemes with rounded corners.
 
-Instead of: "Add some animations"
-Say: "Add a 300ms ease-out transition to the hover state, with a subtle scale transform"
+Think: Microsoft Office, Salesforce
 
-Instead of: "Make it responsive"
-Say: "Implement a mobile-first layout with breakpoints at 640px, 768px, and 1024px"
+Like listening to: Pop Music (Taylor Swift, Ed Sheeran) - accessible, familiar, and widely accepted
 
-Instead of: "Fix the performance"
-Say: "Implement lazy loading for images below the fold and add a loading skeleton for dynamic content"
+Example: "Let's keep this more Routine - users shouldn't have to learn anything new to use it."
 
-## Why This Matters
+## Suite™
 
-The difference isn't just about being specific - it's about speaking AI's language. When you use precise technical terms and exact measurements, you're giving the AI a clear blueprint instead of a vague idea. It's the difference between telling a chef "make it spicy" versus "add 1/4 teaspoon of cayenne pepper."
+Users expect innovation, personality, and modern features through bold, playful, and slightly experimental designs featuring bright colors, custom illustrations, and micro-interactions.
 
-## The Real Secret
+Think: Slack, Notion, Figma
 
-The best AI interactions happen when you think like a developer writing documentation. You're not just describing what you want - you're creating a specification. The more you can break down your request into specific, measurable components, the less room there is for interpretation (and misinterpretation).
+Like listening to: Experimental Rock (Guided By Voices, Deerhunter) - creative, unique, but still approachable
 
-But here's the thing - sometimes it's worth letting the AI explore first. Ask it to "suggest three different approaches" or "show me what you think would work best." You might be surprised by what it comes up with. The AI might suggest a solution you hadn't considered, or it might hallucinate something that sparks a better idea. Your expertise comes in when you spot the hallucinations and know which parts to keep. It's like having a brainstorming partner who sometimes goes off the rails - you don't want to follow them into the weeds, but their wild ideas might lead you somewhere interesting.
+Example: "The empty states could use some Suite energy - maybe add some playful illustrations?"
 
-## Moving Forward
+## Stripped™
 
-Start keeping a mental (or actual) list of successful AI prompts. Notice which ones get you exactly what you want, and which ones lead to endless iterations. The patterns will emerge quickly - specificity wins, every time.
+Users expect quality, exclusivity, and attention to detail through minimal, sophisticated, and carefully crafted designs featuring monochromatic color schemes, ample whitespace, and subtle animations.
 
-June 2, 2024`,
-        image: "/img/ai-subtleties.png",
-        date: "June 2, 2024",
-        tags: ["AI", "Productivity", "Best Practices"],
-      },
-      {
-        title: "API Tokens in a Programmatic Arcade",
-        description:
-          "How the concept of tokens in modern API usage echoes the arcade culture of the 1980s.",
-        content: `## The Token Economy
+Think: Apple, Bang & Olufsen
 
-Remember walking into an arcade with a pocket full of quarters, ready to exchange them for tokens? That familiar clink of metal against metal, the anticipation of gameplay ahead. Fast forward to today, and we're still using tokens - just in a different form. API tokens have become the digital equivalent of those arcade tokens, and the parallels are striking.
+Like listening to: Post Rock (Radiohead, Tortoise) - sophisticated, nuanced, and refined
 
-## The Arcade Experience
+Example: "The product page feels cluttered - let's go more Stripped for the next iteration."
 
-In the 1980s, arcades were temples of gaming. You'd walk in with cash, exchange it for tokens, and each token represented a chance to play. One token, one game. It was simple, it was fair, and it was universal. Whether you were playing Pac-Man or Pole Position, the token system was the same.
+## Workist™
 
-## The Modern Digital Arcade
+Users expect speed, clarity, and getting things done through simple, straightforward, and functional designs featuring neutral colors, clear typography, and minimal decoration.
 
-Today's API tokens work in much the same way. Instead of physical tokens, we have digital ones. Instead of games, we're accessing services. But the fundamental concept remains:
+Think: Google Search, Wikipedia, Craigslist
 
-- One token, one request
+Like listening to: Krautrock (Neu!, Kraftwerk) - brutish, authentic, and purposeful
 
-- Limited supply (rate limits)
+Example: "The settings page needs to be more Workist - users just want to change their preferences and move on."
 
-- Universal currency (standardized authentication)
+## Immersive™
 
-- Clear value exchange
+Users expect excitement, community, and visual impact through bold, energetic, and immersive designs featuring dark themes, neon accents, and dynamic elements.
 
-## The Psychology of Tokens
+Think: Discord, Steam, Twitch
 
-What's fascinating is how both systems tap into the same psychological principles. Physical tokens made the cost of play visible, just as API tokens make the cost of service usage visible. Arcades used tokens to manage access to games, while APIs use tokens to manage access to services. Whether you were in New York or Los Angeles, arcade tokens worked the same way, and API tokens work the same way across different services.
+Like listening to: Big Indie Rock (The Flaming Lips, Turnstile) - energetic, engaging, and delightful
 
-## The Evolution of Token Systems
+Example: "The game's UI could be more Immersive - let's add some particle effects and dynamic transitions."
 
-The arcade token system evolved from simple mechanical devices to sophisticated electronic systems. Similarly, API tokens have evolved from basic authentication to complex systems with:
+## Do Genres Matter
 
-- Rate limiting
+These genre names aren't just labels - they're a shared vocabulary for design decisions. When we say "this needs more Routine™" or "let's dial back the Suite™," we're talking about more than aesthetics.
 
-- Usage tracking
+We're talking about matching user expectations, business goals, and emotional responses. The right genre can make or break a product's success, just like the right music can make or break a movie scene.
 
-- Permission scoping
-
-- Expiration dates
-
-## Lessons from the Arcade
-
-The arcade token system taught us valuable lessons about user experience. The system had to be immediately understandable, with everyone playing by the same rules. You always knew how many tokens you had left, and you knew instantly if your token was accepted. The limited supply meant you had to use your tokens wisely, and there was always a clear value exchange - you knew exactly what you were getting for your tokens.
-
-These same principles apply to modern API token systems. The best API implementations maintain this simplicity while adding necessary security and control.
-
-## The Future of Tokens
-
-Just as arcade tokens evolved into digital gaming currencies, API tokens are evolving into more sophisticated systems. But the core concept remains the same: a simple, universal way to exchange value for service.
-
-The next time you're implementing an API token system, remember the arcade. Sometimes the best solutions are the ones that have stood the test of time, just dressed in digital clothes.
-
-June 14, 2024`,
-        image: "/img/tokens.png",
-        date: "June 14, 2024",
-        tags: ["API Design", "User Experience", "Technology History"],
+June 15, 2024`,
+        image: "/img/design-genres-2.png",
+        date: "June 15, 2024",
+        tags: ["Design", "UX Design", "User Experience", "Design Systems"],
       },
     ],
   },
