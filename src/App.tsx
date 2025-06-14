@@ -6,9 +6,15 @@ import {
   X,
   Dribbble,
   ArrowUpRight,
+  BookOpen,
+  Beaker,
+  Palette,
+  Layers,
+  Briefcase,
+  ArrowUp,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
 import ImageModal from "../components/ImageModal";
@@ -53,7 +59,9 @@ const SectionHeader = ({
 };
 
 function App() {
+  const [activeSection, setActiveSection] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<{
     title: string;
@@ -61,6 +69,15 @@ function App() {
     image?: string;
     date?: string;
   } | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -120,183 +137,6 @@ function App() {
                       transition={{ duration: 1 }}
                       className="absolute inset-0 bg-gradient-to-b from-transparent to-background/5"
                     />
-
-                    <div className="absolute top-8 left-16 sm:left-20 z-10">
-                      <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="flex flex-col gap-1"
-                      >
-                        <div className="flex items-center gap-2">
-                          <motion.div
-                            animate={{
-                              scale: [1, 1.1, 1],
-                              rotate: [0, 5, -5, 0],
-                            }}
-                            transition={{
-                              duration: 2,
-                              repeat: Infinity,
-                              repeatDelay: 5,
-                            }}
-                          >
-                            <CircleDot className="h-5 w-5 sm:h-6 sm:w-6" />
-                          </motion.div>
-                          <span className="text-base sm:text-lg font-medium">
-                            {content.siteInfo.title}
-                          </span>
-                        </div>
-                        {/* <div className="flex items-center gap-2">
-                        <Train className="h-4 w-4 text-gray-400" />
-                        <p className="text-xs text-gray-400 font-semibold uppercase">
-                          Site inspired by The New York City Subway System
-                        </p>
-                      </div> */}
-                      </motion.div>
-                    </div>
-
-                    {/* Mobile Menu Button */}
-                    <motion.button
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 }}
-                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      className="absolute top-8 left-4 z-50 block lg:hidden"
-                      aria-label={
-                        mobileMenuOpen
-                          ? content.navigation.menuAriaLabels.close
-                          : content.navigation.menuAriaLabels.open
-                      }
-                    >
-                      {mobileMenuOpen ? (
-                        <X className="h-6 w-6" />
-                      ) : (
-                        <Menu className="h-6 w-6" />
-                      )}
-                    </motion.button>
-
-                    {/* Mobile Navigation */}
-                    <AnimatePresence>
-                      {mobileMenuOpen && (
-                        <motion.nav
-                          initial={{ opacity: 0, x: "100%" }}
-                          animate={{ opacity: 1, x: 0 }}
-                          exit={{ opacity: 0, x: "100%" }}
-                          transition={{
-                            type: "spring",
-                            stiffness: 100,
-                            damping: 20,
-                          }}
-                          className="fixed top-24 inset-x-0 bottom-0 z-40 bg-background lg:hidden"
-                        >
-                          <motion.ul
-                            variants={staggerChildren}
-                            initial="initial"
-                            animate="animate"
-                            className="flex flex-col items-center justify-center h-full space-y-8 text-lg"
-                          >
-                            {content.navigation.links.map((item) => (
-                              <motion.li key={item.id} variants={fadeInUp}>
-                                <button
-                                  onClick={() => handleNavClick(item.id)}
-                                  className="hover:opacity-70 transition-opacity"
-                                >
-                                  {item.text}
-                                </button>
-                              </motion.li>
-                            ))}
-                            <motion.li
-                              variants={fadeInUp}
-                              className="w-16 h-px bg-gray-200 my-4"
-                              aria-hidden="true"
-                            />
-                            <motion.li variants={fadeInUp}>
-                              <a
-                                href={content.navigation.social.linkedin.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={closeMobileMenu}
-                                className="hover:opacity-70 transition-opacity flex items-center gap-2"
-                              >
-                                <LinkedInLogoIcon className="h-5 w-5" />
-                                <span>
-                                  {content.navigation.social.linkedin.text}
-                                </span>
-                              </a>
-                            </motion.li>
-                            <motion.li variants={fadeInUp}>
-                              <a
-                                href={content.navigation.social.dribbble.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={closeMobileMenu}
-                                className="hover:opacity-70 transition-opacity flex items-center gap-2"
-                              >
-                                <Dribbble className="h-5 w-5" />
-                                <span>
-                                  {content.navigation.social.dribbble.text}
-                                </span>
-                              </a>
-                            </motion.li>
-                          </motion.ul>
-                        </motion.nav>
-                      )}
-                    </AnimatePresence>
-
-                    {/* Desktop Navigation */}
-                    <motion.nav
-                      initial={{ opacity: 0, y: -20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 0.3 }}
-                      className="absolute top-8 right-32 z-10 hidden lg:block"
-                    >
-                      <ul className="flex items-center gap-4 sm:gap-6 md:gap-8">
-                        {content.navigation.links.map((item) => (
-                          <motion.li
-                            key={item.id}
-                            whileHover={{ scale: 1.05 }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 400,
-                              damping: 10,
-                            }}
-                          >
-                            <button
-                              onClick={() => handleNavClick(item.id)}
-                              className="text-sm sm:text-base hover:opacity-70 transition-opacity"
-                            >
-                              {item.text}
-                            </button>
-                          </motion.li>
-                        ))}
-                        <li
-                          className="h-4 w-px bg-gray-200 mx-1 sm:mx-2"
-                          aria-hidden="true"
-                        />
-                        <motion.li whileHover={{ scale: 1.05 }}>
-                          <a
-                            href={content.navigation.social.linkedin.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:opacity-70 transition-opacity"
-                            aria-label="LinkedIn"
-                          >
-                            <LinkedInLogoIcon className="h-5 w-5 sm:h-6 sm:w-6" />
-                          </a>
-                        </motion.li>
-                        <motion.li whileHover={{ scale: 1.05 }}>
-                          <a
-                            href={content.navigation.social.dribbble.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:opacity-70 transition-opacity"
-                            aria-label="Dribbble"
-                          >
-                            <Dribbble className="h-5 w-5 sm:h-6 sm:w-6" />
-                          </a>
-                        </motion.li>
-                      </ul>
-                    </motion.nav>
 
                     <div className="container mx-auto px-4 sm:px-8">
                       <motion.div
@@ -397,28 +237,6 @@ function App() {
                         })}
                       </motion.div>
                     </div>
-
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1, delay: 1 }}
-                      className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                    >
-                      <motion.div
-                        animate={{ y: [0, 10, 0] }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                        className="flex flex-col items-center gap-2"
-                      >
-                        <div className="w-px h-8 bg-foreground/20" />
-                        <span className="text-sm text-muted-foreground">
-                          {content.siteInfo.scrollText}
-                        </span>
-                      </motion.div>
-                    </motion.div>
                   </section>
 
                   {/* Articles Section */}
@@ -919,6 +737,171 @@ function App() {
               onClose={() => setSelectedImage(null)}
             />
           )}
+
+          {/* Scroll to Top Button */}
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: isScrolled ? 1 : 0,
+              y: isScrolled ? 0 : 20,
+            }}
+            transition={{ duration: 0.3 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-24 right-4 z-50 bg-black text-white p-3 rounded-full shadow-lg hover:opacity-80 transition-opacity"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="h-6 w-6" />
+          </motion.button>
+
+          {/* Bottom Navigation Container */}
+          <div className="fixed bottom-0 left-0 right-0 z-10">
+            <div className="bg-black px-8 py-4 flex items-center justify-between">
+              {/* Logo/Title Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="flex items-center gap-2"
+              >
+                <motion.div
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 5, -5, 0],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatDelay: 5,
+                  }}
+                >
+                  <CircleDot className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                </motion.div>
+                <span className="text-base sm:text-lg font-medium text-white">
+                  {content.siteInfo.title}
+                </span>
+              </motion.div>
+
+              {/* Desktop Navigation */}
+              <motion.nav
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="hidden sm:block"
+              >
+                <ul className="flex items-center gap-4 sm:gap-6 md:gap-8">
+                  {content.navigation.links.map((item) => (
+                    <motion.li
+                      key={item.id}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
+                    >
+                      <button
+                        onClick={() => handleNavClick(item.id)}
+                        className="text-sm sm:text-base text-white hover:opacity-70 transition-opacity"
+                      >
+                        {item.text}
+                      </button>
+                    </motion.li>
+                  ))}
+                  <li
+                    className="h-4 w-px bg-gray-600 mx-1 sm:mx-2"
+                    aria-hidden="true"
+                  />
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <a
+                      href={content.navigation.social.linkedin.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-70 transition-opacity text-white"
+                      aria-label="LinkedIn"
+                    >
+                      <LinkedInLogoIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+                    </a>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <a
+                      href={content.navigation.social.dribbble.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-70 transition-opacity text-white"
+                      aria-label="Dribbble"
+                    >
+                      <Dribbble className="h-5 w-5 sm:h-6 sm:w-6" />
+                    </a>
+                  </motion.li>
+                </ul>
+              </motion.nav>
+
+              {/* Mobile Navigation */}
+              <motion.nav
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="sm:hidden"
+              >
+                <ul className="flex items-center gap-6">
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("articles")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Articles"
+                    >
+                      <BookOpen className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("current-projects")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Lab"
+                    >
+                      <Beaker className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("work")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Design"
+                    >
+                      <Palette className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("testimonials")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Testimonials"
+                    >
+                      <Quote className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("career")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Career"
+                    >
+                      <Briefcase className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                  <motion.li whileHover={{ scale: 1.05 }}>
+                    <button
+                      onClick={() => handleNavClick("design-system")}
+                      className="text-white hover:opacity-70 transition-opacity"
+                      aria-label="Design System"
+                    >
+                      <Layers className="h-6 w-6" />
+                    </button>
+                  </motion.li>
+                </ul>
+              </motion.nav>
+            </div>
+          </div>
         </div>
       </Router>
     </ThemeProvider>

@@ -1,8 +1,8 @@
 export const content = {
   siteInfo: {
     title: "Dave Melkonian",
-    subtitle: "Digital Experience Designer",
-    description: "Dave Melkonian  |  Digital Professional  |  AI UX UI A11Y",
+    subtitle: "Dave Melkonian",
+    description: "Digital Experience Designer",
     scrollText: "Scroll to explore",
   },
 
@@ -537,6 +537,83 @@ June 2, 2024`,
         image: "/img/ai-subtleties.png",
         date: "June 2, 2024",
         tags: ["AI", "Productivity", "Best Practices"],
+      },
+      {
+        title: "API Tokens: The Digital Arcade",
+        description:
+          "How the concept of tokens in modern API usage echoes the arcade culture of the 1980s.",
+        content: `## The Token Economy
+
+Remember walking into an arcade with a pocket full of quarters, ready to exchange them for tokens? That familiar clink of metal against metal, the anticipation of gameplay ahead. Fast forward to today, and we're still using tokens - just in a different form. API tokens have become the digital equivalent of those arcade tokens, and the parallels are striking.
+
+## The Arcade Experience
+
+In the 1980s, arcades were temples of gaming. You'd walk in with cash, exchange it for tokens, and each token represented a chance to play. One token, one game. It was simple, it was fair, and it was universal. Whether you were playing Pac-Man or Street Fighter, the token system was the same.
+
+## The Modern Digital Arcade
+
+Today's API tokens work in much the same way. Instead of physical tokens, we have digital ones. Instead of games, we're accessing services. But the fundamental concept remains:
+
+- One token, one request
+
+- Limited supply (rate limits)
+
+- Universal currency (standardized authentication)
+
+- Clear value exchange
+
+## The Psychology of Tokens
+
+What's fascinating is how both systems tap into the same psychological principles:
+
+1. Tangible Value: Physical tokens made the cost of play visible. API tokens make the cost of service usage visible.
+
+2. Controlled Access: Arcades used tokens to manage access to games. APIs use tokens to manage access to services.
+
+3. Universal Language: Whether you were in New York or Los Angeles, arcade tokens worked the same way. API tokens work the same way across different services.
+
+## The Evolution of Token Systems
+
+The arcade token system evolved from simple mechanical devices to sophisticated electronic systems. Similarly, API tokens have evolved from basic authentication to complex systems with:
+
+- Rate limiting
+
+- Usage tracking
+
+- Permission scoping
+
+- Expiration dates
+
+## Lessons from the Arcade
+
+The arcade token system taught us valuable lessons about user experience:
+
+1. Simplicity: The system had to be immediately understandable
+
+2. Fairness: Everyone played by the same rules
+
+3. Transparency: You always knew how many tokens you had left
+
+4. Immediate Feedback: You knew instantly if your token was accepted
+
+5. Limited Supply: You knew you had to use your tokens wisely
+
+6. Clear Value Exchange: You knew exactly what you were getting for your tokens
+
+7. Fairness: Everyone played by the same rules
+
+These same principles apply to modern API token systems. The best API implementations maintain this simplicity while adding necessary security and control.
+
+## The Future of Tokens
+
+Just as arcade tokens evolved into digital gaming currencies, API tokens are evolving into more sophisticated systems. But the core concept remains the same: a simple, universal way to exchange value for service.
+
+The next time you're implementing an API token system, remember the arcade. Sometimes the best solutions are the ones that have stood the test of time, just dressed in digital clothes.
+
+June 9, 2024`,
+        image: "/img/tokens.png",
+        date: "June 9, 2024",
+        tags: ["API Design", "User Experience", "Technology History"],
       },
     ],
   },
