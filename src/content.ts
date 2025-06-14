@@ -254,7 +254,7 @@ export const content = {
 
 Extended interview processes have become the norm: multiple rounds, repeated discussions, and lengthy timelines. While thorough evaluation is important, the current approach often prioritizes procedure over meaningful assessment. How many times should a candidate have to answer "tell me about yourself" before someone takes notes?
 
-After experiencing seven rounds of interviews for a single position, the question becomes clear: what value does each additional interview add?
+After experiencing seven rounds of interviews for a single position, the question becomes clear: what value does each additional interview add? Thankfully, I didn't have to endure this process myself - I've heard enough horror stories from colleagues and friends to know it's a widespread issue that needs addressing.
 
 ## A More Efficient Approach
 
