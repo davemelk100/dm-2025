@@ -545,7 +545,7 @@ Remember walking into an arcade with a pocket full of quarters, ready to exchang
 
 ## The Arcade Experience
 
-In the 1980s, arcades were temples of gaming. You'd walk in with cash, exchange it for tokens, and each token represented a chance to play. One token, one game. It was simple, it was fair, and it was universal. Whether you were playing Pac-Man or Street Fighter, the token system was the same.
+In the 1980s, arcades were temples of gaming. You'd walk in with cash, exchange it for tokens, and each token represented a chance to play. One token, one game. It was simple, it was fair, and it was universal. Whether you were playing Pac-Man or Pole Position, the token system was the same.
 
 ## The Modern Digital Arcade
 
