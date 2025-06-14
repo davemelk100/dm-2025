@@ -266,8 +266,6 @@ What if the hiring process was reimagined with respect for everyone's time? What
 
 - Provided meaningful feedback
 
-- Compensated candidates for take-home work
-
 - Clearly defined requirements upfront
 
 Research suggests that most hiring decisions are made within the first 15 minutes of the initial interview. The subsequent rounds often serve more as validation than discovery.

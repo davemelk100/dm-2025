@@ -737,22 +737,29 @@ function App() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-2"
               >
-                <motion.div
-                  animate={{
-                    scale: [1, 1.1, 1],
-                    rotate: [0, 5, -5, 0],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatDelay: 5,
-                  }}
+                <motion.button
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <CircleDot className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
-                </motion.div>
-                <span className="text-base sm:text-lg font-medium text-white">
-                  {content.siteInfo.title}
-                </span>
+                  <motion.div
+                    animate={{
+                      scale: [1, 1.1, 1],
+                      rotate: [0, 5, -5, 0],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatDelay: 5,
+                    }}
+                  >
+                    <CircleDot className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                  </motion.div>
+                  <span className="text-base sm:text-lg font-medium text-white">
+                    {content.siteInfo.title}
+                  </span>
+                </motion.button>
               </motion.div>
 
               {/* Desktop Navigation */}
