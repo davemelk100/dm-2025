@@ -98,16 +98,14 @@ export const content = {
         description:
           "Digital art piece exploring color theory through hex codes.",
         categories: "Graphic Design, CSS",
-        image:
-          "https://cdn.dribbble.com/userupload/42891405/file/original-5fd288822ac6f3de3dfbb9eab7bdb36a.png?resize=1444x696&vertical=center",
+        image: "/img/hex-orange.png",
         alt: "Hex Code Pop Art",
       },
       {
         title: "Vintage Contact Form",
         description: "Retro-inspired contact form with modern functionality.",
         categories: "UI Design, Graphic Design",
-        image:
-          "https://cdn.dribbble.com/userupload/31524484/file/original-d64db8a660e52bc317659dd5968e4a43.jpg?resize=1905x901&vertical=center",
+        image: "/img/vintage-wp.png",
         alt: "Vintage Contact Form",
       },
       {
@@ -115,8 +113,7 @@ export const content = {
         description:
           "User interface design for a productivity mobile application.",
         categories: "UI/UX Design, Mobile",
-        image:
-          "https://cdn.dribbble.com/userupload/4492918/file/original-79c96b613cd96c876349064f868b72bc.png?resize=950x885&vertical=center",
+        image: "/img/design-panes.png",
         alt: "Mobile App Design",
       },
     ],

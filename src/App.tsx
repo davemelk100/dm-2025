@@ -1,47 +1,28 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   CircleDot,
-  Quote,
-  Menu,
-  X,
   Dribbble,
-  ArrowUpRight,
   BookOpen,
   Beaker,
   Palette,
   Layers,
   Briefcase,
+  Quote,
   ArrowUp,
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useState, useEffect } from "react";
 import { content } from "./content";
 import SparklingBackground from "../components/SparklingBackground";
+import { BrowserRouter as Router } from "react-router-dom";
 import ImageModal from "../components/ImageModal";
 import ArticleModal from "./components/ArticleModal";
 import designTokens from "./designTokens.json";
 import { ThemeProvider } from "./context/ThemeContext";
 import ThemeToggle from "./components/ThemeToggle";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Article from "./pages/Article";
 import { slugify } from "./utils/slugify";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 },
-  },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 // Add SectionHeader component
 const SectionHeader = ({
@@ -59,8 +40,6 @@ const SectionHeader = ({
 };
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<{
@@ -79,15 +58,10 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
-  };
-
   const handleNavClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      closeMobileMenu();
     }
   };
 
@@ -333,7 +307,7 @@ function App() {
                             </div>
                             <div className="inline-flex items-center text-black hover:text-gray-600 dark:text-black dark:hover:text-gray-700 underline">
                               View App
-                              <ArrowUpRight className="ml-1 h-4 w-4" />
+                              <ArrowUp className="ml-1 h-4 w-4" />
                             </div>
                           </a>
                         ))}
@@ -385,7 +359,7 @@ function App() {
                                   {project.categories}
                                 </p>
                               </div>
-                              <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                              <ArrowUp className="opacity-0 group-hover:opacity-100 transition-opacity" />
                             </div>
                           </motion.div>
                         ))}
