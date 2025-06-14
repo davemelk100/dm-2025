@@ -536,7 +536,7 @@ June 2, 2024`,
         tags: ["AI", "Productivity", "Best Practices"],
       },
       {
-        title: "API Tokens: The Digital Arcade",
+        title: "API Tokens in a Programmatic Arcade",
         description:
           "How the concept of tokens in modern API usage echoes the arcade culture of the 1980s.",
         content: `## The Token Economy
