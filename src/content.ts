@@ -610,9 +610,9 @@ Just as arcade tokens evolved into digital gaming currencies, API tokens are evo
 
 The next time you're implementing an API token system, remember the arcade. Sometimes the best solutions are the ones that have stood the test of time, just dressed in digital clothes.
 
-June 9, 2024`,
+June 14, 2024`,
         image: "/img/tokens.png",
-        date: "June 9, 2024",
+        date: "June 14, 2024",
         tags: ["API Design", "User Experience", "Technology History"],
       },
     ],
