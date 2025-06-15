@@ -629,7 +629,7 @@ Users shouldn't need Waze to find basic features. When your navigation is more o
 
 ## 2. UPSOLD
 
-You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to a "premium" version. When every click leads to another subscription offer, you're not just annoying users - you're actively preventing them from using your product.
+You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. When every click leads to another subscription offer, you're not just annoying users - you're actively preventing them from using your product.
 
 ## 3. X-HUNT
 
