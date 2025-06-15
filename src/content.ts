@@ -522,7 +522,7 @@ Users expect excitement, community, and visual impact through bold, energetic, a
 
 Think: Discord, Steam, Twitch
 
-Say: "The game's UI could be more Immerse - let's add some particle effects and dynamic transitions."
+Say: "Let's commit to being more Immerse - can we add spatial audio?"
 
 Listen: Big Indie Rock (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
 
