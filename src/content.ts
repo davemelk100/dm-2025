@@ -487,7 +487,7 @@ May 27, 2024`,
         tags: ["Design", "UX Design", "User Experience"],
       },
       {
-        title: "DRISS™ - The 5 Design Genres",
+        title: "The 5 Design Genres (DRISS)",
         description: "Naming things is helpful. Naming things well? Goated.",
         content: `
 
