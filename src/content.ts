@@ -643,13 +643,7 @@ When you click something and... nothing happens. No loading indicator, no feedba
 
 Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're creating a frustrating user experience.
 
-## Breaking the Pattern
-
-The good news is that these anti-patterns are easy to spot and fix. The key is to:
-
-- Put yourself in the user's shoes
-
-- Test with real people
+## In Conclusion
 
 That's it. That's the article.`,
         image: "/img/anti-patterns.png",
