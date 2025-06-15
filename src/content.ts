@@ -524,7 +524,7 @@ Think: Discord, Steam, Twitch
 
 Say: "Let's commit to being more Immerse - can we add spatial audio?"
 
-Listen: Big Indie Rock (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
+Listen: Big Indie (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
 
 ## 4. SUITE
 
@@ -544,7 +544,7 @@ Think: Apple, Bang & Olufsen
 
 Say: "The product page feels cluttered - let's go more Stripped for the next iteration."
 
-Listen: Post Rock (Radiohead, Tortoise, Zomes) - sophisticated, nuanced, and refined
+Listen: Post Rock (Radiohead, Tortoise, Slint) - sophisticated, nuanced, and refined
 
 ## Do Genres Matter?
 
