@@ -629,7 +629,7 @@ Users shouldn't need Waze to use your app. When your navigation is more of a puz
 
 ## 2. UPHELLING
 
-You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to bully you into a paid tier. But sometimes that's the point. Everyone's gotta eat.
+You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to bully you into a paid tier. But sometimes that's the point. Based? Yes. Annoying? Absolutely.
 
 ## 3. XHUNTING
 
