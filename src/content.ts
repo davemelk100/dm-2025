@@ -584,8 +584,11 @@ In the 1980s, arcades were temples of gaming. You'd walk in with cash, exchange 
 Today's API tokens work in much the same way. Instead of physical tokens, we have digital ones. Instead of games, we're accessing services. But the fundamental concept remains:
 
 - One token, one request
+
 - Limited supply (rate limits)
+
 - Universal currency (standardized authentication)
+
 - Clear value exchange
 
 ## The Psychology of Tokens
@@ -597,8 +600,11 @@ What's fascinating is how both systems tap into the same psychological principle
 The arcade token system evolved from simple mechanical devices to sophisticated electronic systems. Similarly, API tokens have evolved from basic authentication to complex systems with:
 
 - Rate limiting
+
 - Usage tracking
+
 - Permission scoping
+
 - Expiration dates
 
 ## Lessons from the Arcade
@@ -614,7 +620,7 @@ Just as arcade tokens evolved into digital gaming currencies, API tokens are evo
 The next time you're implementing an API token system, remember the arcade. Sometimes the best solutions are the ones that have stood the test of time, just dressed in digital clothes.
 
 June 14, 2024`,
-        image: "/img/arcade-tokens.png",
+        image: "/img/tokens.png",
         date: "June 14, 2024",
         tags: ["Development", "API Design", "User Experience"],
       },
