@@ -618,8 +618,7 @@ June 14, 2024`,
       },
       {
         title: "The 5 Design Anti-Patterns",
-        description:
-          "Common design mistakes that make users insane.",
+        description: "Common design mistakes that make users insane.",
         content: `## The 5 Design Anti-Patterns
 
 Let's just make this clear right away - these aren't just bad designs, they're anti-patterns: common mistakes that actively work against good user experience. This is the definitive list of design anti-patterns, according to me.
@@ -630,7 +629,7 @@ Users shouldn't need Waze to find basic features. When your navigation is more o
 
 ## 2. UPSOLD
 
-The endless scroll of "premium" features and "pro" upgrades that push the actual content further and further away. When every interaction is an opportunity to upsell, you're not just annoying users - you're actively preventing them from using your product. Premium features should enhance the experience, not dominate it.
+You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to a "premium" version. When every click leads to another subscription offer, you're not just annoying users - you're actively preventing them from using your product.
 
 ## 3. X-HUNT
 
