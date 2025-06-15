@@ -119,7 +119,7 @@ export default function Article() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 p-8">
+    <div className="min-h-screen bg-white dark:bg-gray-900 p-8 pb-32">
       <div className="max-w-4xl mx-auto">
         <Link
           to="/"

@@ -629,7 +629,7 @@ Users shouldn't need Waze to find basic features. When your navigation is more o
 
 ## 2. UPSOLD
 
-You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. When every click leads to another subscription offer, you're not just annoying users - you're actively preventing them from using your product.
+You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. When every click leads to another subscription offer, you're not just annoying users - you're actively preventing them from using your product. But sometimes that's the point.
 
 ## 3. X-HUNT
 
@@ -651,9 +651,7 @@ The good news is that these anti-patterns are easy to spot and fix. The key is t
 
 - Test with real people
 
-That's it. That's the article.
-
-June 16, 2024`,
+That's it. That's the article.`,
         image: "/img/anti-patterns.png",
         date: "June 16, 2024",
         tags: ["UX Design", "User Experience", "Design Patterns"],
