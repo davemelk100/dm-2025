@@ -633,7 +633,7 @@ You're reading an article, watching a video, or trying to use a feature - next t
 
 ## 3. XHUNTING
 
-The modern equivalent of desktop pop-up infection, but on a phone we've learned to tolerate it. Each modal more important and elusive than the last, until you're tapping microscopic X's to see the caption on a Reel.
+The modern equivalent of desktop pop-up infection, but on a phone we've learned to tolerate it. Each modal more important and elusive than the last, until you're tapping microscopic X's in order to hide an ad, simply to see the caption on a Reel.
 
 ## 4. PAGEJACKING
 
