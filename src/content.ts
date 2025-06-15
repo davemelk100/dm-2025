@@ -616,6 +616,50 @@ June 14, 2024`,
         date: "June 14, 2024",
         tags: ["Development", "API Design", "User Experience"],
       },
+      {
+        title: "The 5 Design Anti-Patterns",
+        description:
+          "Common design mistakes that make users insane.",
+        content: `## The 5 Design Anti-Patterns
+
+Let's just make this clear right away - these aren't just bad designs, they're anti-patterns: common mistakes that actively work against good user experience. This is the definitive list of design anti-patterns, according to me.
+
+## 1. NAVBLIND
+
+Users shouldn't need a treasure map to find basic features. When your navigation is more of a puzzle than a tool, you're creating a frustrating user experience. Let's not kid ourselves; icons are great, but words are better. Or use both. Go nuts.
+
+## 2. UPSOLD
+
+The endless scroll of "premium" features and "pro" upgrades that push the actual content further and further away. When every interaction is an opportunity to upsell, you're not just annoying users - you're actively preventing them from using your product. Premium features should enhance the experience, not dominate it.
+
+## 3. X-HUNT
+
+The modern equivalent of pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a reel. Elusive modals are evil. You're creating a frustrating user experience, and we all know it.
+
+## 4. PAGEJACK
+
+When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, you're creating a frustrating user experience.
+
+## 5. FORMLOCK
+
+Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're creating a frustrating user experience.
+
+## Breaking the Pattern
+
+The good news is that these anti-patterns are easy to spot and fix. The key is to:
+
+- Put yourself in the user's shoes
+- Test with real people
+- Listen to feedback
+- Make changes quickly
+
+Remember, good design should make things easier, not harder. If you find yourself explaining why something is "actually really intuitive once you get used to it," you might be dealing with an anti-pattern.
+
+June 16, 2024`,
+        image: "/img/anti-patterns.png",
+        date: "June 16, 2024",
+        tags: ["UX Design", "User Experience", "Design Patterns"],
+      },
     ],
   },
 } as const;
