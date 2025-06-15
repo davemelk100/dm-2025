@@ -631,7 +631,7 @@ Users shouldn't need Waze to find basic features. When your navigation is more o
 
 You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. But sometimes that's the point. Everyone's gotta eat.
 
-## 3. X-HUNT
+## 3. XHUNTING
 
 The modern equivalent of desktop pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a reel. Elusive modals are evil. You're creating a frustrating user experience, and we all know it.
 
