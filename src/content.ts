@@ -626,7 +626,7 @@ Let's just make this clear right away - these aren't just bad designs, they're a
 
 ## 1. NAVBLIND
 
-Users shouldn't need a treasure map to find basic features. When your navigation is more of a puzzle than a tool, you're creating a frustrating user experience. Let's not kid ourselves; icons are great, but words are better. Or use both. Go nuts.
+Users shouldn't need Waze to find basic features. When your navigation is more of a puzzle than a tool, you're creating a frustrating user experience. Let's not kid ourselves; icons are great, but words are better. Or use both. Go nuts.
 
 ## 2. UPSOLD
 
