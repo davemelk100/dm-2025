@@ -641,7 +641,7 @@ When you click something and... nothing happens. No loading indicator, no feedba
 
 ## 5. FORMLOCKING
 
-Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're creating a frustrating user experience.
+Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're ignoring decades of UX research on form usability.
 
 ## In Conclusion
 
