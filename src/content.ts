@@ -629,7 +629,7 @@ Users shouldn't need Waze to find basic features. When your navigation is more o
 
 ## 2. UPHELLING
 
-You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. But sometimes that's the point. Everyone's gotta eat.
+You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to bully you into a paid tier. But sometimes that's the point. Everyone's gotta eat.
 
 ## 3. XHUNTING
 
