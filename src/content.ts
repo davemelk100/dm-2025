@@ -649,11 +649,10 @@ Forms that ask for too much information upfront. No way to save progress, no cle
 The good news is that these anti-patterns are easy to spot and fix. The key is to:
 
 - Put yourself in the user's shoes
-- Test with real people
-- Listen to feedback
-- Make changes quickly
 
-Remember, good design should make things easier, not harder. If you find yourself explaining why something is "actually really intuitive once you get used to it," you might be dealing with an anti-pattern.
+- Test with real people
+
+That's it. That's the article.
 
 June 16, 2024`,
         image: "/img/anti-patterns.png",
