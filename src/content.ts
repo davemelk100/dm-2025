@@ -634,7 +634,7 @@ The endless scroll of "premium" features and "pro" upgrades that push the actual
 
 ## 3. X-HUNT
 
-The modern equivalent of pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a reel. Elusive modals are evil. You're creating a frustrating user experience, and we all know it.
+The modern equivalent of desktop pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a reel. Elusive modals are evil. You're creating a frustrating user experience, and we all know it.
 
 ## 4. PAGEJACK
 
