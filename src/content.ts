@@ -637,7 +637,7 @@ The modern equivalent of desktop pop-up oppression, but somehow we've learned to
 
 ## 4. PAGEJACK
 
-When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, you're creating a frustrating user experience.
+When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, your user wants to jump out a window.
 
 ## 5. FORMLOCK
 
