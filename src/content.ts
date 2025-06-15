@@ -618,7 +618,7 @@ June 14, 2024`,
       },
       {
         title: "The 5 Design Anti-Patterns",
-        description: "Common design mistakes that make users insane.",
+        description: "Accidental and intentional anti-patterns that make users insane.",
         content: `## The 5 Design Anti-Patterns
 
 Let's just make this clear right away - these aren't just bad designs, they're anti-patterns: common mistakes that actively work against good user experience. This is the definitive list of design anti-patterns, according to me.
@@ -637,7 +637,7 @@ The modern equivalent of desktop pop-up infection, but on a phone we've learned 
 
 ## 4. PAGEJACKING
 
-When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, your user wants to jump out a window. 
+When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". Oh and what about onboarding tutorials? We all love those, right? When your pages don't respond to user actions, your user wants to jump out a window. 
 
 ## 5. FORMLOCKING
 
