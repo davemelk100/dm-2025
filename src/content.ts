@@ -623,11 +623,11 @@ June 14, 2024`,
 
 Let's just make this clear right away - these aren't just bad designs, they're anti-patterns: common mistakes that actively work against good user experience. This is the definitive list of design anti-patterns, according to me.
 
-## 1. NAVBLIND
+## 1. NAVBLINDING
 
 Users shouldn't need Waze to find basic features. When your navigation is more of a puzzle than a tool, you're creating a frustrating user experience. Let's not kid ourselves; icons are great, but words are better. Or use both. Go nuts.
 
-## 2. UPSOLD
+## 2. UPHELLING
 
 You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to upsell you to bully you into a paid tier. But sometimes that's the point. Everyone's gotta eat.
 
@@ -635,11 +635,11 @@ You're reading an article, watching a video, or trying to use a feature - next t
 
 The modern equivalent of desktop pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a Reel. Elusive modals are evil.
 
-## 4. PAGEJACK
+## 4. PAGEJACKING
 
 When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, your user wants to jump out a window.
 
-## 5. FORMLOCK
+## 5. FORMLOCKING
 
 Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're creating a frustrating user experience.
 
