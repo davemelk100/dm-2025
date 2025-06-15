@@ -512,7 +512,7 @@ Users expect speed, clarity, and getting things done through simple, straightfor
 
 THINK: Google Search, Wikipedia, Craigslist, Microsoft Office
 
-SAY: "The settings page needs to be more Workist - users just want to change their preferences and move on."
+SAY: "The settings page needs to be more Routine - users just want to change their preferences and move on."
 
 LISTEN: Noise (Shellac, the AmRep label, Neu!) - brutish, authentic, and purposeful
 
@@ -548,9 +548,11 @@ LISTEN: Post Rock (Radiohead, Tortoise, Slint) - sophisticated, nuanced, and ref
 
 ## Do Genres Matter?
 
-These genre names aren't just labels - they're a shared vocabulary for design decisions. When we say "this needs more Routine" or "let's dial back the Suite," we're talking about more than aesthetics.
+These design genres aren't just fancy labels - they're a powerful shared language that helps teams make better decisions. When someone says "this interface needs to be more familiar and reliable" or "let's make this experience more playful and experimental," they're not just talking about colors and fonts. They're communicating a complete vision of how the product should feel and function.
 
-We're talking about matching user expectations, business goals, and emotional responses. The right genre can make or break a product's success, just like the right music can make or break a movie scene.
+Think of it like a movie soundtrack. The right music doesn't just play in the background - it shapes how you experience the entire film. In the same way, choosing the right design genre shapes how users experience your product. It's about creating harmony between what users expect, what your business needs, and how people feel when they use your product.
+
+The wrong genre can make users feel lost and frustrated. The right one can make them feel right at home. That's why these genre names matter - they help us make intentional choices about the experience we're creating.
 
 June 15, 2024`,
         image: "/img/design-genres-2.png",
