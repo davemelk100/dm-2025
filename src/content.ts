@@ -303,7 +303,7 @@ June 7, 2024`,
 
 The word "vibe" might make you cringe, but there's something important about how things feel when you use them. Vibe engineering isn't another buzzword - it's the difference between making something feel right and making it work right. Every interaction is a chance to build trust with users.
 
-Think of vibe coding like telling a robot "make this room cozier" instead of understanding what makes a space feel warm. The robot might add throw pillows and dim the lights, but it won't understand that the real issue might be the harsh lighting or cold furniture.
+THINK of vibe coding like telling a robot "make this room cozier" instead of understanding what makes a space feel warm. The robot might add throw pillows and dim the lights, but it won't understand that the real issue might be the harsh lighting or cold furniture.
 
 ## The Real Difference
 
@@ -344,7 +344,7 @@ Here's something I've learned the hard way: multi-step changes are risky. When y
 
 ## Moving Forward
 
-Hallucinations aren't going away anytime soon. They're part of how these models work. The key is to develop a healthy skepticism and know how to work around them. Think of it like proofreading - you don't trust spell check completely, you use it as a tool.
+Hallucinations aren't going away anytime soon. They're part of how these models work. The key is to develop a healthy skepticism and know how to work around them. THINK of it like proofreading - you don't trust spell check completely, you use it as a tool.
 
 May 30, 2024`,
         image: "/img/ai-hallucination.png",
@@ -436,7 +436,7 @@ Your users aren't just numbers in a database, they're partners in your product's
 
 The real question isn't what your users are worth to you - it's what you're willing to invest to truly understand how they think about and organize your content.
 
-Cutting corners on IA doesn't just affect numbers on a dashboard. You're losing real people. Think about it: if your product has 10,000 users and each one takes just 10 seconds to decide they can't find what they're looking for, that's 10,000 potential customers walking away. What's that worth to you?
+Cutting corners on IA doesn't just affect numbers on a dashboard. You're losing real people. THINK about it: if your product has 10,000 users and each one takes just 10 seconds to decide they can't find what they're looking for, that's 10,000 potential customers walking away. What's that worth to you?
 
 ## Beyond the Bottom Line
 
@@ -500,51 +500,51 @@ Why do we need utilitarian names for types of design? Because we don't have any 
 
 Users expect power, control, and maximum information density through heavy, complex interfaces with dense information, dark themes, high contrast, and industrial aesthetics.
 
-Think: Bloomberg Terminal, Trading Platforms
+THINK: Bloomberg Terminal, Trading Platforms
 
-Say: "The admin panel is getting too Dense - maybe we should split these controls into separate views?"
+SAY: "The admin panel is getting too Dense - maybe we should split these controls into separate views?"
 
-Listen: Prog (Mahavishnu Orchestra, Yes, King Crimson) - complex, intense, and information-rich
+LISTEN: Prog (Mahavishnu Orchestra, Yes, King Crimson) - complex, intense, and information-rich
 
 ## 2. ROUTINE
 
 Users expect speed, clarity, and getting things done through simple, straightforward, and functional designs featuring neutral colors, clear typography, and minimal decoration.
 
-Think: Google Search, Wikipedia, Craigslist, Microsoft Office
+THINK: Google Search, Wikipedia, Craigslist, Microsoft Office
 
-Say: "The settings page needs to be more Workist - users just want to change their preferences and move on."
+SAY: "The settings page needs to be more Workist - users just want to change their preferences and move on."
 
-Listen: Noise (Shellac, the AmRep label, Neu!) - brutish, authentic, and purposeful
+LISTEN: Noise (Shellac, the AmRep label, Neu!) - brutish, authentic, and purposeful
 
 ## 3. IMMERSE
 
 Users expect excitement, community, and visual impact through bold, energetic, and immersive designs featuring dark themes, neon accents, and dynamic elements.
 
-Think: Discord, Steam, Twitch
+THINK: Discord, Steam, Twitch
 
-Say: "Let's commit to being more Immerse - can we add spatial audio?"
+SAY: "Let's commit to being more Immerse - can we add spatial audio?"
 
-Listen: Big Indie (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
+LISTEN: Big Indie (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
 
 ## 4. SUITE
 
 Users expect innovation, personality, and modern features through bold, playful, and slightly experimental designs featuring bright colors, custom illustrations, and micro-interactions.
 
-Think: Slack, Notion, Figma
+THINK: Slack, Notion, Figma
 
-Say: "The empty states could use some Suite energy - maybe add some playful illustrations?"
+SAY: "The empty states could use some Suite energy - maybe add some playful illustrations?"
 
-Listen: Experimental Indie (Guided By Voices, Deerhunter, Neutral Milk Hotel) - creative, unique, but still approachable
+LISTEN: Experimental Indie (Guided By Voices, Deerhunter, Neutral Milk Hotel) - creative, unique, but still approachable
 
 ## 5. STRIPPED
 
 Users expect quality, exclusivity, and attention to detail through minimal, sophisticated, and carefully crafted designs featuring monochromatic color schemes, ample whitespace, and subtle animations.
 
-Think: Apple, Bang & Olufsen
+THINK: Apple, Bang & Olufsen
 
-Say: "The product page feels cluttered - let's go more Stripped for the next iteration."
+SAY: "The product page feels cluttered - let's go more Stripped for the next iteration."
 
-Listen: Post Rock (Radiohead, Tortoise, Slint) - sophisticated, nuanced, and refined
+LISTEN: Post Rock (Radiohead, Tortoise, Slint) - sophisticated, nuanced, and refined
 
 ## Do Genres Matter?
 
