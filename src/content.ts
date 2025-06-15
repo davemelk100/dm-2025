@@ -633,15 +633,15 @@ You're reading an article, watching a video, or trying to use a feature - next t
 
 ## 3. XHUNTING
 
-The modern equivalent of desktop pop-up oppression, but somehow we've learned to tolerate it. Each modal more important than the last, until you're tapping microscopic X's to see the caption on a Reel. Elusive modals are evil.
+The modern equivalent of desktop pop-up infection, but on a phone we've learned to tolerate it. Each modal more important and elusive than the last, until you're tapping microscopic X's to see the caption on a Reel.
 
 ## 4. PAGEJACKING
 
-When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, your user wants to jump out a window.
+When you click something and... nothing happens. No loading indicator, no feedback, just a blank stare from your screen. Not even a "thanks for coming". When your pages don't respond to user actions, your user wants to jump out a window. 
 
 ## 5. FORMLOCKING
 
-Forms that ask for too much information upfront. No way to save progress, no clear validation rules, and no way to fix mistakes. When your signup form is more complicated than your actual product, you're ignoring decades of UX research on form usability.
+When there's no way to track progress or retrieve previous data, well, it's super annoying. When your signup form is more complicated than your actual product, you're ignoring decades of UX research on form usability.
 
 ## In Conclusion
 
