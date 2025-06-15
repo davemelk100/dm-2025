@@ -487,78 +487,78 @@ May 27, 2024`,
         tags: ["Design", "UX Design", "User Experience"],
       },
       {
-        title: "Design Genres™, part 2",
+        title: "The 6 Design Genres ™",
         description: "Because naming things is fun.",
         content: `
 
-This was fun the first time around, so let's go ahead and run it back, this time with more details
+This was fun the first time around, so let's go ahead and run it back, this time with more details.
 And more guitars.
 
 Why do we need catchy names for types of design? Because we don't have any yet. At least none that are any fun. So let's make some up.
 
-## Dash™
+## 1. Dash
 
 Users expect power, control, and maximum information density through heavy, complex interfaces with dense information, dark themes, high contrast, and industrial aesthetics.
 
 Think: Bloomberg Terminal, Trading Platforms
 
-Like listening to: Technical Metal (Meshuggah, Cynic) - complex, intense, and information-rich
+Say: "The admin panel is getting too Dash-y - maybe we should split these controls into separate views?"
 
-Example: "The admin panel is getting too Dash-y - maybe we should split these controls into separate views?"
+Listen: Technical Metal (Meshuggah, Cryptopsy, Neurosis) - complex, intense, and information-rich
 
-## Routine™
+## 2. Routine
 
 Users expect familiarity, reliability, and professional polish through clean, safe, and universally appealing designs featuring blue and white color schemes with rounded corners.
 
 Think: Microsoft Office, Salesforce
 
-Like listening to: Pop Music (Taylor Swift, Ed Sheeran) - accessible, familiar, and widely accepted
+Say: "Let's keep this more Routine - users shouldn't have to learn anything new to use it."
 
-Example: "Let's keep this more Routine - users shouldn't have to learn anything new to use it."
+Listen: Pop Music (Taylor Swift, Ed Sheeran, Bruno Mars) - accessible, familiar, and widely accepted
 
-## Suite™
+## 3. Suite
 
 Users expect innovation, personality, and modern features through bold, playful, and slightly experimental designs featuring bright colors, custom illustrations, and micro-interactions.
 
 Think: Slack, Notion, Figma
 
-Like listening to: Experimental Rock (Guided By Voices, Deerhunter) - creative, unique, but still approachable
+Say: "The empty states could use some Suite energy - maybe add some playful illustrations?"
 
-Example: "The empty states could use some Suite energy - maybe add some playful illustrations?"
+Listen: Experimental Indie (Guided By Voices, Deerhunter, Neutral Milk Hotel) - creative, unique, but still approachable
 
-## Stripped™
+## 4. Stripped
 
 Users expect quality, exclusivity, and attention to detail through minimal, sophisticated, and carefully crafted designs featuring monochromatic color schemes, ample whitespace, and subtle animations.
 
 Think: Apple, Bang & Olufsen
 
-Like listening to: Post Rock (Radiohead, Tortoise) - sophisticated, nuanced, and refined
+Say: "The product page feels cluttered - let's go more Stripped for the next iteration."
 
-Example: "The product page feels cluttered - let's go more Stripped for the next iteration."
+Listen: Post Rock (Radiohead, Tortoise, Zomes) - sophisticated, nuanced, and refined
 
-## Workist™
+## 5. Workist
 
 Users expect speed, clarity, and getting things done through simple, straightforward, and functional designs featuring neutral colors, clear typography, and minimal decoration.
 
 Think: Google Search, Wikipedia, Craigslist
 
-Like listening to: Krautrock (Neu!, Kraftwerk) - brutish, authentic, and purposeful
+Say: "The settings page needs to be more Workist - users just want to change their preferences and move on."
 
-Example: "The settings page needs to be more Workist - users just want to change their preferences and move on."
+Listen: Noise (Shellac, godheadsilo, Helmet) - brutish, authentic, and purposeful
 
-## Immersive™
+## 6. Immerse
 
 Users expect excitement, community, and visual impact through bold, energetic, and immersive designs featuring dark themes, neon accents, and dynamic elements.
 
 Think: Discord, Steam, Twitch
 
-Like listening to: Big Indie Rock (The Flaming Lips, Turnstile) - energetic, engaging, and delightful
+Say: "The game's UI could be more Immerse - let's add some particle effects and dynamic transitions."
 
-Example: "The game's UI could be more Immersive - let's add some particle effects and dynamic transitions."
+Listen: Big Indie Rock (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
 
-## Do Genres Matter
+## Do Genres Matter?
 
-These genre names aren't just labels - they're a shared vocabulary for design decisions. When we say "this needs more Routine™" or "let's dial back the Suite™," we're talking about more than aesthetics.
+These genre names aren't just labels - they're a shared vocabulary for design decisions. When we say "this needs more Routine" or "let's dial back the Suite," we're talking about more than aesthetics.
 
 We're talking about matching user expectations, business goals, and emotional responses. The right genre can make or break a product's success, just like the right music can make or break a movie scene.
 
