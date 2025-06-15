@@ -496,13 +496,13 @@ And an acronym. And more guitars.
 
 Why do we need utilitarian names for types of design? Because we don't have any yet. At least none that are any fun. So let's make some up.
 
-## 1. DASH
+## 1. DENSE
 
 Users expect power, control, and maximum information density through heavy, complex interfaces with dense information, dark themes, high contrast, and industrial aesthetics.
 
 Think: Bloomberg Terminal, Trading Platforms
 
-Say: "The admin panel is getting too Dash-y - maybe we should split these controls into separate views?"
+Say: "The admin panel is getting too Dense - maybe we should split these controls into separate views?"
 
 Listen: Prog (Mahavishnu Orchestra, Yes, King Crimson) - complex, intense, and information-rich
 
