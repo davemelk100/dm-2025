@@ -514,7 +514,7 @@ Think: Google Search, Wikipedia, Craigslist, Microsoft Office
 
 Say: "The settings page needs to be more Workist - users just want to change their preferences and move on."
 
-Listen: Noise (Shellac, godheadsilo, Helmet) - brutish, authentic, and purposeful
+Listen: Noise (Shellac, the AmRep label, Neu!) - brutish, authentic, and purposeful
 
 ## 3. IMMERSE
 
