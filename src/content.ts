@@ -524,7 +524,7 @@ THINK: Discord, Steam, Twitch
 
 SAY: "Let's commit to being more Immerse - can we add spatial audio?"
 
-LISTEN: Big Indie (The Flaming Lips, Sloan, Broken Social Scene) - energetic, engaging, and delightful
+LISTEN: Big Indie (The Flaming Lips, Turnstile, Broken Social Scene) - energetic, engaging, and delightful
 
 ## 4. SUITE
 
