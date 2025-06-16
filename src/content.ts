@@ -514,7 +514,7 @@ THINK: Google Search, Wikipedia, Craigslist, Microsoft Office
 
 SAY: "The settings page needs to be more Routine - users just want to change their preferences and move on."
 
-LISTEN: Noise (Shellac, the AmRep label, Neu!) - brutish, authentic, and purposeful
+LISTEN: Noise (Shellac, Helmet, Neu!) - brutish, authentic, and purposeful
 
 ## 3. IMMERSE
 
@@ -532,7 +532,7 @@ Users expect innovation, personality, and modern features through bold, playful,
 
 THINK: Slack, Notion, Figma
 
-SAY: "The empty states could use some Suite energy - maybe add some playful illustrations?"
+SAY: "The empty states could use some Suite intuition - let's try more predicitive micro-interactions."
 
 LISTEN: Experimental Indie (Guided By Voices, Deerhunter, Neutral Milk Hotel) - creative, unique, but still approachable
 
@@ -551,8 +551,6 @@ LISTEN: Post Rock (Radiohead, Tortoise, Slint) - sophisticated, nuanced, and ref
 These design genres aren't just fancy labels - they're a powerful shared language that helps teams make better decisions. When someone says "this interface needs to be more familiar and reliable" or "let's make this experience more playful and experimental," they're not just talking about colors and fonts. They're communicating a complete vision of how the product should feel and function.
 
 Think of it like a movie soundtrack. The right music doesn't just play in the background - it shapes how you experience the entire film. In the same way, choosing the right design genre shapes how users experience your product. It's about creating harmony between what users expect, what your business needs, and how people feel when they use your product.
-
-The wrong genre can make users feel lost and frustrated. The right one can make them feel right at home. That's why these genre names matter - they help us make intentional choices about the experience we're creating.
 
 June 15, 2024`,
         image: "/img/design-genres-2.png",
@@ -627,7 +625,7 @@ Let's just make this clear right away - these aren't just bad designs, they're a
 
 Users shouldn't need Waze to use your app. When your navigation is more of a puzzle than a tool, you're not paying attention to your users. Let's not kid ourselves; icons are great, but words are better. Or use both. Go nuts.
 
-## 2. UPHELLING
+## 2. UPSHELLING
 
 You're reading an article, watching a video, or trying to use a feature - next thing you know, you just got horse-collared by a paywall. Every interaction is another chance to bully you into a paid tier. But sometimes that's the point. Based? Yes. Annoying? Absolutely.
 
