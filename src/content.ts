@@ -616,7 +616,8 @@ June 14, 2024`,
       },
       {
         title: "The 5 Design Anti-Patterns",
-        description: "Accidental and intentional anti-patterns that make users insane.",
+        description:
+          "Accidental and intentional anti-patterns that make users insane.",
         content: `## The 5 Design Anti-Patterns
 
 Let's just make this clear right away - these aren't just bad designs, they're anti-patterns: common mistakes that actively work against good user experience. This is the definitive list of design anti-patterns, according to me.
@@ -647,6 +648,23 @@ That's it. That's the article.`,
         image: "/img/anti-patterns.png",
         date: "June 16, 2024",
         tags: ["UX Design", "User Experience", "Design Patterns"],
+      },
+      {
+        title: "Commit Message Fatigue",
+        description:
+          "Annoyed by writing commit messages? Do this and never worry about it again.",
+        content: `## Commit Message Fatigue
+
+Friday 4:45 PM. Your 15th commit of the day. "fixed stuff" looks perfectly reasonable.
+
+## The Solution
+
+Use AI to write your commit messages. Cursor's AI commit message feature can analyze your changes and generate meaningful commit messages automatically. Go here: https://docs.cursor.com/more/ai-commit-message
+
+June 17, 2024`,
+        image: "/img/commit-fatigue.png",
+        date: "June 17, 2024",
+        tags: ["Git", "Development", "Best Practices", "Productivity"],
       },
     ],
   },
