@@ -652,18 +652,17 @@ That's it. That's the article.`,
       {
         title: "Commit Message Fatigue",
         description:
-          "Annoyed by writing commit messages? Do this and never worry about it again.",
-        content: `## Commit Message Fatigue
+          "Do this and never write another one again.",
+        content: `## My Goodness There's Got to Be a Better Way
 
-Friday 4:45 PM. Your 15th commit of the day. "fixed stuff" looks perfectly reasonable.
+Friday 4:45 PM. Your last 19 commits of the day have been up-arrow + tab + tab + enter + enter.
 
 ## The Solution
 
-Use AI to write your commit messages. Cursor's AI commit message feature can analyze your changes and generate meaningful commit messages automatically. Go here: https://docs.cursor.com/more/ai-commit-message
-
-June 17, 2024`,
+Use AI to write your commit messages. Cursor's AI commit message feature can analyze your changes and generate meaningful commit messages automatically. Go here: https://docs.cursor.com/more/ai-commit-message, or just click on those diamond icons in the Source Control input field and experience the magic.
+`,
         image: "/img/commit-fatigue.png",
-        date: "June 17, 2024",
+        date: "June 16, 2024",
         tags: ["Git", "Development", "Best Practices", "Productivity"],
       },
     ],
