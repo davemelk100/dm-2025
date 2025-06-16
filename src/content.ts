@@ -488,7 +488,7 @@ May 27, 2024`,
       },
       {
         title: "The 5 Design Genres (DRISS)",
-        description: "Naming things is helpful. Naming things well? Goated.",
+        description: "Naming things is fun. Naming things well? Goated.",
         content: `
 
 This was fun the first time around, so let's go ahead and run it back, this time with more details.
